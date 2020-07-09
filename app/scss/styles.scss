@@ -1,0 +1,152 @@
+@import "vars";
+@import "global";
+@import "fonts";
+
+
+.header {
+  background-color: $grey-bg;
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+  }
+
+  .logo {
+    padding-left: 7px;
+  }
+
+  &__seller {
+    margin-left: auto;
+  }
+
+  &__seller-btn {
+    padding: 10px 17px;
+
+    font-size: 14px;
+
+    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.1);
+    background-color: $blue;
+    color: #fff;
+    border-radius: 20px;
+  }
+
+  &__account {
+    display: flex;
+    align-items: center;
+    margin-left: 21px;
+  }
+
+  &__icons {
+    margin-right: 45px;
+  }
+
+  &__icon {
+    margin-left: 28px;
+
+    font-size: 0;
+
+    .lnr {
+      font-size: 20px;
+
+      color: #7e8fa1;
+    }
+  }
+
+  &__account-info {
+    display: flex;
+  }
+
+  &__account-avatar {
+    width: 50px;
+    height: 50px;
+    margin-right: 20px;
+
+    font-size: 0;
+
+    border-radius: 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &__account-name {
+    display: block;
+    margin-top: 3px;
+    margin-bottom: 2px;
+
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 22px;
+
+    color: $dark-grey;
+  }
+
+  &__account-balance {
+    color: $blue;
+  }
+
+  &__bottom {
+    background-color: #fff;
+  }
+
+  &__bottom-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+  }
+
+  &__menu-items {
+    padding: 0;
+    margin: 0;
+    display: flex;
+
+    text-transform: uppercase;
+
+    list-style: none;
+  }
+
+  &__menu-item {
+    margin-right: 33px;
+  }
+
+  &__menu-link {
+    font-weight: 500;
+
+    color: $dark-grey;
+  }
+
+  &__search {
+    position: relative;
+
+    min-width: 360px;
+  }
+
+  &__search-input {
+    width: 100%;
+    min-height: 46px;
+    padding: 0 75px 0 25px;
+
+    border: 1px solid #d9dfe5;
+    border-radius: 25px;
+    outline: transparent;
+  }
+
+  &__search-btn {
+    position: absolute;
+    right: 0;
+    top: 0;
+
+    height: 100%;
+    min-width: 70px;
+    
+    color: #fff;
+    background-color: $blue;
+    border: none;
+    border-radius: 25px;
+    outline: transparent;
+  }
+}
+
