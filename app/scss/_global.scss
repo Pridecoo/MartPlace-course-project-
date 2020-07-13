@@ -26,3 +26,32 @@ body {
   margin: 0 auto;
   padding: 0 15px;
 }
+
+
+.avatar {
+  border-radius: 50%;
+}
+
+.product-info__category--wordpress {
+  &:before {
+    display: inline-block;
+    content: "";
+    width: 15px;
+    height: 15px;
+    margin-right: 10px;
+
+    background: url(../images/icons/wordpress.svg);
+  }
+}
+
+.products-title {
+  position: relative;
+
+  margin-bottom: 50px;
+  padding: 38px 30px;
+
+  font-size: 30px;
+  font-weight: 500;
+
+  background-color: #fff;
+}

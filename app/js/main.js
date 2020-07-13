@@ -1,9 +1,18 @@
 $(function(){
 
-  $('.slider__inner').slick({
-    arrows: false,
-    dots: true,
+  $('.weekly__items').slick({
+    arrows: true,
+    dots: false,
     infinite: true,
+    draggable: false,
+    appendArrows: '.products-title--slider',
   });
 
+
+  $('.weekly__content-stars').rateYo({
+    rating: 4.5,
+    starWidth: '13px',
+    spacing: '4px',
+    readOnly: true
+  });
 });
