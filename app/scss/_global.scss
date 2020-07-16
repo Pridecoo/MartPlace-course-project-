@@ -14,6 +14,10 @@ a {
   text-decoration: none;
 }
 
+img {
+  display: block;
+}
+
 body {
   font-family: "quicksand", sans-serif;
 
@@ -29,29 +33,156 @@ body {
 
 
 .avatar {
+  width: 50px;
+  height: 50px;
+
   border-radius: 50%;
+
+  &--mini {
+    width: 30px;
+    height: 30px;
+  }
 }
 
-.product-info__category--wordpress {
+.product__info-category {
+  color: $purple;
+
   &:before {
     display: inline-block;
     content: "";
     width: 15px;
-    height: 15px;
-    margin-right: 10px;
+    height: 17px;
+    margin-right: 5px;
 
-    background: url(../images/icons/wordpress.svg);
+
+
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+  }
+
+  &--wordpress,
+  &--plugin {
+
+    &:before {
+      background: url(../images/icons/wordpress.svg);
+    }
+  }
+
+  &--psd,
+  &--html {
+    text-transform: uppercase;
+  }
+
+  &--psd {
+
+    &:before {
+      background: url(../images/icons/psd.svg);
+    }
+  }
+
+
+  &--html {
+
+    &:before {
+      background: url(../images/icons/html.svg);
+    }
   }
 }
 
 .products-title {
   position: relative;
 
+  width: 100%;
+  min-height: 110px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   margin-bottom: 50px;
-  padding: 38px 30px;
+  padding: 0 30px;
 
   font-size: 30px;
   font-weight: 500;
 
   background-color: #fff;
+  border-radius: 4px;
+  box-shadow: 0px 2px 4px 0px rgba(108, 111, 115, 0.1);
+
+  &--slider {
+
+    &:after {
+      position: absolute;
+      right: 30px;
+      top: 50%;
+      content: "";
+
+      width: 110px;
+      height: 45px;
+
+      background-color: $purple;
+      border-radius: 25px;
+
+      transform: translateY(-50%);
+    }
+  }
+
+  &--newest {
+    margin-bottom: 30px;
+  }
+}
+
+.tag {
+  margin-right: 5px;
+  padding: 5px 13px 5px 15px;
+
+  color: #868c96;
+
+  background-color: $grey-bg;
+  border-radius: 25px;
+  border: none;
+  outline: transparent;
+
+  cursor: pointer;
+
+  transition: all .3s;
+
+  &:hover {
+    box-shadow: 0 1px 3px 1px rgba(0, 0, 0, 0.15);
+  }
+
+  &:active {
+    box-shadow: inset 0 2px 3px 0 rgba(0, 0, 0, 0.3), 0 2px 3px 0 rgba(0, 0, 0, 0.3);
+  }
+
+  &--filter {
+    padding: 8px 20px;
+  }
+
+  &--all {
+    padding: 18px 36px;
+
+    word-spacing: 2px;
+
+    color: #fff;
+    background-color: $blue;
+
+    &:hover {
+      background-color: #fff;
+      color: $blue;
+    }
+  }
+
+  &--picture {
+    padding: 13px 29px;
+
+    font-weight: 600;
+
+    color: #fff;
+    border: 1px solid #fff;
+    background: transparent;
+
+    &:hover {
+      color: $blue;
+      background: #fff;
+    }
+  }
 }
