@@ -39,7 +39,7 @@ gulp.task("styles", function(){
     "node_modules/rateyo/src/jquery.rateyo.css",
     "node_modules/slick-carousel/slick/slick.css",
     "node_modules/magnific-popup/dist/magnific-popup.css",
-    "app/css/linear-icons.css"
+    "app/libs/linear-icons.css"
   ])
     .pipe(concat("libs.min.css"))
     .pipe(cssmin())

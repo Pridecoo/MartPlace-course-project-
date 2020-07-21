@@ -5,13 +5,15 @@ $(function(){
     dots: false,
     infinite: true,
     draggable: false,
-    appendArrows: '.products-title--slider',
+    appendArrows: '.weekly__title',
   });
 
 
   $('.product__stars').rateYo({
     rating: 4.5,
-    starWidth: '13px',
+    starWidth: '15px',
+    ratedFill: "#ffc000",
+    normalFill: "#eff1f5",
     spacing: '4px',
     readOnly: true
   });

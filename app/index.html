@@ -17,15 +17,11 @@
 		<div class="container">
 			<div class="header__inner">
 
-				<div class="logo">
-					<a class="logo__link" href="#">
-						<img class="logo__img" src="images/logo.png" alt="logo">
-					</a>
-				</div>
+				<a class="logo" href="#">
+					<img class="logo__img" src="images/logo.png" alt="logo">
+				</a>
 
-				<div class="header__seller">
-					<a class="header__seller-btn" href="#">Become a Seller</a>
-				</div>
+				<a class="header__seller-btn" href="#">Become a Seller</a>
 
 				<div class="header__account">
 
@@ -44,17 +40,14 @@
 						</a>
 					</div>
 
-					<div class="header__account-info">
-						<a class="header__avatar-link" href="#">
-							<img class="header__avatar-img avatar" src="images/content/avatar.jpg" alt="user picture">
-						</a>
+					<a class="header__account-info" href="#">
+						<img class="header__avatar-img avatar" src="images/content/avatar.jpg" alt="user picture">
 
 						<div class="header__account-text">
-							<a class="header__account-name" href="#">Taofiq Hakim</a>
-							<a class="header__account-balance" href="#">$20.45</a>
+							<span class="header__account-name" href="#">Taofiq Hakim</span>
+							<span class="header__account-balance" href="#">$20.45</span>
 						</div>
-
-					</div>
+					</a>
 
 				</div>
 
@@ -68,7 +61,7 @@
 					<nav class="header__menu">
 						<ul class="header__menu-items">
 							<li class="header__menu-item">
-								<a class="header__menu-link header__menu-link--active" href="#">home</a>
+								<a class="header__menu-link header__menu-active" href="#">home</a>
 							</li>
 							<li class="header__menu-item">
 								<a class="header__menu-link" href="#">all products</a>
@@ -193,8 +186,8 @@
 			<div class="container">
 				<div class="weekly__inner">
 
-					<div class="products-title products-title--slider">
-						<div class="products-title__text">
+					<div class="title-bacground weekly__title">
+						<div class="title-bacground__text">
 							Weekly Featured Products
 						</div>
 					</div>
@@ -202,10 +195,10 @@
 					<div class="weekly__items">
 
 						<div class="weekly__slide">
-
-							<article class="product">
-								<div class="product__picture">
-									<img class="product__img" src="images/content/product-1.jpg" alt="product picture">
+							<article class="product product-weekly">
+								<div class="product__picture product-weekly__picture">
+									<img class="product__img product-weekly__img" src="images/content/product-1.jpg"
+										alt="product picture">
 
 									<div class="product__picture-btns">
 										<a class="tag tag--picture" href="#">More Info</a>
@@ -213,13 +206,17 @@
 									</div>
 								</div>
 
-								<div class="product__content">
-									<a class="product__content-title" href="#">One Page Resume Template</a>
+								<div class="product__content product-weekly__content">
+
+									<a class="product__content-title product-weekly__content-title" href="#">One Page Resume Template</a>
 
 									<div class="product__info">
-										<img class="avatar avatar--mini" src="images/content/avatar-2.jpg" alt="user picture">
-										<a class="product__info-author" href="#">AazzTech</a>
-										<a class="product__info-category product__info-category--wordpress" href="#">
+										<a class="product__info-author" href="#">
+											<img class="avatar product-avatar" src="images/content/avatar-2.jpg" alt="user picture">
+											AazzTech
+										</a>
+										<a class="product__info-category" style="background-image: url(images/icons/wordpress.svg);"
+											href="#">
 											WordPress
 										</a>
 									</div>
@@ -231,26 +228,37 @@
 										mattis, leo quam aliquet congue justo ut scelerisque.
 									</div>
 
-									<div class="product__content-tags">
+									<div class="tags product__tags">
+										<a class="tag" href="#">website</a>
+										<a class="tag" href="#">plugin</a>
+										<a class="tag" href="#">landing page</a>
+										<a class="tag" href="#">landing page</a>
 										<a class="tag" href="#">website</a>
 										<a class="tag" href="#">plugin</a>
 										<a class="tag" href="#">landing page</a>
 									</div>
 
-									<div class="product__stats">
-										<div class="product__price">$20</div>
 
-										<div class="product__fav">
-											<span class="lnr lnr-heart"></span>
-											90
+									<div class="product__content-bottom product-weekly__content-bottom">
+										<div class="product__stats">
+											<div class="product__price product-weekly__price">$10 - $50</div>
+
+											<div class="product__fav">
+												<button class="product__fav-btn" type="button">
+													<span class="lnr lnr-heart"></span>
+												</button>
+												46
+											</div>
+	
+											<div class="product__sells product-weekly__sells">
+												<button class="product__sells-btn" type="button">
+													<span class="lnr lnr-cart"></span>
+												</button>
+												68
+											</div>
+
+											<div class="product__stars product-weekly__stars">stars</div>
 										</div>
-
-										<div class="product__sells">
-											<span class="lnr lnr-cart"></span>
-											246
-										</div>
-
-										<div class="product__stars">stars</div>
 									</div>
 
 								</div>
@@ -258,10 +266,10 @@
 						</div>
 
 						<div class="weekly__slide">
-
-							<article class="product">
-								<div class="product__picture">
-									<img class="product__img" src="images/content/product-2.jpg" alt="product picture">
+							<article class="product product-weekly">
+								<div class="product__picture product-weekly__picture">
+									<img class="product__img product-weekly__img" src="images/content/product-3.jpg"
+										alt="product picture">
 
 									<div class="product__picture-btns">
 										<a class="tag tag--picture" href="#">More Info</a>
@@ -269,14 +277,18 @@
 									</div>
 								</div>
 
-								<div class="product__content">
-									<a class="product__content-title" href="#">One Page Resume Template</a>
+								<div class="product__content product-weekly__content">
+
+									<a class="product__content-title product-weekly__content-title" href="#">One Page Resume Template</a>
 
 									<div class="product__info">
-										<img class="avatar avatar--mini" src="images/content/avatar-2.jpg" alt="user picture">
-										<a class="product__info-author" href="#">AazzTech</a>
-										<a class="product__info-category product__info-category--wordpress" href="#">
-											WordPress
+										<a class="product__info-author" href="#">
+											<img class="avatar product-avatar" src="images/content/avatar.jpg" alt="user picture">
+											mrCoolDesigner
+										</a>
+										<a class="product__info-category product__info-category--uppercase" style="background-image: url(images/icons/html.svg);"
+											href="#">
+											html
 										</a>
 									</div>
 
@@ -287,31 +299,37 @@
 										mattis, leo quam aliquet congue justo ut scelerisque.
 									</div>
 
-									<div class="product__content-tags">
+									<div class="tags product__tags">
 										<a class="tag" href="#">website</a>
 										<a class="tag" href="#">plugin</a>
 										<a class="tag" href="#">landing page</a>
 									</div>
 
-									<div class="product__stats">
-										<div class="product__price">$20</div>
 
-										<div class="product__fav">
-											<span class="lnr lnr-heart"></span>
-											90
+									<div class="product__content-bottom product-weekly__content-bottom">
+										<div class="product__stats">
+											<div class="product__price product-weekly__price">$10 - $50</div>
+
+											<div class="product__fav">
+												<button class="product__fav-btn" type="button">
+													<span class="lnr lnr-heart"></span>
+												</button>
+												56
+											</div>
+	
+											<div class="product__sells product-weekly__sells">
+												<button class="product__sells-btn" type="button">
+													<span class="lnr lnr-cart"></span>
+												</button>
+												68
+											</div>
+
+											<div class="product__stars product-weekly__stars">stars</div>
 										</div>
-
-										<div class="product__sells">
-											<span class="lnr lnr-cart"></span>
-											246
-										</div>
-
-										<div class="product__stars">stars</div>
 									</div>
 
 								</div>
 							</article>
-
 						</div>
 
 					</div>
@@ -324,23 +342,24 @@
 			<div class="container">
 				<div class="newest__inner">
 
-					<div class="products-title products-title--newest">
-						<div class="products-title__text">
+					<div class="title-bacground newest__title">
+						<div class="title-bacground__text">
 							Newest Release Products
 						</div>
 
-						<div class="products-title__filter">Filter by:
-							<div class="products-title__filters">
-								<button class="products-title__filters-btn" type="button">Trending items</button>
-								<button class="products-title__filters-btn" type="button">Best seller</button>
-								<button class="products-title__filters-btn" type="button">Best rating</button>
-								<button class="products-title__filters-btn" type="button">Low price</button>
-								<button class="products-title__filters-btn" type="button">High price</button>
+						<div class="newest__filter">
+							Filter by:
+							<div class="newest__filters">
+								<button class="newest__filters-btn" type="button">Trending items</button>
+								<button class="newest__filters-btn" type="button">Best seller</button>
+								<button class="newest__filters-btn" type="button">Best rating</button>
+								<button class="newest__filters-btn" type="button">Low price</button>
+								<button class="newest__filters-btn" type="button">High price</button>
 							</div>
 						</div>
 					</div>
 
-					<div class="newest__tags">
+					<div class="tags newest__tags">
 						<button class="tag tag--filter" type="button" data-filter=".category-plugins">
 							Plugins
 						</button>
@@ -376,9 +395,9 @@
 
 					<div class="newest__items">
 
-						<article class="product product--mini mix category-plugins">
+						<article class="product mix category-plugins">
 							<div class="product__picture">
-								<img class="product__img product__img--mini" src="images/content/product-1.jpg" alt="product picture">
+								<img class="product__img" src="images/content/product-1.jpg" alt="product picture">
 
 								<div class="product__picture-btns">
 									<a class="tag tag--picture" href="#">More Info</a>
@@ -386,44 +405,58 @@
 								</div>
 							</div>
 
-							<div class="product__content product__content--mini">
-								<a class="product__content-title product__content-title--mini" href="#">E-commerce Shopping Cart</a>
+							<div class="product__content">
 
-								<div class="product__info">
-									<img class="avatar avatar--mini" src="images/content/avatar-2.jpg" alt="user picture">
-									<a class="product__info-author product__info-author--mini" href="#">Theme-Valley</a>
-									<a class="product__info-category product__info-category--plugin" href="#">
-										Plugin
-									</a>
+								<div class="product__content-top">
+									<a class="product__content-title" href="#">E-commerce Shopping Cart</a>
+
+									<div class="product__info">
+										<a class="product__info-author" href="#">
+											<img class="avatar product-avatar" src="images/content/avatar-2.jpg" alt="user picture">
+											AazzTech
+										</a>
+										<a class="product__info-category" style="background-image: url(images/icons/wordpress.svg);"
+											href="#">
+											Plugin
+										</a>
+									</div>
+
+
+									<div class="product__content-text">
+										Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo
+										quam
+										aliquet congue.
+									</div>
 								</div>
 
+								<div class="product__content-bottom">
+									<div class="product__stats">
+										<div class="product__price">$10</div>
 
-								<div class="product__content-text product__content-text--mini">
-									Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam
-									aliquet congue.
+										<div class="product__fav">
+											<button class="product__fav-btn" type="button">
+												<span class="lnr lnr-heart"></span>
+											</button>
+											56
+										</div>
+
+										<div class="product__stars">stars</div>
+
+										<div class="product__sells">
+											<button class="product__sells-btn" type="button">
+												<span class="lnr lnr-cart"></span>
+											</button>
+											68
+										</div>
+									</div>
 								</div>
+
 							</div>
-
-							<div class="product__stats product__stats--mini">
-								<div class="product__price product__price--mini">$20</div>
-
-								<div class="product__fav product__fav--mini">
-									<span class="lnr lnr-heart"></span>
-									90
-								</div>
-
-								<div class="product__sells product__sells--mini">
-									<span class="lnr lnr-cart"></span>
-									246
-								</div>
-							</div>
-
 						</article>
 
-
-						<article class="product product--mini mix category-psd">
+						<article class="product mix category-psd">
 							<div class="product__picture">
-								<img class="product__img product__img--mini" src="images/content/product-3.jpg" alt="product picture">
+								<img class="product__img" src="images/content/product-4.jpg" alt="product picture">
 
 								<div class="product__picture-btns">
 									<a class="tag tag--picture" href="#">More Info</a>
@@ -431,48 +464,57 @@
 								</div>
 							</div>
 
-							<div class="product__content product__content--mini">
-								<a class="product__content-title product__content-title--mini" href="#">
-									Marketify Coffee Shop
-								</a>
+							<div class="product__content">
 
-								<div class="product__info">
-									<img class="avatar avatar--mini" src="images/content/avatar-2.jpg" alt="user picture">
-									<a class="product__info-author product__info-author--mini" href="#">
-										EcoTheme
-									</a>
-									<a class="product__info-category product__info-category--psd" href="#">
-										psd
-									</a>
+								<div class="product__content-top">
+									<a class="product__content-title" href="#">Marketify Coffee Shop</a>
+
+									<div class="product__info">
+										<a class="product__info-author" href="#">
+											<img class="avatar product-avatar" src="images/content/avatar-2.jpg" alt="user picture">
+											AazzTech
+										</a>
+										<a class="product__info-category product__info-category--uppercase" style="background-image: url(images/icons/psd.svg);"
+											href="#">
+											psd
+										</a>
+									</div>
+
+									<div class="product__content-text">
+										Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo
+										quam
+										aliquet congue.
+									</div>
 								</div>
 
+								<div class="product__content-bottom">
+									<div class="product__stats">
+										<div class="product__price">$10</div>
 
-								<div class="product__content-text product__content-text--mini">
-									Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam
-									aliquet congue.
+										<div class="product__fav">
+											<button class="product__fav-btn" type="button">
+												<span class="lnr lnr-heart"></span>
+											</button>
+											56
+										</div>
+
+										<div class="product__stars">stars</div>
+
+										<div class="product__sells">
+											<button class="product__sells-btn" type="button">
+												<span class="lnr lnr-cart"></span>
+											</button>
+											68
+										</div>
+									</div>
 								</div>
+
 							</div>
-
-							<div class="product__stats product__stats--mini">
-								<div class="product__price product__price--mini">$18</div>
-
-								<div class="product__fav product__fav--mini">
-									<span class="lnr lnr-heart"></span>
-									48
-								</div>
-
-								<div class="product__sells product__sells--mini">
-									<span class="lnr lnr-cart"></span>
-									50
-								</div>
-							</div>
-
 						</article>
 
-
-						<article class="product product--mini mix category-landing">
+						<article class="product mix category-landing">
 							<div class="product__picture">
-								<img class="product__img product__img--mini" src="images/content/product-4.jpg" alt="product picture">
+								<img class="product__img" src="images/content/product-2.jpg" alt="product picture">
 
 								<div class="product__picture-btns">
 									<a class="tag tag--picture" href="#">More Info</a>
@@ -480,50 +522,58 @@
 								</div>
 							</div>
 
-							<div class="product__content product__content--mini">
-								<a class="product__content-title product__content-title--mini" href="#">
-									Bryson - Portfolio Template
-								</a>
+							<div class="product__content">
 
-								<div class="product__info">
-									<img class="avatar avatar--mini" src="images/content/avatar-2.jpg" alt="user picture">
-									<a class="product__info-author product__info-author--mini" href="#">
-										Artcorner
-									</a>
-									<a class="product__info-category product__info-category--html" href="#">
-										html
-									</a>
+								<div class="product__content-top">
+									<a class="product__content-title" href="#">Bryson - Portfolio Template</a>
+
+									<div class="product__info">
+										<a class="product__info-author" href="#">
+											<img class="avatar product-avatar" src="images/content/avatar-2.jpg" alt="user picture">
+											AazzTech
+										</a>
+										<a class="product__info-category product__info-category--uppercase" style="background-image: url(images/icons/html.svg);"
+											href="#">
+											html
+										</a>
+									</div>
+
+
+									<div class="product__content-text">
+										Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo
+										quam
+										aliquet congue.
+									</div>
 								</div>
 
+								<div class="product__content-bottom">
+									<div class="product__stats">
+										<div class="product__price">$10</div>
 
-								<div class="product__content-text product__content-text--mini">
-									Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam
-									aliquet congue.
+										<div class="product__fav">
+											<button class="product__fav-btn" type="button">
+												<span class="lnr lnr-heart"></span>
+											</button>
+											56
+										</div>
+
+										<div class="product__stars">stars</div>
+
+										<div class="product__sells">
+											<button class="product__sells-btn" type="button">
+												<span class="lnr lnr-cart"></span>
+											</button>
+											68
+										</div>
+									</div>
 								</div>
+
 							</div>
-
-							<div class="product__stats product__stats--mini">
-								<div class="product__price product__price--mini">$10</div>
-
-								<div class="product__fav product__fav--mini">
-									<span class="lnr lnr-heart"></span>
-									56
-								</div>
-
-								<div class="product__stars product__stars--mini">stars</div>
-
-								<div class="product__sells product__sells--mini">
-									<span class="lnr lnr-cart"></span>
-									68
-								</div>
-							</div>
-
 						</article>
 
-
-						<article class="product product--mini mix category-plugins">
+						<article class="product mix category-plugins">
 							<div class="product__picture">
-								<img class="product__img product__img--mini" src="images/content/product-4.jpg" alt="product picture">
+								<img class="product__img" src="images/content/product-3.jpg" alt="product picture">
 
 								<div class="product__picture-btns">
 									<a class="tag tag--picture" href="#">More Info</a>
@@ -531,48 +581,58 @@
 								</div>
 							</div>
 
-							<div class="product__content product__content--mini">
-								<a class="product__content-title product__content-title--mini" href="#">E-commerce Shopping Cart</a>
+							<div class="product__content">
 
-								<div class="product__info">
-									<img class="avatar avatar--mini" src="images/content/avatar-2.jpg" alt="user picture">
-									<a class="product__info-author product__info-author--mini" href="#">
-										Design-Hub
-									</a>
-									<a class="product__info-category product__info-category--plugin" href="#">
-										Plugin
-									</a>
+								<div class="product__content-top">
+									<a class="product__content-title" href="#">E-commerce Shopping Cart</a>
+
+									<div class="product__info">
+										<a class="product__info-author" href="#">
+											<img class="avatar product-avatar" src="images/content/avatar-2.jpg" alt="user picture">
+											SomeDude
+										</a>
+										<a class="product__info-category" style="background-image: url(images/icons/wordpress.svg);"
+											href="#">
+											Plugin
+										</a>
+									</div>
+
+
+									<div class="product__content-text">
+										Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo
+										quam
+										aliquet congue.
+									</div>
 								</div>
 
+								<div class="product__content-bottom">
+									<div class="product__stats">
+										<div class="product__price">$10</div>
 
-								<div class="product__content-text product__content-text--mini">
-									Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam
-									aliquet congue.
+										<div class="product__fav">
+											<button class="product__fav-btn" type="button">
+												<span class="lnr lnr-heart"></span>
+											</button>
+											56
+										</div>
+
+										<div class="product__stars">stars</div>
+
+										<div class="product__sells">
+											<button class="product__sells-btn" type="button">
+												<span class="lnr lnr-cart"></span>
+											</button>
+											68
+										</div>
+									</div>
 								</div>
+
 							</div>
-
-							<div class="product__stats product__stats--mini">
-								<div class="product__price product__price--mini">$10-50</div>
-
-								<div class="product__fav product__fav--mini">
-									<span class="lnr lnr-heart"></span>
-									90
-								</div>
-
-								<div class="product__stars product__stars--mini">stars</div>
-
-								<div class="product__sells product__sells--mini">
-									<span class="lnr lnr-cart"></span>
-									45
-								</div>
-							</div>
-
 						</article>
 
-
-						<article class="product product--mini mix category-psd">
+						<article class="product mix category-psd">
 							<div class="product__picture">
-								<img class="product__img product__img--mini" src="images/content/product-3.jpg" alt="product picture">
+								<img class="product__img" src="images/content/product-2.jpg" alt="product picture">
 
 								<div class="product__picture-btns">
 									<a class="tag tag--picture" href="#">More Info</a>
@@ -580,48 +640,56 @@
 								</div>
 							</div>
 
-							<div class="product__content product__content--mini">
-								<a class="product__content-title product__content-title--mini" href="#">
-									Marketify Coffee Shop
-								</a>
+							<div class="product__content">
 
-								<div class="product__info">
-									<img class="avatar avatar--mini" src="images/content/avatar-2.jpg" alt="user picture">
-									<a class="product__info-author product__info-author--mini" href="#">
-										AazzTech
-									</a>
-									<a class="product__info-category product__info-category--psd" href="#">
-										psd
-									</a>
+								<div class="product__content-top">
+									<a class="product__content-title" href="#">Marketify Coffee Shop</a>
+
+									<div class="product__info">
+										<a class="product__info-author" href="#">
+											<img class="avatar product-avatar" src="images/content/avatar-2.jpg" alt="user picture">
+											AazzTech
+										</a>
+										<a class="product__info-category product__info-category--uppercase" style="background-image: url(images/icons/psd.svg);"
+											href="#">
+											psd
+										</a>
+									</div>
+
+
+									<div class="product__content-text">
+										Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo
+										quam
+										aliquet congue.
+									</div>
 								</div>
 
+								<div class="product__content-bottom">
+									<div class="product__stats">
+										<div class="product__price">$10</div>
 
-								<div class="product__content-text product__content-text--mini">
-									Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam
-									aliquet congue.
+										<div class="product__fav">
+											<button class="product__fav-btn" type="button">
+												<span class="lnr lnr-heart"></span>
+											</button>
+											56
+										</div>
+
+										<div class="product__sells">
+											<button class="product__sells-btn" type="button">
+												<span class="lnr lnr-cart"></span>
+											</button>
+											68
+										</div>
+									</div>
 								</div>
+
 							</div>
-
-							<div class="product__stats product__stats--mini">
-								<div class="product__price product__price--mini">$10-50</div>
-
-								<div class="product__fav product__fav--mini">
-									<span class="lnr lnr-heart"></span>
-									48
-								</div>
-
-								<div class="product__sells product__sells--mini">
-									<span class="lnr lnr-cart"></span>
-									50
-								</div>
-							</div>
-
 						</article>
 
-
-						<article class="product product--mini mix category-site">
+						<article class="product mix category-site">
 							<div class="product__picture">
-								<img class="product__img product__img--mini" src="images/content/product-2.jpg" alt="product picture">
+								<img class="product__img" src="images/content/product-4.jpg" alt="product picture">
 
 								<div class="product__picture-btns">
 									<a class="tag tag--picture" href="#">More Info</a>
@@ -629,44 +697,52 @@
 								</div>
 							</div>
 
-							<div class="product__content product__content--mini">
-								<a class="product__content-title product__content-title--mini" href="#">
-									Bryson - Portfolio Template
-								</a>
+							<div class="product__content">
 
-								<div class="product__info">
-									<img class="avatar avatar--mini" src="images/content/avatar-2.jpg" alt="user picture">
-									<a class="product__info-author product__info-author--mini" href="#">
-										Coder-Lab
-									</a>
-									<a class="product__info-category product__info-category--html" href="#">
-										html
-									</a>
+								<div class="product__content-top">
+									<a class="product__content-title" href="#">Bryson - Portfolio Template</a>
+
+									<div class="product__info">
+										<a class="product__info-author" href="#">
+											<img class="avatar product-avatar" src="images/content/avatar-2.jpg" alt="user picture">
+											AazzTech
+										</a>
+										<a class="product__info-category product__info-category--uppercase" style="background-image: url(images/icons/html.svg);"
+											href="#">
+											html
+										</a>
+									</div>
+
+									<div class="product__content-text">
+										Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo
+										quam
+										aliquet congue.
+									</div>
 								</div>
 
+								<div class="product__content-bottom">
+									<div class="product__stats">
+										<div class="product__price">$10</div>
 
-								<div class="product__content-text product__content-text--mini">
-									Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam
-									aliquet congue.
+										<div class="product__fav">
+											<button class="product__fav-btn" type="button">
+												<span class="lnr lnr-heart"></span>
+											</button>
+											56
+										</div>
+
+										<div class="product__stars">stars</div>
+
+										<div class="product__sells">
+											<button class="product__sells-btn" type="button">
+												<span class="lnr lnr-cart"></span>
+											</button>
+											68
+										</div>
+									</div>
 								</div>
+
 							</div>
-
-							<div class="product__stats product__stats--mini">
-								<div class="product__price product__price--mini">$10</div>
-
-								<div class="product__fav product__fav--mini">
-									<span class="lnr lnr-heart"></span>
-									56
-								</div>
-
-								<div class="product__stars product__stars--mini">stars</div>
-
-								<div class="product__sells product__sells--mini">
-									<span class="lnr lnr-cart"></span>
-									68
-								</div>
-							</div>
-
 						</article>
 
 					</div>
