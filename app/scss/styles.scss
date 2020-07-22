@@ -458,7 +458,7 @@
 .product {
   display: flex;
   flex-direction: column;
-  max-width: calc(100% / 3 - 28px);
+  max-width: 361px;
   margin-right: 28px;
   margin-bottom: 30px;
 
@@ -901,3 +901,83 @@
   background-color: $blue;
   color: #fff;
 }
+
+// feed
+.feed {
+  padding: 120px 0 90px;
+
+  background-color: #eff1f5;
+
+  &__items {
+    margin-right: -28px;
+  }
+
+  &__arrow {
+    background-color: $blue;
+
+    &:hover {
+      background-color: rgba($blue, .9);
+    }
+
+    &:active {
+      background-color: #1474ce;
+    }
+  }
+}
+
+// statistics
+.statistics {
+  padding: 95px 0;
+
+  background-color: #212225;
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__item {
+    text-align: center;
+
+    color: $yellow-icon;
+
+    &--blue {
+      color: $blue-icon;
+    }
+
+    &--green {
+      color: $green-icon;
+    }
+
+    &--red {
+      color: $red-icon;
+    }
+  }
+
+  &__icon {
+    margin-bottom: 45px;
+
+    font-size: 48px;
+  }
+
+  &__number {
+    margin-bottom: 14px;
+
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  &__title {
+    font-size: 18px;
+
+    color: #fff;
+  }
+}
+
+.statistics__inner {}
+
+.statistics {}
+
+.lnr {}
+
+.lnr-briefcase {}
