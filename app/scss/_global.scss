@@ -29,7 +29,6 @@ body {
   padding: 0 15px;
 }
 
-
 .avatar {
   width: 50px;
   height: 50px;
@@ -38,9 +37,7 @@ body {
   border-radius: 50%;
 }
 
-.title-bacground {
-  position: relative;
-
+.title-background {
   width: 100%;
   min-height: 110px;
   display: flex;
@@ -61,6 +58,40 @@ body {
   flex-wrap: wrap;
 }
 
+.button {
+  color: #fff;
+  border: none;
+  outline: transparent;
+
+  cursor: pointer;
+
+  transition: all .3s;
+
+  &--rounded,
+  &--blue {
+    @include focus-purple;
+    @include active-lblue;
+    @include hover-lblue;
+  }
+
+  &--rounded {
+    border-radius: 35px;
+  }
+
+  &--blue {
+    background-color: $blue;
+  }
+
+  &--transparent {
+    background-color: transparent;
+    border: 1px solid #fff;
+
+    @include focus-white;
+    @include hover-white;
+    @include active-white;
+  }
+}
+
 .tag {
   margin: 0 5px 5px 0;
   padding: 5px 12px 5px 17px;
@@ -76,6 +107,8 @@ body {
 
   transition: all .3s;
 
+  @include focus-purple;
+
   &:hover {
     box-shadow: 0 1px 3px 1px rgba(0, 0, 0, 0.15);
   }
@@ -84,36 +117,31 @@ body {
     box-shadow: inset 0 2px 3px 0 rgba(0, 0, 0, 0.3), 0 2px 3px 0 rgba(0, 0, 0, 0.3);
   }
 
-  &--filter {
-    padding: 8px 20px;
+}
+
+.slick-arrow {
+  padding: 12px 21px 15px 19px;
+
+  font-size: 15px;
+  background-color: $purple;
+
+  &--prev {
+    border-radius: 35px 0 0 35px;
   }
 
-  &--all {
-    padding: 18px 36px;
-
-    word-spacing: 2px;
-
-    color: #fff;
-    background-color: $blue;
-
-    &:hover {
-      background-color: #fff;
-      color: $blue;
-    }
+  &--next {
+    border-radius: 0 35px 35px 0;
   }
 
-  &--picture {
-    padding: 13px 29px;
+  &:hover {
+    background-color: rgba($purple, .9);
+  }
 
-    font-weight: 600;
+  &:focus {
+    color: $lblue;
+  }
 
-    color: #fff;
-    border: 1px solid #fff;
-    background: transparent;
-
-    &:hover {
-      color: $blue;
-      background: #fff;
-    }
+  &:active {
+    background-color: #602bbd;
   }
 }

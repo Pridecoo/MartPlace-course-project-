@@ -5,11 +5,13 @@ $dark-grey: #333333;
 $grey-text: #555;
 $purple: #7347c1;
 
+$lblue: #4198f5;
+
 @mixin focus-purple {
   outline: transparent;
 
   transition: all .3s;
-  
+
   &:focus {
     box-shadow: 0 0 2px 1px $purple,
   }
@@ -19,7 +21,7 @@ $purple: #7347c1;
   outline: transparent;
 
   transition: all .3s;
-  
+
   &:focus {
     box-shadow: 0 0 2px 1px #fff,
   }
@@ -29,7 +31,27 @@ $purple: #7347c1;
   &:active {
     background-color: #fff;
     color: $blue;
-    box-shadow: inset 0 0 0 1px $blue, 0 4px 5px 0 rgba(0, 0, 0, 0.3);
+    box-shadow: inset 0 4px 5px 0 rgba(0, 0, 0, 0.3);
+  }
+}
+
+@mixin hover-white {
+  &:hover {
+    background-color: #fff;
+    color: $blue;
+  }
+}
+
+@mixin active-lblue {
+  &:active {
+    background-color: $lblue;
+    box-shadow: inset 0 4px 5px 0 rgba(0, 0, 0, 0.3);
+  }
+}
+
+@mixin hover-lblue {
+  &:hover {
+    background-color: $lblue;
   }
 }
 

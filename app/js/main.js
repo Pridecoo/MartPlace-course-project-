@@ -5,7 +5,9 @@ $(function(){
     dots: false,
     infinite: true,
     draggable: false,
-    appendArrows: '.weekly__title',
+    prevArrow: '<button class="slick-arrow slick-arrow--prev button" type="button"><span class="lnr lnr-chevron-left"></span></button>',
+    nextArrow: '<button class="slick-arrow slick-arrow--next button" type="button"><span class="lnr lnr-chevron-right"></span></button>',
+    appendArrows: '.arrows-wrapper',
   });
 
 

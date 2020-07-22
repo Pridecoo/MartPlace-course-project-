@@ -23,18 +23,6 @@
     font-size: 14px;
 
     box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.1);
-    background-color: $blue;
-    color: #fff;
-    border-radius: 20px;
-
-    @include focus-purple;
-
-    @include active-white;
-
-    &:hover {
-      box-shadow: 0 2px 5px 2px rgba(0, 0, 0, 0.3);
-    }
-
   }
 
   &__account {
@@ -227,29 +215,12 @@
 
     font-size: 0;
 
-    color: #fff;
-    background-color: $blue;
-    border: none;
     border-radius: 35px;
-    outline: transparent;
-
-    cursor: pointer;
-
-    @include focus-purple;
 
     span {
       font-size: 15px;
     }
 
-    &:hover {
-      background-color: #1c88fa;
-    }
-
-    &:active {
-      background-color: #fff;
-
-      color: $blue;
-    }
   }
 }
 
@@ -295,8 +266,6 @@
 
   &__btns {
     font-size: 16px;
-
-    background-color: transparent;
   }
 
   &__btn {
@@ -304,20 +273,7 @@
     padding: 18px 30px;
 
     color: #fff;
-    border: 1px solid #fff;
-    border-radius: 35px;
     box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.1);
-
-    @include focus-white;
-
-    &:hover {
-      background-color: #fff;
-      color: $blue;
-    }
-
-    &:active {
-      box-shadow: inset 0 0 5px 0px #000;
-    }
   }
 
   //headline-search 
@@ -414,22 +370,9 @@
   &__search-btn {
     padding: 18px 66px;
 
-    color: #fff;
-    background-color: $blue;
-    border: none;
     border-radius: 4px;
 
-    cursor: pointer;
-
     white-space: nowrap;
-
-    @include focus-purple;
-    @include active-white;
-
-    &:hover {
-      box-shadow: 0 2px 5px 2px rgba(0, 0, 0, 0.3);
-    }
-
   }
 }
 
@@ -496,60 +439,18 @@
   &__inner {
     padding: 120px 0;
 
-
-    .slick-arrow {
-      position: absolute;
-      z-index: 1;
-      top: 47px;
-
-      height: 15px;
-      width: 8px;
-
-      font-size: 0;
-
-      border: none;
-
-      cursor: pointer;
-
-      @include focus-white
+    .slick-slide .product {
+      box-shadow: none; //no shadow for a hidden slide
+      transition: box-shadow 0.1s linear; //little effect to fade the shadow
     }
 
-    .slick-next {
-      right: 53px;
-      background: url(../images/icons/arrow-right.svg);
-
-    }
-
-    .slick-prev {
-      right: 105px;
-
-      background: url(../images/icons/arrow-left.svg);
-    }
-
-    .slick-next,
-    .slick-prev {
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: cover;
+    .slick-slide.slick-active .product {
+      box-shadow: 0px 2px 4px 0px rgba(108, 111, 115, 0.1); //only the active slides have the shadow
     }
   }
 
-  &__title {
-
-    &:after {
-      position: absolute;
-      right: 30px;
-      top: 50%;
-      content: "";
-
-      width: 110px;
-      height: 45px;
-
-      background-color: $purple;
-      border-radius: 35px;
-
-      transform: translateY(-50%);
-    }
+  &__items {
+    margin-right: -28px;
   }
 }
 
@@ -599,6 +500,17 @@
     transition: opacity .3;
   }
 
+  &__picture-btn {
+    padding: 13px 29px;
+    margin-right: 7px;
+
+    font-weight: 600;
+
+    color: #fff;
+    border: 1px solid #fff;
+    background: transparent;
+  }
+
   &__img {
     width: 100%;
     height: 230px;
@@ -637,15 +549,21 @@
 
   &__info-category {
     padding-left: 28px;
-  
+
     color: $purple;
-  
+
     background-position: left;
     background-repeat: no-repeat;
-  
+
     &--uppercase {
       text-transform: uppercase;
     }
+  }
+
+  &__avatar {
+    width: 30px;
+    height: 30px;
+    margin-right: 8px;
   }
 
   &__content-text {
@@ -685,8 +603,14 @@
   &__fav-btn,
   &__sells-btn {
     margin-right: 3px;
-    
-    cursor: pointer;
+
+    transition: all .3s linear;
+
+    &:focus {
+      span {
+        text-shadow: 0 1px 2px currentcolor, 0 1px 2px currentcolor;
+      }
+    }
   }
 
   &__fav {
@@ -698,14 +622,29 @@
 
     color: #7e7e7e;
     background-color: transparent;
-    border: none;
-
-
 
     span {
       margin-right: 2px;
 
       color: $purple;
+    }
+
+    &:hover {
+      text-shadow: 0px 0px 1px currentcolor, 0 0px 1px currentcolor;
+    }
+
+    &:active {
+      span {
+        color: red;
+        text-shadow: 0px 0px 1px currentcolor, 0 0px 1px currentcolor;
+      }
+    }
+  }
+
+  &__fav-active {
+    span {
+      color: red;
+      text-shadow: 0px 0px 1px currentcolor, 0 0px 1px currentcolor;
     }
   }
 
@@ -718,12 +657,28 @@
 
     color: $blue;
     background-color: transparent;
-    border: none;
 
     span {
       margin-right: 5px;
     }
 
+    &:hover {
+      text-shadow: 0px 0px 1px currentcolor, 0 0px 1px currentcolor;
+    }
+
+    &:active {
+      span {
+        color: #86dd04;
+        text-shadow: 0px 0px 1px currentcolor, 0 0px 1px currentcolor;
+      }
+    }
+  }
+
+  &__sells-active {
+    span {
+      color: #86dd04;
+      text-shadow: 0px 0px 1px currentcolor, 0 0px 1px currentcolor;
+    }
   }
 
   &__info {
@@ -740,10 +695,6 @@
     margin-right: 18px;
 
     color: #000;
-
-    // &--mini {
-    //   margin-right: 20px;
-    // }
   }
 
   &__info-name {
@@ -760,14 +711,15 @@
   max-width: 100%;
 
   &__picture {
+    max-width: 555px;
+    width: 100%;
+    height: inherit;
+
     border-radius: 4px 0 0 4px;
   }
 
   &__img {
-    position: relative;
-    max-width: 555px;
-    width: 100%;
-    height: 100%;
+    min-height: 100%;
 
     border-radius: 4px 0 0 4px;
   }
@@ -786,7 +738,7 @@
 
   &__price {
     margin-right: 20px;
-    
+
     color: #fff;
     background-color: $blue;
   }
@@ -798,12 +750,6 @@
   &__sells {
     margin-left: 0;
   }
-}
-
-.product-avatar {
-  width: 30px;
-  height: 30px;
-  margin-right: 8px;
 }
 
 // Newest
@@ -825,7 +771,7 @@
   }
 
   &__tags {
-    padding: 30px;
+    padding: 30px 30px 25px;
     margin-bottom: 50px;
 
     background-color: #fff;
@@ -833,101 +779,117 @@
     box-shadow: 0px 2px 4px 0px rgba(108, 111, 115, 0.1);
   }
 
-  &__button {
+  &__tag {
+    padding: 8px 20px;
+  }
+
+  &__button-wrapper {
     text-align: center;
-    padding-top: 30px;
+    padding-top: 48px;
+  }
+
+  &__button {
+    padding: 18px 36px;
+
+    word-spacing: 2px;
+
+    color: #fff;
+    background-color: $blue;
+
+    transition: all .3s;
+
   }
 
   // filter
   &__filter {
     position: relative;
-  
+
     padding: 20px 0;
     margin-right: 30px;
-  
+
     font-size: 16px;
-  
+
     color: #747b86;
-  
+
     &:hover {
       .newest__filters {
         height: auto;
         padding: 21px 22px;
-  
+
         font-size: 15px;
-  
+
         opacity: 1;
       }
     }
-  
+
     &:after {
       position: absolute;
       right: -30px;
-  
+
       content: "";
-  
+
       width: 8px;
       height: 20px;
-  
+
       background: url(../images/icons/filter.svg) center no-repeat;
-  
+
     }
   }
-  
+
   &__filters {
     position: absolute;
     z-index: 1;
     top: 52px;
     left: -70px;
-  
+
     min-width: 184px;
     padding: 0 22px;
     height: 0;
-  
+
     font-size: 0;
-  
+
     opacity: 0;
     background-color: #fff;
     box-shadow: 0px 5px 40px 0px rgba(82, 85, 90, 0.2);
     border-radius: 3px;
-  
+
     transition: all .2s;
-  
+
     &:before {
       position: absolute;
       top: -12px;
       right: 16px;
-  
+
       content: "";
       width: 0;
       height: 0;
-  
+
       border: none;
       border-style: solid;
       border-width: 0 7px 12px 7px;
       border-color: transparent transparent #ffffff transparent;
     }
   }
-  
+
   &__filters-btn {
     margin-bottom: 8px;
-  
+
     color: #747b86;
     background: transparent;
     border: none;
-  
+
     cursor: pointer;
-  
+
     transition: color .3s;
-  
+
     &:last-child {
       margin: 0;
     }
-  
+
     &:hover {
       color: $blue;
     }
-  
+
     &:active {
       color: $purple;
     }

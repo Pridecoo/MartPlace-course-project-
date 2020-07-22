@@ -21,7 +21,7 @@
 					<img class="logo__img" src="images/logo.png" alt="logo">
 				</a>
 
-				<a class="header__seller-btn" href="#">Become a Seller</a>
+				<a class="header__seller-btn button button--rounded button--blue" href="#">Become a Seller</a>
 
 				<div class="header__account">
 
@@ -80,7 +80,7 @@
 
 					<form class="header__search">
 						<input class="header__search-input" type="search" placeholder="Search product here...">
-						<button class="header__search-btn" type="submit">
+						<button class="header__search-btn button button--rounded button--blue" type="submit">
 							search
 							<span class="lnr lnr-magnifier"></span>
 						</button>
@@ -108,8 +108,8 @@
 						</div>
 
 						<div class="headline__btns">
-							<a class="headline__btn" href="#">View All Products</a>
-							<a class="headline__btn" href="#">Popular Products</a>
+							<a class="headline__btn button button--rounded button--transparent" href="#">View All Products</a>
+							<a class="headline__btn button button--rounded button--transparent" href="#">Popular Products</a>
 						</div>
 					</div>
 
@@ -132,7 +132,7 @@
 
 							</div>
 
-							<button class="headline__search-btn" type="submit">Search Now</button>
+							<button class="headline__search-btn button button--blue" type="submit">Search Now</button>
 						</form>
 					</div>
 
@@ -186,10 +186,11 @@
 			<div class="container">
 				<div class="weekly__inner">
 
-					<div class="title-bacground weekly__title">
-						<div class="title-bacground__text">
+					<div class="title-background weekly__title">
+						<div class="title-background__text">
 							Weekly Featured Products
 						</div>
+						<div class="arrows-wrapper"></div>
 					</div>
 
 					<div class="weekly__items">
@@ -201,8 +202,8 @@
 										alt="product picture">
 
 									<div class="product__picture-btns">
-										<a class="tag tag--picture" href="#">More Info</a>
-										<a class="tag tag--picture" href="#">Live Demo</a>
+										<a class="product__picture-btn button button--rounded button--transparent" href="#">More Info</a>
+										<a class="product__picture-btn button button--rounded button--transparent" href="#">Live Demo</a>
 									</div>
 								</div>
 
@@ -212,7 +213,7 @@
 
 									<div class="product__info">
 										<a class="product__info-author" href="#">
-											<img class="avatar product-avatar" src="images/content/avatar-2.jpg" alt="user picture">
+											<img class="avatar product__avatar" src="images/content/avatar-2.jpg" alt="user picture">
 											AazzTech
 										</a>
 										<a class="product__info-category" style="background-image: url(images/icons/wordpress.svg);"
@@ -238,20 +239,19 @@
 										<a class="tag" href="#">landing page</a>
 									</div>
 
-
 									<div class="product__content-bottom product-weekly__content-bottom">
 										<div class="product__stats">
 											<div class="product__price product-weekly__price">$10 - $50</div>
 
 											<div class="product__fav">
-												<button class="product__fav-btn" type="button">
+												<button class="product__fav-btn product__fav-active button" type="button">
 													<span class="lnr lnr-heart"></span>
 												</button>
 												46
 											</div>
-	
+
 											<div class="product__sells product-weekly__sells">
-												<button class="product__sells-btn" type="button">
+												<button class="product__sells-btn product__sells-active button" type="button">
 													<span class="lnr lnr-cart"></span>
 												</button>
 												68
@@ -272,8 +272,8 @@
 										alt="product picture">
 
 									<div class="product__picture-btns">
-										<a class="tag tag--picture" href="#">More Info</a>
-										<a class="tag tag--picture" href="#">Live Demo</a>
+										<a class="product__picture-btn button button--rounded button--transparent" href="#">More Info</a>
+										<a class="product__picture-btn button button--rounded button--transparent" href="#">Live Demo</a>
 									</div>
 								</div>
 
@@ -283,11 +283,11 @@
 
 									<div class="product__info">
 										<a class="product__info-author" href="#">
-											<img class="avatar product-avatar" src="images/content/avatar.jpg" alt="user picture">
+											<img class="avatar product__avatar" src="images/content/avatar.jpg" alt="user picture">
 											mrCoolDesigner
 										</a>
-										<a class="product__info-category product__info-category--uppercase" style="background-image: url(images/icons/html.svg);"
-											href="#">
+										<a class="product__info-category product__info-category--uppercase"
+											style="background-image: url(images/icons/html.svg);" href="#">
 											html
 										</a>
 									</div>
@@ -305,20 +305,19 @@
 										<a class="tag" href="#">landing page</a>
 									</div>
 
-
 									<div class="product__content-bottom product-weekly__content-bottom">
 										<div class="product__stats">
 											<div class="product__price product-weekly__price">$10 - $50</div>
 
 											<div class="product__fav">
-												<button class="product__fav-btn" type="button">
+												<button class="product__fav-btn button" type="button">
 													<span class="lnr lnr-heart"></span>
 												</button>
 												56
 											</div>
-	
+
 											<div class="product__sells product-weekly__sells">
-												<button class="product__sells-btn" type="button">
+												<button class="product__sells-btn button" type="button">
 													<span class="lnr lnr-cart"></span>
 												</button>
 												68
@@ -342,8 +341,8 @@
 			<div class="container">
 				<div class="newest__inner">
 
-					<div class="title-bacground newest__title">
-						<div class="title-bacground__text">
+					<div class="title-background newest__title">
+						<div class="title-background__text">
 							Newest Release Products
 						</div>
 
@@ -360,35 +359,35 @@
 					</div>
 
 					<div class="tags newest__tags">
-						<button class="tag tag--filter" type="button" data-filter=".category-plugins">
+						<button class="tag newest__tag" type="button" data-filter=".category-plugins">
 							Plugins
 						</button>
 
-						<button class="tag tag--filter" type="button" data-filter=".category-wordpress">
+						<button class="tag newest__tag" type="button" data-filter=".category-wordpress">
 							WordPress
 						</button>
 
-						<button class="tag tag--filter" type="button" data-filter=".category-site">
+						<button class="tag newest__tag" type="button" data-filter=".category-site">
 							Site Template
 						</button>
 
-						<button class="tag tag--filter" type="button" data-filter=".category-psd">
+						<button class="tag newest__tag" type="button" data-filter=".category-psd">
 							PSD Template
 						</button>
 
-						<button class="tag tag--filter" type="button" data-filter=".category-joomla">
+						<button class="tag newest__tag" type="button" data-filter=".category-joomla">
 							Joomla
 						</button>
 
-						<button class="tag tag--filter" type="button" data-filter=".category-ui">
+						<button class="tag newest__tag" type="button" data-filter=".category-ui">
 							User Interface
 						</button>
 
-						<button class="tag tag--filter" type="button" data-filter=".category-landing">
+						<button class="tag newest__tag" type="button" data-filter=".category-landing">
 							Landing Page
 						</button>
 
-						<button class="tag tag--filter" type="button" data-filter=".category-software">
+						<button class="tag newest__tag" type="button" data-filter=".category-software">
 							Software
 						</button>
 					</div>
@@ -400,8 +399,8 @@
 								<img class="product__img" src="images/content/product-1.jpg" alt="product picture">
 
 								<div class="product__picture-btns">
-									<a class="tag tag--picture" href="#">More Info</a>
-									<a class="tag tag--picture" href="#">Live Demo</a>
+									<a class="product__picture-btn button button--rounded button--transparent" href="#">More Info</a>
+									<a class="product__picture-btn button button--rounded button--transparent" href="#">Live Demo</a>
 								</div>
 							</div>
 
@@ -412,15 +411,14 @@
 
 									<div class="product__info">
 										<a class="product__info-author" href="#">
-											<img class="avatar product-avatar" src="images/content/avatar-2.jpg" alt="user picture">
-											AazzTech
+											<img class="avatar product__avatar" src="images/content/avatar-2.jpg" alt="user picture">
+											Theme-Valley
 										</a>
 										<a class="product__info-category" style="background-image: url(images/icons/wordpress.svg);"
 											href="#">
 											Plugin
 										</a>
 									</div>
-
 
 									<div class="product__content-text">
 										Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo
@@ -434,7 +432,7 @@
 										<div class="product__price">$10</div>
 
 										<div class="product__fav">
-											<button class="product__fav-btn" type="button">
+											<button class="product__fav-btn button" type="button">
 												<span class="lnr lnr-heart"></span>
 											</button>
 											56
@@ -443,7 +441,7 @@
 										<div class="product__stars">stars</div>
 
 										<div class="product__sells">
-											<button class="product__sells-btn" type="button">
+											<button class="product__sells-btn button" type="button">
 												<span class="lnr lnr-cart"></span>
 											</button>
 											68
@@ -459,8 +457,8 @@
 								<img class="product__img" src="images/content/product-4.jpg" alt="product picture">
 
 								<div class="product__picture-btns">
-									<a class="tag tag--picture" href="#">More Info</a>
-									<a class="tag tag--picture" href="#">Live Demo</a>
+									<a class="product__picture-btn button button--rounded button--transparent" href="#">More Info</a>
+									<a class="product__picture-btn button button--rounded button--transparent" href="#">Live Demo</a>
 								</div>
 							</div>
 
@@ -471,11 +469,11 @@
 
 									<div class="product__info">
 										<a class="product__info-author" href="#">
-											<img class="avatar product-avatar" src="images/content/avatar-2.jpg" alt="user picture">
+											<img class="avatar product__avatar" src="images/content/avatar-2.jpg" alt="user picture">
 											AazzTech
 										</a>
-										<a class="product__info-category product__info-category--uppercase" style="background-image: url(images/icons/psd.svg);"
-											href="#">
+										<a class="product__info-category product__info-category--uppercase"
+											style="background-image: url(images/icons/psd.svg);" href="#">
 											psd
 										</a>
 									</div>
@@ -492,7 +490,7 @@
 										<div class="product__price">$10</div>
 
 										<div class="product__fav">
-											<button class="product__fav-btn" type="button">
+											<button class="product__fav-btn button" type="button">
 												<span class="lnr lnr-heart"></span>
 											</button>
 											56
@@ -501,7 +499,7 @@
 										<div class="product__stars">stars</div>
 
 										<div class="product__sells">
-											<button class="product__sells-btn" type="button">
+											<button class="product__sells-btn button" type="button">
 												<span class="lnr lnr-cart"></span>
 											</button>
 											68
@@ -517,8 +515,8 @@
 								<img class="product__img" src="images/content/product-2.jpg" alt="product picture">
 
 								<div class="product__picture-btns">
-									<a class="tag tag--picture" href="#">More Info</a>
-									<a class="tag tag--picture" href="#">Live Demo</a>
+									<a class="product__picture-btn button button--rounded button--transparent" href="#">More Info</a>
+									<a class="product__picture-btn button button--rounded button--transparent" href="#">Live Demo</a>
 								</div>
 							</div>
 
@@ -529,15 +527,14 @@
 
 									<div class="product__info">
 										<a class="product__info-author" href="#">
-											<img class="avatar product-avatar" src="images/content/avatar-2.jpg" alt="user picture">
+											<img class="avatar product__avatar" src="images/content/avatar-2.jpg" alt="user picture">
 											AazzTech
 										</a>
-										<a class="product__info-category product__info-category--uppercase" style="background-image: url(images/icons/html.svg);"
-											href="#">
+										<a class="product__info-category product__info-category--uppercase"
+											style="background-image: url(images/icons/html.svg);" href="#">
 											html
 										</a>
 									</div>
-
 
 									<div class="product__content-text">
 										Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo
@@ -551,7 +548,7 @@
 										<div class="product__price">$10</div>
 
 										<div class="product__fav">
-											<button class="product__fav-btn" type="button">
+											<button class="product__fav-btn button" type="button">
 												<span class="lnr lnr-heart"></span>
 											</button>
 											56
@@ -560,7 +557,7 @@
 										<div class="product__stars">stars</div>
 
 										<div class="product__sells">
-											<button class="product__sells-btn" type="button">
+											<button class="product__sells-btn button" type="button">
 												<span class="lnr lnr-cart"></span>
 											</button>
 											68
@@ -576,8 +573,8 @@
 								<img class="product__img" src="images/content/product-3.jpg" alt="product picture">
 
 								<div class="product__picture-btns">
-									<a class="tag tag--picture" href="#">More Info</a>
-									<a class="tag tag--picture" href="#">Live Demo</a>
+									<a class="product__picture-btn button button--rounded button--transparent" href="#">More Info</a>
+									<a class="product__picture-btn button button--rounded button--transparent" href="#">Live Demo</a>
 								</div>
 							</div>
 
@@ -588,7 +585,7 @@
 
 									<div class="product__info">
 										<a class="product__info-author" href="#">
-											<img class="avatar product-avatar" src="images/content/avatar-2.jpg" alt="user picture">
+											<img class="avatar product__avatar" src="images/content/avatar-2.jpg" alt="user picture">
 											SomeDude
 										</a>
 										<a class="product__info-category" style="background-image: url(images/icons/wordpress.svg);"
@@ -596,7 +593,6 @@
 											Plugin
 										</a>
 									</div>
-
 
 									<div class="product__content-text">
 										Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo
@@ -610,7 +606,7 @@
 										<div class="product__price">$10</div>
 
 										<div class="product__fav">
-											<button class="product__fav-btn" type="button">
+											<button class="product__fav-btn button" type="button">
 												<span class="lnr lnr-heart"></span>
 											</button>
 											56
@@ -619,7 +615,7 @@
 										<div class="product__stars">stars</div>
 
 										<div class="product__sells">
-											<button class="product__sells-btn" type="button">
+											<button class="product__sells-btn button" type="button">
 												<span class="lnr lnr-cart"></span>
 											</button>
 											68
@@ -635,8 +631,8 @@
 								<img class="product__img" src="images/content/product-2.jpg" alt="product picture">
 
 								<div class="product__picture-btns">
-									<a class="tag tag--picture" href="#">More Info</a>
-									<a class="tag tag--picture" href="#">Live Demo</a>
+									<a class="product__picture-btn button button--rounded button--transparent" href="#">More Info</a>
+									<a class="product__picture-btn button button--rounded button--transparent" href="#">Live Demo</a>
 								</div>
 							</div>
 
@@ -647,15 +643,14 @@
 
 									<div class="product__info">
 										<a class="product__info-author" href="#">
-											<img class="avatar product-avatar" src="images/content/avatar-2.jpg" alt="user picture">
+											<img class="avatar product__avatar" src="images/content/avatar-2.jpg" alt="user picture">
 											AazzTech
 										</a>
-										<a class="product__info-category product__info-category--uppercase" style="background-image: url(images/icons/psd.svg);"
-											href="#">
+										<a class="product__info-category product__info-category--uppercase"
+											style="background-image: url(images/icons/psd.svg);" href="#">
 											psd
 										</a>
 									</div>
-
 
 									<div class="product__content-text">
 										Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo
@@ -669,14 +664,14 @@
 										<div class="product__price">$10</div>
 
 										<div class="product__fav">
-											<button class="product__fav-btn" type="button">
+											<button class="product__fav-btn button" type="button">
 												<span class="lnr lnr-heart"></span>
 											</button>
 											56
 										</div>
 
 										<div class="product__sells">
-											<button class="product__sells-btn" type="button">
+											<button class="product__sells-btn button" type="button">
 												<span class="lnr lnr-cart"></span>
 											</button>
 											68
@@ -692,8 +687,8 @@
 								<img class="product__img" src="images/content/product-4.jpg" alt="product picture">
 
 								<div class="product__picture-btns">
-									<a class="tag tag--picture" href="#">More Info</a>
-									<a class="tag tag--picture" href="#">Live Demo</a>
+									<a class="product__picture-btn button button--rounded button--transparent" href="#">More Info</a>
+									<a class="product__picture-btn button button--rounded button--transparent" href="#">Live Demo</a>
 								</div>
 							</div>
 
@@ -704,11 +699,11 @@
 
 									<div class="product__info">
 										<a class="product__info-author" href="#">
-											<img class="avatar product-avatar" src="images/content/avatar-2.jpg" alt="user picture">
+											<img class="avatar product__avatar" src="images/content/avatar-2.jpg" alt="user picture">
 											AazzTech
 										</a>
-										<a class="product__info-category product__info-category--uppercase" style="background-image: url(images/icons/html.svg);"
-											href="#">
+										<a class="product__info-category product__info-category--uppercase"
+											style="background-image: url(images/icons/html.svg);" href="#">
 											html
 										</a>
 									</div>
@@ -725,7 +720,7 @@
 										<div class="product__price">$10</div>
 
 										<div class="product__fav">
-											<button class="product__fav-btn" type="button">
+											<button class="product__fav-btn button" type="button">
 												<span class="lnr lnr-heart"></span>
 											</button>
 											56
@@ -734,7 +729,7 @@
 										<div class="product__stars">stars</div>
 
 										<div class="product__sells">
-											<button class="product__sells-btn" type="button">
+											<button class="product__sells-btn button" type="button">
 												<span class="lnr lnr-cart"></span>
 											</button>
 											68
@@ -747,8 +742,8 @@
 
 					</div>
 
-					<div class="newest__button">
-						<a class="tag tag--all" href="#">All New Products</a class="tag tag--all">
+					<div class="newest__button-wrapper">
+						<a class="newest__button button button--rounded button--blue" href="#">All New Products</a>
 					</div>
 
 				</div>
@@ -756,7 +751,6 @@
 		</section>
 
 	</main>
-
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	<script src="js/libs.min.js"></script>
