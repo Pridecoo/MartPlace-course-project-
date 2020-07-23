@@ -119,6 +119,17 @@ body {
 
 }
 
+// slick
+
+.slick-slide .product {
+  box-shadow: none; //no shadow for a hidden slide
+  transition: box-shadow 0.1s linear; //little effect to fade the shadow
+}
+
+.slick-slide.slick-active .product {
+  box-shadow: 0px 2px 4px 0px rgba(108, 111, 115, 0.1); //only the active slides have the shadow
+}
+
 .slick-arrow {
   padding: 14px 21px 14px 19px;
 

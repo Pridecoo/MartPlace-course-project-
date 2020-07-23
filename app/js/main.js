@@ -22,6 +22,16 @@ $(function(){
     slidesToScroll: 3,
   });
 
+  $('.clients__items').slick({
+    arrows: false,
+    dots: false,
+    infinite: true,
+    // autoplay: 7000,
+    draggable: true,
+    slidesToShow: 2,
+    slidesToScroll: 2,
+  });
+
   $('.product__stars').rateYo({
     rating: 4.5,
     starWidth: '15px',
