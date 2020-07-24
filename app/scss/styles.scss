@@ -1408,5 +1408,60 @@
       @include bg-center-norep-cover;
     }
   }
+}
 
+// service
+.service {
+  display: flex;
+
+  &__item {
+    width: 50%;
+    min-height: 297px;
+    padding: 210px 130px 0;
+
+    text-align: right;
+
+    &--right {
+      text-align: left;
+
+      border-left: 1px solid #e8eaf3;
+    }
+  }
+
+  &__title {
+    position: relative;
+
+    font-size: 24px;
+
+    span {
+      color: $blue;
+    }
+
+    &:before {
+      content: "";
+      position: absolute;
+      top: -144px;
+      left: 50%;
+
+      width: 150px;
+      height: 120px;
+
+      background: url(../images/guarantee.png) no-repeat;
+
+      transform: translateX(-50%);
+    }
+
+    &--right {
+
+      span {
+        color: $purple;
+      }
+
+      &:before {
+        width: 155px;
+
+        background: url(../images/support.png) no-repeat;
+      }
+    }
+  }
 }
