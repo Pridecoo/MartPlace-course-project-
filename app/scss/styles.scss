@@ -1064,7 +1064,6 @@
   }
 
   &__text {
-    margin-bottom: 54px;
 
     @include content-text;
   }
@@ -1087,7 +1086,7 @@
 
     transition: all .8s;
 
-    @include bg-center-norep;
+    @include bg-center-norep-cover;
 
     &:before {
       content: "";
@@ -1162,6 +1161,31 @@
 // clients
 .clients {
   padding: 113px 0 87px;
+
+  &__items {
+    width: calc(100% + 100px);
+    padding: 50px 0;
+    margin: 0 -50px; //space for the shadows
+    margin-left: -50px; //put the div in its original position
+    overflow: hidden; //hide the overflow
+
+    .slick-list {
+      overflow: visible;
+    }
+
+    .slick-slide .clients__item {
+      box-shadow: none; //no shadow for a hidden slide
+      transition: box-shadow 0.1s ease-in-out; //little effect to fade the shadow
+    }
+    
+    .slick-slide.slick-active .clients__item {
+      box-shadow: 0px 2px 50px 0px rgba(0, 0, 0, 0.08); //only the active slides have the shadow
+    }
+
+    .slick-slide {
+      margin-right: 29px;
+    }
+  }
 
   &__item {
     max-width: 556px;
