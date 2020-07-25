@@ -112,6 +112,14 @@ body {
   }
 }
 
+.input {
+  outline: transparent;
+
+  &--rounded {
+    border-radius: 35px;
+  }
+}
+
 .tag {
   margin: 0 5px 5px 0;
   padding: 5px 12px 5px 17px;
@@ -140,7 +148,6 @@ body {
 }
 
 // slick
-
 .slick-slide .product {
   box-shadow: none; //no shadow for a hidden slide
   transition: box-shadow 0.1s linear; //little effect to fade the shadow
@@ -174,5 +181,34 @@ body {
 
   &:active {
     background-color: #602bbd;
+  }
+}
+
+// mixitup
+.mixitup-control-active {
+  background-color: $blue;
+  color: #fff;
+}
+
+// section-heading
+.section-heading {
+  max-width: 680px;
+  margin: 0 auto 54px;
+
+  text-align: center;
+
+  &__title {
+    margin-bottom: 21px;
+
+    font-size: 36px;
+
+    span {
+      color: $blue;
+    }
+  }
+
+  &__text {
+
+    @include content-text;
   }
 }

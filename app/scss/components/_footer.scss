@@ -1,0 +1,181 @@
+.footer {
+  color: #ababab;
+  background-color: #262b30;
+
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    padding: 115px 0 110px;
+  }
+
+  &__info {
+    max-width: 280px;
+  }
+
+  &__logo {
+    display: inline-block;
+    margin-bottom: 23px;
+  }
+
+  &__info-text {
+    margin-bottom: 18px;
+    
+    line-height: 28px;
+  }
+
+  &__contacts {
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+  }
+
+  &__contact-link {
+    position: relative;
+
+    display: inline-block;
+    padding-left: 28px;
+    margin-bottom: 8px;
+
+    font-family: "quicksand", sans-serif;
+    line-height: 26px;
+
+    color: #ababab;    
+
+    &:before {
+      position: absolute;
+      left: 0;
+      top: 50%;
+
+      font-family: "linearicons-free";
+      font-size: 16px;
+
+      color: #fff;
+
+      transform: translateY(-50%);
+    }
+  }
+
+  &__links {
+    min-width: 200px;
+    padding-left: 30px;
+  }
+
+  &__title {
+    padding-top: 15px;
+    margin-bottom: 26px;
+
+    font-size: 18px;
+    letter-spacing: 1px;
+
+    color: #fff;
+  }
+
+  &__links-items {
+    padding: 0;
+    margin: 0;
+
+    list-style: none;
+  }
+
+  &__link {
+    line-height: 32px;
+
+    color: #ababab;
+  }
+
+  &__newsletter {
+    max-width: 360px;
+  }
+
+  &__newsletter-text {
+    margin-bottom: 30px;
+    padding-top: 2px;
+
+    line-height: 28px;
+  }
+
+  &__subscribe-form {
+    position: relative;
+
+    width: 100%;
+    margin-bottom: 48px;
+  }
+
+  &__subscribe-input {
+    padding: 0 120px 0 28px ;
+
+    min-height: 50px;
+    width: 100%;
+
+    border: none;
+
+  }
+
+  &__subscribe-btn {
+    position: absolute;
+    right: -1px;
+
+    padding: 0 31px;
+
+    line-height: 50px;
+  }
+
+  &__social {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+  }
+
+  &__social-link {
+    width: 42px;
+    height: 42px;
+    margin-right: 13px;
+
+    font-size: 0;
+
+    background-image: url(../images/social.png);
+
+    transition: transform .3s;
+
+    &--facebook {
+      background-position: -210px -0;
+    }
+
+    &--twitter {
+      background-position: -168px -0;
+    }
+
+    &--google {
+      background-position: -126px -0;
+    }
+
+    &--linkedin {
+      background-position: -42px -0;
+    }
+
+    &--something {
+      background-position: -84px -0;
+    }
+
+    &:hover {
+      transform: scale(1.1)
+    }
+  }
+
+  &__bottom {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 95px;
+
+    color: #999;
+    background-color: #192027;
+  }
+
+  &__bottom-link {
+    margin-left: 3px;
+
+    color: #fff;
+  }
+}
