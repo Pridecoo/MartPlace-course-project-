@@ -212,3 +212,14 @@ body {
     @include content-text;
   }
 }
+
+// stars
+.jq-ry-normal-group svg {
+  fill: #fff;
+  stroke: #ffc000;
+  stroke-width: 40;
+}
+
+.jq-ry-rated-group svg {
+  fill: #ffc000;
+}

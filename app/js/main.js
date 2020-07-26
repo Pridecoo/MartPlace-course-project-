@@ -34,9 +34,8 @@ $(function(){
 
   $('.product__stars').rateYo({
     rating: 4.5,
-    starWidth: '15px',
+    starWidth: '12px',
     ratedFill: "#ffc000",
-    normalFill: "#eff1f5",
     spacing: '4px',
     readOnly: true
   });
