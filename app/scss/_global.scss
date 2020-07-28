@@ -16,6 +16,11 @@ img {
   display: block;
 }
 
+html,
+body {
+	height: 100%;
+}
+
 body {
   font-family: "quicksand", sans-serif;
 
@@ -27,6 +32,20 @@ body {
   max-width: 1170px;
   margin: 0 auto;
   padding: 0 15px;
+}
+
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	min-height: 100%;
+}
+
+.page {
+	flex: 1 0 auto;
+}
+
+.footer {
+	flex: 0 0 auto;
 }
 
 .avatar {

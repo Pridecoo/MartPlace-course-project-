@@ -82,6 +82,10 @@
     line-height: 32px;
 
     color: #ababab;
+
+    &:hover {
+      text-decoration: underline;
+    }
   }
 
   &__newsletter {
