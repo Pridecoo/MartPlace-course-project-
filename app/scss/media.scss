@@ -1,0 +1,475 @@
+@media (max-width: 1024px) {
+  .header {
+    &__menu-item {
+      margin-right: 18px;
+    }
+
+    &__seller-btn {
+      display: none;
+    }
+  }
+
+  .headline {
+
+    &__search-btn {
+      margin-left: 15px;
+      padding: 18px 30px;
+    }
+  }
+
+  .features {
+
+    &__items {
+      flex-wrap: wrap;
+    }
+  }
+
+  .feature {
+    max-width: unset;
+    width: 70%;
+    padding: 40px 15px 50px;
+    margin: 10px auto;
+  }
+
+  .why-us {
+
+    &__item {
+      width: 48%;
+    }
+  }
+
+  .product {
+    width: calc(50% - 28px);
+
+    &__price {
+      padding: 7px 10px 8px;
+    }
+  }
+
+  .product-weekly {
+    &__content {
+      min-width: 50%;
+      padding: 30px 30px 0;
+    }
+  }
+}
+
+@media (max-width: 769px) {
+  .header {
+    &__burger-btn {
+      display: block;
+    }
+
+    &__menu-items {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      z-index: 2;
+      display: none;
+      width: calc(100% + 30px);
+      margin: 0 -15px;
+      flex-direction: column;
+      text-align: center;
+      line-height: 65px;
+      background-color: #fff;
+      transition: left .5s;
+    }
+
+    &__menu-item {
+      width: 100%;
+      display: block;
+    }
+
+    &__search {
+      width: 80%;
+      margin-left: auto;
+    }
+
+    &__bottom-inner {
+      height: 65px;
+    }
+
+    &__pages-links {
+      margin: 0;
+    }
+
+    &__menu-pop-up {
+      top: 100%;
+      width: 100vw;
+      flex-wrap: wrap;
+
+      position: initial;
+      box-shadow: none;
+      border-bottom: 1px solid #0674ec;
+    }
+
+    &__pages-categories {
+      position: absolute;
+      top: 0;
+    }
+
+    &__pages-category {
+      max-width: 100%;
+      margin-bottom: 15px;
+      margin: 0;
+
+      &:last-child {
+        margin-left: 0;
+      }
+    }
+
+    &__pages-column {
+      justify-content: space-evenly;
+    }
+
+    &__pages-category-title {
+      margin-bottom: 10px;
+    }
+
+    &__pages-links {
+      &:first-child {
+        margin-right: 10px;
+      }
+    }
+
+    &__account {
+      margin: 0;
+    }
+
+    &__account-text {
+      display: none;
+    }
+
+    &__avatar-img {
+      margin: 0;
+    }
+
+    &__icons {
+      margin-right: 30px;
+    }
+
+    &__icon {
+      margin-left: 17px;
+    }
+
+    &__search-btn {
+      min-width: 52px;
+    }
+
+    &__search-input {
+      padding: 0 55px 0 15px;
+    }
+
+    &__notifications,
+    &__cart,
+    &__account-links {
+      position: fixed;
+      left: auto;
+      right: 15px;
+      top: 100px;
+    }
+
+    &__cart {
+      max-width: 93%;
+
+      &:before {
+        right: 79px;
+        left: auto;
+      }
+    }
+
+    &__notifications {
+      &:before {
+        left: 193px;
+      }
+    }
+
+    &__messages {
+      &:before {
+        left: 233px;
+      }
+    }
+
+  }
+
+  .logo {
+    &__img {
+      height: 35px;
+    }
+  }
+
+  .headline {
+
+    &__search {
+      display: none;
+    }
+
+    &__title {
+      margin-bottom: 25px;
+      font-size: 40px;
+    }
+
+    &__inner {
+      min-height: unset;
+      padding: 120px 0;
+    }
+
+    &__btn {
+      margin-bottom: 20px;
+    }
+  }
+
+  .features {
+    padding: 120px 0;
+  }
+
+  .feature {
+    width: 100%;
+  }
+
+  .product {
+    &__tags {
+      margin-bottom: 20px;
+    }
+
+    &__content-text {
+      margin-top: 15px;
+    }
+
+    &__content-top {
+      padding: 25px 25px 0;
+    }
+
+    &__content-title {
+      font-size: 18px;
+    }
+
+    &__content-bottom {
+      padding: 14px 0;
+    }
+
+    &__picture {
+      max-width: 100%;
+
+      border-radius: 4px 4px 0 0;
+    }
+
+    &__img {
+      height: 230px;
+    }
+  }
+
+  .title-background {
+    min-height: 85px;
+    padding: 0 22px;
+    font-size: 25px;
+  }
+
+  .product-weekly {
+    width: calc(100% - 28px);
+    flex-direction: column;
+  
+    &__content {
+      padding: 25px 25px 0;
+    }
+
+    &__content-title {
+      font-size: 20px;
+    }
+  }
+}
+
+@media (max-width: 376px) {
+  .header {
+    &__inner {
+      height: 75px;
+    }
+
+    &__burger-btn {
+      font-size: 35px;
+    }
+
+    &__search {
+      height: 70%;
+    }
+
+    &__search-input {
+      height: 100%;
+      min-height: unset;
+    }
+
+    &__bottom-inner {
+      height: 55px;
+    }
+
+    &__burger-btn {
+      line-height: 55px;
+    }
+
+    &__avatar-img {
+      height: 40px;
+      width: auto;
+    }
+
+    &__icons {
+      margin-right: 19px;
+    }
+
+    &__icon {
+      .lnr {
+        font-size: 17px;
+      }
+    }
+
+    .logo {
+      padding: 0;
+    }
+
+    &__notifications,
+    &__cart,
+    &__account-links {
+      position: fixed;
+      left: 0;
+      right: 0;
+      top: 75px;
+      max-width: 100vw;
+      width: 100%;
+
+      &:before {
+        display: none;
+      }
+    }
+
+    &__cart-product,
+    &__notification,
+    &__account-links {
+      padding: 15px !important;
+    }
+
+    &__cart-total {
+      padding: 0 15px;
+      line-height: 60px;
+    }
+
+    &__product-info {
+      margin: 0 10px;
+    }
+
+    &__notifications {
+      padding-top: 15px !important;
+    }
+
+    &__notifications-top {
+      padding: 0 15px;
+    }
+
+  }
+
+  .logo__img {
+    height: 27px;
+  }
+
+  .headline {
+
+    &__title {
+      margin-bottom: 25px;
+      font-size: 35px;
+    }
+
+    &__inner {
+      padding: 75px 0 60px;
+    }
+
+    &__btn {
+      margin-bottom: 20px;
+    }
+
+    &__text {
+      font-size: 17px;
+    }
+
+    &__btns {
+      font-size: 14px;
+    }
+  }
+
+  .features {
+    padding: 60px 0;
+  }
+
+  .feature {
+    padding: 30px 15px 35px;
+
+    &__title {
+      margin: 20px 0 12px;
+    }
+  }
+
+  .weekly {
+    &__inner {
+      padding: 60px 0 40px;
+    }
+  }
+
+  .product {
+    // margin: 0 5px;
+
+    &__content-top {
+      padding: 14px 10px 10px;
+    }
+
+    &__content-text {
+      margin-top: 10px;
+      line-height: 27px;
+    }
+
+    &__tags {
+      margin: 10px 0 10px;
+    }
+
+    &__picture-btn {
+      padding: 13px 20px;
+      margin: 7px;
+    }
+
+    &__info {
+      flex-wrap: wrap;
+      margin-top: 10px;
+    }
+
+    &__fav,
+    &__sells {
+      font-size: 0;
+
+      .button {
+        font-size: 18px;
+      }
+    }
+  }
+
+  .product-weekly {
+
+    &__content {
+      padding: 18px 15px 0;
+    }
+
+    &__content-title {
+      font-size: 19px;
+    }
+
+    &__img {
+      height: 190px;
+    }
+
+    &__price {
+      margin-right: 15px;
+      white-space: nowrap;
+    }
+  }
+
+  .title-background {
+    padding: 0 15px;
+    margin-bottom: 35px;
+    font-size: 21px;
+  }
+}

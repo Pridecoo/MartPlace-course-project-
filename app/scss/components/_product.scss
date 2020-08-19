@@ -1,7 +1,7 @@
 .product {
   display: flex;
   flex-direction: column;
-  max-width: 361px;
+  width: calc(33.33% - 28px);
   margin-right: 28px;
   margin-bottom: 30px;
 
@@ -110,13 +110,22 @@
   }
 
   &__content-text {
+    max-height: 125px;
     margin-top: 27px;
 
     @include content-text;
+    @include text-nowrap;
   }
 
   &__tags {
-    margin: 40px 0 41px;
+    @include text-nowrap;
+   -webkit-line-clamp: 1;
+    max-width: 422px;
+    margin: 20px 0 41px;
+    padding: 10px 0;
+
+    overflow: hidden;
+    white-space: nowrap;
   }
 
   &__stats {

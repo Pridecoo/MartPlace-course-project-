@@ -26,6 +26,7 @@ body {
 
   font-size: 15px;
   font-weight: 400;
+  overflow-x: hidden;
 }
 
 .container {
@@ -75,6 +76,9 @@ body {
 .tags {
   display: flex;
   flex-wrap: wrap;
+
+  @include text-nowrap;
+  -webkit-line-clamp: 1;
 }
 
 .button {
@@ -176,33 +180,6 @@ body {
   box-shadow: 0px 2px 4px 0px rgba(108, 111, 115, 0.1); //only the active slides have the shadow
 }
 
-.slick-arrow {
-  padding: 14px 21px 14px 19px;
-
-  font-size: 15px;
-  background-color: $purple;
-
-  &--prev {
-    border-radius: 35px 0 0 35px;
-  }
-
-  &--next {
-    border-radius: 0 35px 35px 0;
-  }
-
-  &:hover {
-    background-color: rgba($purple, .9);
-  }
-
-  &:focus {
-    color: #000;
-  }
-
-  &:active {
-    background-color: #602bbd;
-  }
-}
-
 // mixitup
 .mixitup-control-active {
   background-color: $blue;
@@ -241,4 +218,42 @@ body {
 
 .jq-ry-rated-group svg {
   fill: #ffc000;
+}
+
+// arrows
+.product-arrow {
+  padding: 14px 21px 14px 19px;
+
+  font-size: 15px;
+  background-color: $purple;
+  border-radius: 35px;
+
+  &--prev {
+    border-radius: 35px 0 0 35px;
+  }
+
+  &--next {
+    border-radius: 0 35px 35px 0;
+  }
+
+
+  &:hover {
+    background-color: rgba($purple, .9);
+  }
+
+  &:focus {
+    color: #000;
+  }
+
+  &:active {
+    background-color: #602bbd;
+  }
+
+  // &:hover {
+  //   background-color: rgba($blue, .9);
+  // }
+
+  // &:active {
+  //   background-color: #1474ce;
+  // }
 }
