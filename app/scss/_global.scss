@@ -76,9 +76,6 @@ body {
 .tags {
   display: flex;
   flex-wrap: wrap;
-
-  @include text-nowrap;
-  -webkit-line-clamp: 1;
 }
 
 .button {
@@ -248,12 +245,4 @@ body {
   &:active {
     background-color: #602bbd;
   }
-
-  // &:hover {
-  //   background-color: rgba($blue, .9);
-  // }
-
-  // &:active {
-  //   background-color: #1474ce;
-  // }
 }

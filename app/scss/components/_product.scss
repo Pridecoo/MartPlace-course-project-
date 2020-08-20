@@ -118,14 +118,11 @@
   }
 
   &__tags {
-    @include text-nowrap;
-   -webkit-line-clamp: 1;
-    max-width: 422px;
+    height: 40px;
     margin: 20px 0 41px;
     padding: 10px 0;
 
     overflow: hidden;
-    white-space: nowrap;
   }
 
   &__stats {

@@ -26,11 +26,39 @@ $(function () {
     infinite: true,
     autoplay: 10000,
     draggable: false,
-    prevArrow: '<button class="slick-arrow product-arrow feed__arrow--prev feed__arrow button" type="button"><span class="lnr lnr-chevron-left"></span></button>',
-    nextArrow: '<button class="slick-arrow product-arrow feed__arrow--next feed__arrow button" type="button"><span class="lnr lnr-chevron-right"></span></button>',
+    prevArrow: '<button class="slick-arrow product-arrow product-arrow--prev feed__arrow button" type="button"><span class="lnr lnr-chevron-left"></span></button>',
+    nextArrow: '<button class="slick-arrow product-arrow product-arrow--next feed__arrow button" type="button"><span class="lnr lnr-chevron-right"></span></button>',
     appendArrows: '.feed__arrows-wrapper',
     slidesToShow: 3,
     slidesToScroll: 3,
+
+    responsive: [
+      {
+        breakpoint: 1025,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+        }
+      },
+
+      {
+        breakpoint: 769,
+        settings: {
+          arrows: false,
+          slidesToShow: 2,
+          slidesToScroll: 2,
+        }
+      },
+
+      {
+        breakpoint: 769,
+        settings: {
+          arrows: false,
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        }
+      }
+    ],
   });
 
   $('.clients__items').slick({
@@ -44,6 +72,17 @@ $(function () {
     draggable: false,
     slidesToShow: 2,
     slidesToScroll: 2,
+
+    responsive: [
+      {
+        breakpoint: 769,
+        settings: {
+          arrows: false,
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        }
+      },
+    ]
   });
 
   $('.product__stars').rateYo({
