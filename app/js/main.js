@@ -102,8 +102,6 @@ $(function () {
     $('.header__pages-categories').toggleClass("closed");
   });
 
-
-
   var mixer = mixitup('.newest__items');
 
 });

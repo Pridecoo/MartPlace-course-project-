@@ -54,6 +54,12 @@
 
       transform: translateY(-50%);
     }
+
+    &:hover {
+      &:before {
+        color: $blue;
+      }
+    }
   }
 
   &__links {
@@ -114,6 +120,7 @@
 
     border: none;
 
+    @include focus-purple;
   }
 
   &__subscribe-btn {
@@ -159,6 +166,7 @@
     }
 
     &--something {
+      margin: 0;
       background-position: -84px -0;
     }
 

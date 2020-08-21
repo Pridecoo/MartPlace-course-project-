@@ -93,6 +93,44 @@
       width: 60%;
     }
   }
+
+  .service {
+    &__item {
+      min-height: 240px;
+    }
+    
+    &__title {
+      padding: 150px 30px 0;
+      font-size: 2.7vw;
+      text-align: center;
+      background-size: 100px 75px;
+      
+      span {
+        display: block;
+      }
+
+    }
+  }
+
+  .footer {
+    
+    &__top {
+      flex-wrap: wrap;
+    }
+
+    &__info {
+      min-width: 45%;
+      margin-bottom: 20px;
+    }
+
+    &__newsletter {
+      max-width: 50%;
+    }
+
+    &__subscribe-form {
+      width: 85%;
+    }
+  }
 }
 
 @media (max-width: 769px) {
@@ -201,17 +239,20 @@
       padding: 0 55px 0 15px;
     }
 
+    &__product-img {
+      height: 100% !important;
+    }
+
     &__notifications,
     &__cart,
     &__account-links {
-      position: fixed;
       left: auto;
-      right: 15px;
-      top: 100px;
+      max-width: unset;
+      width: calc(100vw - 30px);
     }
 
     &__cart {
-      max-width: 93%;
+      right: -80px;
 
       &:before {
         right: 79px;
@@ -219,15 +260,24 @@
       }
     }
 
+    &__price-wrapper {
+      margin-left: auto;
+    }
+
     &__notifications {
+      right: -157px;
+
       &:before {
-        left: 193px;
+        left: unset;
+        right: 164px;
       }
     }
 
     &__messages {
+      right: -116px;
+
       &:before {
-        left: 233px;
+        right: 122px;
       }
     }
 
@@ -527,6 +577,67 @@
       padding: 15px 18px;
     }
   }
+
+  .service {
+    &__item {
+      min-height: unset;
+    }
+
+    &__title {
+      padding: 113px 15px 30px;
+      margin: 0 50px 20px 0;
+      font-size: 17px;
+      background-size: 75px 55px;
+      background-position: center 45px;
+
+      span {
+        display: block;
+      }
+
+      &--right {
+        margin: 0 0 50px 20px;
+      }
+    }
+  }
+
+  .join-us {
+    padding: 60px 15px;
+  }
+
+  .footer {
+    
+    &__top {
+      padding: 60px 0;
+    }
+
+    &__info {
+      min-width: 100%;
+      margin-bottom: 20px;
+    }
+
+    &__newsletter {
+      max-width: 100%;
+    }
+
+    &__subscribe-form {
+      width: 75%;
+      margin-bottom: 30px;
+    }
+
+    &__links {
+      min-width: 50%;
+      padding: 0;
+      margin-bottom: 20px;
+    }
+
+    &__title {
+      margin-bottom: 15px;
+    }
+
+    &__logo {
+      margin-bottom: 12px;
+    }
+  }
 }
 
 @media (max-width: 376px) {
@@ -578,12 +689,8 @@
     &__notifications,
     &__cart,
     &__account-links {
-      position: fixed;
-      left: 0;
-      right: 0;
-      top: 75px;
-      max-width: 100vw;
-      width: 100%;
+      top: 82%;
+      width: 101vw;
 
       &:before {
         display: none;
@@ -596,6 +703,11 @@
       padding: 15px !important;
     }
 
+    &__account-links {
+      top: 100%;
+      right: -18px;
+    }
+
     &__cart-total {
       padding: 0 15px;
       line-height: 60px;
@@ -606,7 +718,12 @@
     }
 
     &__notifications {
+      right: -150px;
       padding-top: 15px !important;
+    }
+
+    &__messages {
+      right: -113px;
     }
 
     &__notifications-top {
@@ -783,6 +900,65 @@
   .blog {
     &__item-img {
       height: 170px;
+    }
+  }
+
+  .service {
+    &__item {
+
+      &--right {
+        padding-left: 15px;
+        padding-right: 0;
+      }
+    }
+
+    &__title {
+      padding: 110px 15px 20px 0;
+      margin: 0 10px 20px 0;
+      font-size: 16px;
+
+      span {
+        display: inline;
+      }
+
+      &:before {
+        top: -65px;
+        width: 80px;
+        height: 50px;
+      }
+
+      &--right {
+        margin: 0 0 20px 10px;
+      }
+    }
+  }
+
+  .join-us {
+    &__title {
+      font-size: 30px;
+    }
+
+    &__suptitle {
+      margin-bottom: 30px;
+      font-size: 16px;
+    }
+  }
+
+  .footer {
+
+    &__subscribe-form {
+      width: 100%;
+      margin-bottom: 30px;
+    }
+
+    &__social-link {
+      margin-right: 6px;
+    }
+
+    &__bottom {
+      flex-wrap: wrap;
+      height: 60px;
+      font-size: 13px;
     }
   }
 }
