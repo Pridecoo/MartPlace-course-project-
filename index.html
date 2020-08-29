@@ -1,0 +1,2310 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="icon" href="images/favicon.ico" type="image/x-icon">
+	<link rel="stylesheet" href="css/libs.min.css">
+	<link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
+	<link rel="stylesheet" href="css/styles.min.css">
+	<title>MartPlace</title>
+</head>
+
+<body>
+
+	<header class="header">
+  <div class="container">
+    <div class="header__inner">
+
+      <a class="logo" href="#">
+        <img class="logo__img" src="images/logo.png" alt="logo">
+      </a>
+
+      <a class="header__seller-btn button button--rounded button--blue" href="#">Become a Seller</a>
+
+      <div class="header__account">
+
+        <div class="header__icons">
+
+          <span class="header__notifications-menu">
+            <a class="header__icon" href="#">
+              <span class="lnr lnr-alarm"></span>
+              <span class="header__icon-number header__icon-number--red header__icon-number--active">10</span>
+            </a>
+
+            <div class="header__notifications">
+              <div class="header__notifications-top">
+                <span class="header__notifications-title">My Notifications</span>
+                <a class="header__notifications-all" href="#">View All</a>
+              </div>
+
+              <div class="header__notifications-content">
+                <a class="header__notification lnr lnr-heart" href="#">
+                  <img class="header__notification-picture avatar header__notification-avatar"
+                    src="images/content/avatar-3.jpg" alt="notification author picture">
+
+                  <div class="header__notification-text">
+                    <span class="header__notification-name">Anderson</span>
+                    <span class="header__notification-type">added to Favourite</span>
+                    <span class="header__notification-link">Marketify Coffee Shop</span>
+                    <time class="header__notification-date" datetime="15-03-2017">Just now</time>
+                  </div>
+                </a>
+
+                <a class="header__notification lnr lnr-bubble" href="#">
+                  <img class="header__notification-picture avatar header__notification-avatar"
+                    src="images/content/avatar.jpg" alt="notification author picture">
+
+                  <div class="header__notification-text">
+                    <span class="header__notification-name">Michael Jorden</span>
+                    <span class="header__notification-type">commented on</span>
+                    <span class="header__notification-link">MartPlace Extension Bundle</span>
+                    <time class="header__notification-date" datetime="15-03-2017">2 hours ago</time>
+                  </div>
+                </a>
+
+                <a class="header__notification lnr lnr-cart" href="#">
+                  <img class="header__notification-picture avatar header__notification-avatar"
+                    src="images/content/avatar-2.jpg" alt="notification author picture">
+
+                  <div class="header__notification-text">
+                    <span class="header__notification-name">Moshed</span>
+                    <span class="header__notification-type">Purchased</span>
+                    <span class="header__notification-link">Bryson-Responsive Template</span>
+                    <time class="header__notification-date" datetime="15-03-2017">6 hours ago</time>
+                  </div>
+                </a>
+
+                <a class="header__notification lnr lnr-star" href="#">
+                  <img class="header__notification-picture avatar header__notification-avatar"
+                    src="images/content/avatar-3.jpg" alt="notification author picture">
+
+                  <div class="header__notification-text">
+                    <span class="header__notification-name">Tamim</span>
+                    <span class="header__notification-type">wrote a review on</span>
+                    <span class="header__notification-link">Rida-Responsive vCard Template</span>
+                    <time class="header__notification-date" datetime="15-03-2017">2 days ago</time>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </span>
+
+          <span class="header__messages-menu">
+            <a class="header__icon" href="#">
+              <span class="lnr lnr-envelope"></span>
+              <span class="header__icon-number header__icon-number--green header__icon-number--active">6</span>
+            </a>
+
+            <div class="header__messages header__notifications">
+              <div class="header__notifications-top">
+                <span class="header__notifications-title">My Messages</span>
+                <a class="header__notifications-all" href="#">View All</a>
+              </div>
+
+              <div class="header__notifications-content">
+
+                <a class="header__notification header__notification--messages" href="#">
+                  <img class="header__notification-picture avatar header__notification-avatar"
+                    src="images/content/avatar-2.jpg" alt="notification author picture">
+
+
+                  <div class="header__notification-text header__notification-text--messages">
+                    <div class="header__messsage-top">
+                      <span class="header__notification-name lnr lnr-envelope">Washim</span>
+                      <time class="header__notification-date header__notification-date--unread"
+                        datetime="15-03-2017">Just now</time>
+                    </div>
+                    <span class="header__notification-message">
+                      Hello John Smith! Nunc placerat ideas le man
+                    </span>
+                  </div>
+                </a>
+
+                <a class="header__notification header__notification--messages" href="#">
+                  <img class="header__notification-picture avatar header__notification-avatar"
+                    src="images/content/avatar.jpg" alt="notification author picture">
+
+
+                  <div class="header__notification-text header__notification-text--messages">
+                    <div class="header__messsage-top">
+                      <span class="header__notification-name lnr lnr-envelope">Bulbul Ahmed</span>
+                      <time class="header__notification-date header__notification-date--unread"
+                        datetime="15-03-2017">2 hours ago</time>
+                    </div>
+                    <span class="header__notification-message">
+                      Hello John Smith! Nunc placerat ideas le man
+                    </span>
+                  </div>
+                </a>
+
+                <a class="header__notification header__notification--messages" href="#">
+                  <img class="header__notification-picture avatar header__notification-avatar"
+                    src="images/content/avatar-2.jpg" alt="notification author picture">
+
+
+                  <div class="header__notification-text header__notification-text--messages">
+                    <div class="header__messsage-top">
+                      <span class="header__notification-name header__notification-name--replied"
+                        style="background-image: url(images/icons/reply.svg);">
+                        EchoTheme
+                      </span>
+                      <time class="header__notification-date" datetime="16-07-2017">Jul 16</time>
+                    </div>
+                    <span class="header__notification-message">
+                      Hello John Smith! Nunc placerat ideas le man
+                    </span>
+                  </div>
+                </a>
+
+                <a class="header__notification header__notification--messages" href="#">
+                  <img class="header__notification-picture avatar header__notification-avatar"
+                    src="images/content/avatar.jpg" alt="notification author picture">
+
+
+                  <div class="header__notification-text header__notification-text--messages">
+                    <div class="header__messsage-top">
+                      <span class="header__notification-name">Themeluva</span>
+                      <time class="header__notification-date" datetime="23-05-2017">May 23</time>
+                    </div>
+                    <span class="header__notification-message">
+                      Hello John Smith! Nunc placerat ideas le man
+                    </span>
+                  </div>
+                </a>
+
+                <a class="header__notification header__notification--messages" href="#">
+                  <img class="header__notification-picture avatar header__notification-avatar"
+                    src="images/content/avatar-3.jpg" alt="notification author picture">
+
+
+                  <div class="header__notification-text header__notification-text--messages">
+                    <div class="header__messsage-top">
+                      <span class="header__notification-name">Adnan</span>
+                      <time class="header__notification-date" datetime="26-03-2017">Mar 26</time>
+                    </div>
+                    <span class="header__notification-message">
+                      Hello John Smith! Nunc placerat ideas le man
+                    </span>
+                  </div>
+                </a>
+              </div>
+            </div>
+
+          </span>
+
+          <span class="header__cart-menu">
+            <a class="header__icon" href="#">
+              <span class="lnr lnr-cart"></span>
+              <span class="header__icon-number header__icon-number--blue header__icon-number--active">2</span>
+            </a>
+
+            <div class="header__cart">
+
+              <div class="header__cart-content">
+
+                <div class="header__cart-product">
+                  <img class="product__img header__product-img" src="images/content/product-1.jpg"
+                    alt="product picture">
+
+                  <div class="product__info header__product-info">
+                    <a class="product__content-title header__content-title" href="#">
+                      Finance and Consulting Business Theme
+                    </a>
+                    <a class="product__info-category header__info-category"
+                      style="background-image: url(images/icons/wordpress.svg);" href="#">
+                      Wordpress
+                    </a>
+                  </div>
+
+                  <div class="header__price-wrapper">
+                    <button class="header__cart-delete lnr lnr-trash" type="button"></button>
+                    <div class="product__price header__product-price">$60</div>
+                  </div>
+                </div>
+
+                <div class="header__cart-product">
+                  <img class="product__img header__product-img" src="images/content/product-3.jpg"
+                    alt="product picture">
+
+                  <div class="product__info header__product-info">
+                    <a class="product__content-title header__content-title" href="#">
+                      Flounce - Multipurpose OpenCart Theme
+                    </a>
+                    <a class="product__info-category header__info-category"
+                      style="background-image: url(images/icons/wordpress.svg);" href="#">
+                      Wordpress
+                    </a>
+                  </div>
+
+                  <div class="header__price-wrapper">
+                    <button class="header__cart-delete lnr lnr-trash" type="button"></button>
+                    <div class="product__price header__product-price">$20</div>
+                  </div>
+                </div>
+
+                <div class="header__cart-total">Total :
+                  <span>$80</span>
+                </div>
+
+                <div class="header__cart-buttons">
+                  <a class="header__cart-button" href="#">Go to Cart</a>
+                  <a class="header__cart-button header__cart-button--checkout" href="#">Go to Checkout</a>
+                </div>
+              </div>
+
+            </div>
+          </span>
+        </div>
+
+        <div class="header__account-menu">
+          <a class="header__account-info" href="#">
+            <img class="header__avatar-img avatar" src="images/content/avatar.jpg" alt="user picture">
+
+            <div class="header__account-text">
+              <span class="header__account-name" href="#">Taofiq Hakim</span>
+              <span class="header__account-balance" href="#">$20.45</span>
+            </div>
+          </a>
+
+          <ul class="header__account-links">
+            <li class="header__links-item">
+              <a class="header__link lnr lnr-user" href="#">Profile Page</a>
+            </li>
+            <li class="header__links-item">
+              <a class="header__link lnr lnr-home" href="#">Dashboard</a>
+
+            </li>
+            <li class="header__links-item">
+              <a class="header__link lnr lnr-cog" href="#">Account Settings</a>
+            </li>
+            <li class="header__links-item">
+              <a class="header__link lnr lnr-cart" href="#">Your Purchases</a>
+            </li>
+            <li class="header__links-item">
+              <a class="header__link lnr lnr-heart" href="#">Your Favorites</a>
+            </li>
+            <li class="header__links-item">
+              <a class="header__link lnr lnr-dice" href="#">Add Credits</a>
+            </li>
+            <li class="header__links-item">
+              <a class="header__link lnr lnr-chart-bars" href="#">Sales Statements</a>
+            </li>
+            <li class="header__links-item">
+              <a class="header__link lnr lnr-upload" href="#">Upload Item</a>
+            </li>
+            <li class="header__links-item">
+              <a class="header__link lnr lnr-book" href="#">Edit Item</a>
+            </li>
+            <li class="header__links-item">
+              <a class="header__link lnr lnr-briefcase" href="#">Withdrawals</a>
+            </li>
+            <li class="header__links-item">
+              <a class="header__link lnr lnr-exit" href="#">Logout</a>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+
+  <div class="header__bottom">
+    <div class="container">
+      <div class="header__bottom-inner">
+
+        <nav class="header__menu">
+          <div class="header__burger-btn lnr lnr-menu"></div>
+
+          <ul class="header__menu-items">
+            <li class="header__menu-item header__menu-home">
+              <a class="header__menu-link header__menu-active" href="#">home</a>
+
+              <ul class="header__home-links header__menu-pop-up">
+                <li class="header__links-item">
+                  <a class="header__link" href="#">Home One Multi User</a>
+                </li>
+                <li class="header__links-item">
+                  <a class="header__link" href="#">Home Two Single User</a>
+                </li>
+                <li class="header__links-item">
+                  <a class="header__link" href="#">Home Three Product</a>
+                </li>
+              </ul>
+            </li>
+            <li class="header__menu-item header__menu-products">
+              <a class="header__menu-link" href="#">all products</a>
+
+              <ul class="header__products-links header__menu-pop-up">
+                <li class="header__links-item">
+                  <a class="header__link" href="#">Recent Items</a>
+                </li>
+                <li class="header__links-item">
+                  <a class="header__link" href="#">Popular Items</a>
+                </li>
+                <li class="header__links-item">
+                  <a class="header__link" href="#">Featured Items</a>
+                </li>
+                <li class="header__links-item">
+                  <a class="header__link" href="#">Free Templates</a>
+                </li>
+                <li class="header__links-item">
+                  <a class="header__link" href="#">Follow Feed</a>
+                </li>
+                <li class="header__links-item">
+                  <a class="header__link" href="#">Top Authors</a>
+                </li>
+              </ul>
+            </li>
+            <li class="header__menu-item header__menu-wordpress">
+              <a class="header__menu-link" href="#">wordpress</a>
+
+              <ul class="header__wordpress-links header__menu-pop-up">
+                <li class="header__links-item">
+                  <a class="header__link" href="#">Popular Items</a>
+                </li>
+                <li class="header__links-item">
+                  <a class="header__link" href="#">Admin Templates</a>
+                </li>
+                <li class="header__links-item">
+                  <a class="header__link" href="#">Blog / Magazine / News</a>
+                </li>
+                <li class="header__links-item">
+                  <a class="header__link" href="#">Creative</a>
+                </li>
+                <li class="header__links-item">
+                  <a class="header__link" href="#">Corporate Business</a>
+                </li>
+                <li class="header__links-item">
+                  <a class="header__link" href="#">Resume Portfolio</a>
+                </li>
+                <li class="header__links-item">
+                  <a class="header__link" href="#">eCommerce</a>
+                </li>
+                <li class="header__links-item">
+                  <a class="header__link" href="#">Entertainment</a>
+                </li>
+                <li class="header__links-item">
+                  <a class="header__link" href="#">Landing Pages</a>
+                </li>
+              </ul>
+            </li>
+            <li class="header__menu-item">
+              <a class="header__menu-link" href="#">features</a>
+            </li>
+            <li class="header__menu-item header__menu-pages">
+              <a class="header__menu-link" href="#">pages</a>
+
+
+              <div class="header__pages-categories header__menu-pop-up">
+
+                <div class="header__pages-category">
+                  <div class="header__pages-category-title">
+                    MartPlace Pages
+                  </div>
+
+                  <div class="header__pages-column">
+                    <ul class="header__pages-links">
+                      <li class="header__links-item">
+                        <a class="header__link" href="#">Home Page One</a>
+                      </li>
+                      <li class="header__links-item">
+                        <a class="header__link" href="#">Home Page Two</a>
+                      </li>
+                      <li class="header__links-item">
+                        <a class="header__link" href="#">Home Page Three</a>
+                      </li>
+                      <li class="header__links-item">
+                        <a class="header__link" href="#">Products Grid</a>
+                      </li>
+                      <li class="header__links-item">
+                        <a class="header__link" href="#">Products List</a>
+                      </li>
+                      <li class="header__links-item">
+                        <a class="header__link" href="#">Category Grid Sidebar</a>
+                      </li>
+                      <li class="header__links-item">
+                        <a class="header__link" href="#">Category List Sidebar</a>
+                      </li>
+                      <li class="header__links-item">
+                        <a class="header__link" href="#">Search Product</a>
+                      </li>
+                      <li class="header__links-item">
+                        <a class="header__link" href="#">Single Product V-1</a>
+                      </li>
+                      <li class="header__links-item">
+                        <a class="header__link" href="#">Single Product V-2</a>
+                      </li>
+                      <li class="header__links-item">
+                        <a class="header__link" href="#">Single Product V-3</a>
+                      </li>
+                    </ul>
+                    <ul class="header__pages-links">
+                      <li class="header__links-item">
+                        <a class="header__link" href="#">Single Items Comments</a>
+                      </li>
+                      <li class="header__links-item">
+                        <a class="header__link" href="#">Single Items Reviews</a>
+                      </li>
+                      <li class="header__links-item">
+                        <a class="header__link" href="#">Single Items Support</a>
+                      </li>
+                      <li class="header__links-item">
+                        <a class="header__link" href="#">Single Items FAQs</a>
+                      </li>
+                      <li class="header__links-item">
+                        <a class="header__link" href="#">Favorites Items</a>
+                      </li>
+                      <li class="header__links-item">
+                        <a class="header__link" href="#">Author Profile</a>
+                      </li>
+                      <li class="header__links-item">
+                        <a class="header__link" href="#">Author Items</a>
+                      </li>
+                      <li class="header__links-item">
+                        <a class="header__link" href="#">Customer Reviews</a>
+                      </li>
+                      <li class="header__links-item">
+                        <a class="header__link" href="#">Followers</a>
+                      </li>
+                      <li class="header__links-item">
+                        <a class="header__link" href="#">Following</a>
+                      </li>
+                      <li class="header__links-item">
+                        <a class="header__link" href="#">Product View Variations</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="header__pages-category header__pages-category--dashboard">
+                  <div class="header__pages-category-title">
+                    Dashboard
+                  </div>
+
+                  <div class="header__pages-column">
+                    <ul class="header__pages-links header__pages-links--dashboard">
+                      <li class="header__links-item">
+                        <a class="header__link" href="#">Dashboard</a>
+                      </li>
+                      <li class="header__links-item">
+                        <a class="header__link" href="#">Account Settings</a>
+                      </li>
+                      <li class="header__links-item">
+                        <a class="header__link" href="#">Author Purchases</a>
+                      </li>
+                      <li class="header__links-item">
+                        <a class="header__link" href="#">Items Rating</a>
+                      </li>
+                      <li class="header__links-item">
+                        <a class="header__link" href="#">Add Credits</a>
+                      </li>
+                      <li class="header__links-item">
+                        <a class="header__link" href="#">Statements</a>
+                      </li>
+                      <li class="header__links-item">
+                        <a class="header__link" href="#">Invoice</a>
+                      </li>
+                      <li class="header__links-item">
+                        <a class="header__link" href="#">Upload Item</a>
+                      </li>
+                      <li class="header__links-item">
+                        <a class="header__link" href="#">Edit Items</a>
+                      </li>
+                      <li class="header__links-item">
+                        <a class="header__link" href="#">Withdrawals</a>
+                      </li>
+                      <li class="header__links-item">
+                        <a class="header__link" href="#">Add Payment Method</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="header__pages-category">
+                  <div class="header__pages-category-title">
+                    Others Pages
+                  </div>
+
+                  <div class="header__pages-column">
+                    <ul class="header__pages-links">
+                      <li class="header__links-item">
+                        <a class="header__link" href="#">Notifications</a>
+                      </li>
+                      <li class="header__links-item">
+                        <a class="header__link" href="#">Message Inbox</a>
+                      </li>
+                      <li class="header__links-item">
+                        <a class="header__link" href="#">Message Compose</a>
+                      </li>
+                      <li class="header__links-item">
+                        <a class="header__link" href="#">Shopping Cart</a>
+                      </li>
+                      <li class="header__links-item">
+                        <a class="header__link" href="#">Checkout</a>
+                      </li>
+                      <li class="header__links-item">
+                        <a class="header__link" href="#">Login</a>
+                      </li>
+                      <li class="header__links-item">
+                        <a class="header__link" href="#">Register</a>
+                      </li>
+                      <li class="header__links-item">
+                        <a class="header__link" href="#">Recovery Password</a>
+                      </li>
+                      <li class="header__links-item">
+                        <a class="header__link" href="#">Support Forum</a>
+                      </li>
+                      <li class="header__links-item">
+                        <a class="header__link" href="#">Forum Details</a>
+                      </li>
+                      <li class="header__links-item">
+                        <a class="header__link" href="#">How It Works</a>
+                      </li>
+                    </ul>
+                    <ul class="header__pages-links">
+                      <li class="header__links-item">
+                        <a class="header__link" href="#">About Us</a>
+                      </li>
+                      <li class="header__links-item">
+                        <a class="header__link" href="#">Pricing Plan</a>
+                      </li>
+                      <li class="header__links-item">
+                        <a class="header__link" href="#">Testimonials</a>
+                      </li>
+                      <li class="header__links-item">
+                        <a class="header__link" href="#">FAQs</a>
+                      </li>
+                      <li class="header__links-item">
+                        <a class="header__link" href="#">FAQs Details</a>
+                      </li>
+                      <li class="header__links-item">
+                        <a class="header__link" href="#">Affiliates</a>
+                      </li>
+                      <li class="header__links-item">
+                        <a class="header__link" href="#">Terms & Conditions</a>
+                      </li>
+                      <li class="header__links-item">
+                        <a class="header__link" href="#">Blog V-1</a>
+                      </li>
+                      <li class="header__links-item">
+                        <a class="header__link" href="#">Blog V-2</a>
+                      </li>
+                      <li class="header__links-item">
+                        <a class="header__link" href="#">Blog Details</a>
+                      </li>
+                      <li class="header__links-item">
+                        <a class="header__link" href="#">Contact Us</a>
+                      </li>
+                      <li class="header__links-item">
+                        <a class="header__link" href="#">Menu & Footer Variation</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </nav>
+
+        <form class="header__search">
+          <input class="header__search-input input input--rounded" type="search" placeholder="Search product here...">
+          <button class="header__search-btn button button--rounded button--blue" type="submit">
+            search
+            <span class="lnr lnr-magnifier"></span>
+          </button>
+        </form>
+
+      </div>
+    </div>
+  </div>
+
+</header>
+
+	<div class="wrapper">
+
+		<main class="page">
+			<section class="headline">
+				<div class="container">
+					<div class="headline__inner">
+
+						<div class="headline__content">
+							<div class="headline__title">
+								Create Your Own
+								<span>Digital Product Marketplace</span>
+							</div>
+
+							<div class="headline__text">
+								MartPlace is the most powerful, & customizable template for Easy Digital Downloads Products
+							</div>
+
+							<div class="headline__btns">
+								<a class="headline__btn button button--rounded button--transparent" href="#">View All Products</a>
+								<a class="headline__btn button button--rounded button--transparent" href="#">Popular Products</a>
+							</div>
+						</div>
+
+						<div class="headline__search">
+							<form class="headline__search-form">
+								<div class="headline__search-select">
+									<input class="headline__search-input input" type="search" placeholder="Search your products...">
+
+									<select class="headline__search-categories select" name="" id="">
+										<option class="headline__search-option" value="">All Categories</option>
+										<option class="headline__search-option" value="">Plugins</option>
+										<option class="headline__search-option" value="">WordPress</option>
+										<option class="headline__search-option" value="">Site Template</option>
+										<option class="headline__search-option" value="">PSD Template</option>
+										<option class="headline__search-option" value="">Joomla</option>
+										<option class="headline__search-option" value="">User Interface</option>
+										<option class="headline__search-option" value="">Landing Page</option>
+										<option class="headline__search-option" value="">Software</option>
+									</select>
+
+								</div>
+
+								<button class="headline__search-btn button button--blue" type="submit">Search Now</button>
+							</form>
+						</div>
+
+					</div>
+				</div>
+			</section>
+
+			<section class="features">
+				<div class="container">
+					<div class="features__items">
+
+						<article class="features__item feature">
+							<div class="features__img feature__img" style="background-image: url(images/ux-icon.png);">user experience
+							</div>
+
+							<div class="features__title feature__title">Best UX Research</div>
+							<div class="features__text feature__text">
+								Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
+								the mattis, leo quam aliquet diam
+								congue is laoreet elit metus.
+							</div>
+						</article>
+
+						<article class="features__item feature">
+							<div class="features__img  feature__img" style="background-image: url(images/response-icon.png);">fully
+								responsive</div>
+
+							<div class="features__title feature__title">Fully Responsive</div>
+							<div class="features__text feature__text">
+								Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
+								the mattis, leo quam aliquet diam
+								congue is laoreet elit metus.
+							</div>
+						</article>
+
+						<article class="features__item feature">
+							<div class="features__img  feature__img" style="background-image: url(images/sell-icon.png);">buy and sell
+							</div>
+
+							<div class="features__title feature__title">Buy & Sell Easily</div>
+							<div class="features__text feature__text">
+								Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
+								the mattis, leo quam aliquet diam
+								congue is laoreet elit metus.
+							</div>
+						</article>
+
+					</div>
+				</div>
+
+			</section>
+
+			<section class="weekly">
+				<div class="container">
+					<div class="weekly__inner">
+
+						<div class="title-background weekly__title">
+							<div class="title-background__text">
+								Weekly Featured Products
+							</div>
+							<div class="weekly__arrows-wrapper"></div>
+						</div>
+
+						<div class="weekly__items">
+
+							<div class="slide">
+								<article class="product product-weekly">
+									<div class="product__picture product-weekly__picture">
+										<img class="product__img product-weekly__img" src="images/content/product-1.jpg"
+											alt="product picture">
+
+										<div class="product__picture-btns">
+											<a class="product__picture-btn button button--rounded button--transparent" href="#">More Info</a>
+											<a class="product__picture-btn button button--rounded button--transparent" href="#">Live Demo</a>
+										</div>
+									</div>
+
+									<div class="product__content product-weekly__content">
+
+										<a class="product__content-title product-weekly__content-title" href="#">One Page Resume
+											Template</a>
+
+										<div class="product__info">
+											<a class="product__info-author" href="#">
+												<img class="avatar product__avatar" src="images/content/avatar-2.jpg" alt="user picture">
+												AazzTech
+											</a>
+											<a class="product__info-category" style="background-image: url(images/icons/wordpress.svg);"
+												href="#">
+												WordPress
+											</a>
+										</div>
+
+										<div class="product__content-text">
+											Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo
+											quam
+											aliquet congue placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the
+											mattis, leo quam aliquet congue justo ut scelerisque.
+										</div>
+
+										<div class="tags product__tags">
+											<a class="tag" href="#">website</a>
+											<a class="tag" href="#">plugin</a>
+											<a class="tag" href="#">landing page</a>
+											<a class="tag" href="#">landing page</a>
+											<a class="tag" href="#">website</a>
+											<a class="tag" href="#">plugin</a>
+											<a class="tag" href="#">landing page</a>
+										</div>
+
+										<div class="product__content-bottom product-weekly__content-bottom">
+											<div class="product__stats">
+												<div class="product__price product-weekly__price">$10 - $50</div>
+
+												<div class="product__fav">
+													<button class="product__fav-btn product__fav-active button" type="button">
+														<span class="lnr lnr-heart"></span>
+													</button>
+													46
+												</div>
+
+												<div class="product__sells product-weekly__sells">
+													<button class="product__sells-btn product__sells-active button" type="button">
+														<span class="lnr lnr-cart"></span>
+													</button>
+													68
+												</div>
+
+												<div class="product__stars product-weekly__stars">stars</div>
+											</div>
+										</div>
+
+									</div>
+								</article>
+							</div>
+
+							<div class="slide">
+								<article class="product product-weekly">
+									<div class="product__picture product-weekly__picture">
+										<img class="product__img product-weekly__img" src="images/content/product-3.jpg"
+											alt="product picture">
+
+										<div class="product__picture-btns">
+											<a class="product__picture-btn button button--rounded button--transparent" href="#">More Info</a>
+											<a class="product__picture-btn button button--rounded button--transparent" href="#">Live Demo</a>
+										</div>
+									</div>
+
+									<div class="product__content product-weekly__content">
+
+										<a class="product__content-title product-weekly__content-title" href="#">One Page Resume
+											Template</a>
+
+										<div class="product__info">
+											<a class="product__info-author" href="#">
+												<img class="avatar product__avatar" src="images/content/avatar.jpg" alt="user picture">
+												mrCoolDesigner
+											</a>
+											<a class="product__info-category product__info-category--uppercase"
+												style="background-image: url(images/icons/html.svg);" href="#">
+												html
+											</a>
+										</div>
+
+										<div class="product__content-text">
+											Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo
+											quam
+											aliquet congue placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the
+											mattis, leo quam aliquet congue justo ut scelerisque.
+										</div>
+
+										<div class="tags product__tags">
+											<a class="tag" href="#">website</a>
+											<a class="tag" href="#">plugin</a>
+											<a class="tag" href="#">landing page</a>
+										</div>
+
+										<div class="product__content-bottom product-weekly__content-bottom">
+											<div class="product__stats">
+												<div class="product__price product-weekly__price">$10 - $50</div>
+
+												<div class="product__fav">
+													<button class="product__fav-btn button" type="button">
+														<span class="lnr lnr-heart"></span>
+													</button>
+													56
+												</div>
+
+												<div class="product__sells product-weekly__sells">
+													<button class="product__sells-btn button" type="button">
+														<span class="lnr lnr-cart"></span>
+													</button>
+													68
+												</div>
+
+												<div class="product__stars product-weekly__stars">stars</div>
+											</div>
+										</div>
+
+									</div>
+								</article>
+							</div>
+
+							<div class="slide">
+								<article class="product product-weekly">
+									<div class="product__picture product-weekly__picture">
+										<img class="product__img product-weekly__img" src="images/content/product-4.jpg"
+											alt="product picture">
+
+										<div class="product__picture-btns">
+											<a class="product__picture-btn button button--rounded button--transparent" href="#">More Info</a>
+											<a class="product__picture-btn button button--rounded button--transparent" href="#">Live Demo</a>
+										</div>
+									</div>
+
+									<div class="product__content product-weekly__content">
+
+										<a class="product__content-title product-weekly__content-title" href="#">One Page Resume
+											Template</a>
+
+										<div class="product__info">
+											<a class="product__info-author" href="#">
+												<img class="avatar product__avatar" src="images/content/avatar-2.jpg" alt="user picture">
+												AazzTech
+											</a>
+											<a class="product__info-category" style="background-image: url(images/icons/wordpress.svg);"
+												href="#">
+												WordPress
+											</a>
+										</div>
+
+										<div class="product__content-text">
+											Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo
+											quam
+											aliquet congue placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the
+											mattis, leo quam aliquet congue justo ut scelerisque.
+										</div>
+
+										<div class="tags product__tags">
+											<a class="tag" href="#">website</a>
+											<a class="tag" href="#">plugin</a>
+											<a class="tag" href="#">landing page</a>
+											<a class="tag" href="#">landing page</a>
+											<a class="tag" href="#">website</a>
+											<a class="tag" href="#">plugin</a>
+											<a class="tag" href="#">landing page</a>
+										</div>
+
+										<div class="product__content-bottom product-weekly__content-bottom">
+											<div class="product__stats">
+												<div class="product__price product-weekly__price">$10 - $50</div>
+
+												<div class="product__fav">
+													<button class="product__fav-btn product__fav-active button" type="button">
+														<span class="lnr lnr-heart"></span>
+													</button>
+													46
+												</div>
+
+												<div class="product__sells product-weekly__sells">
+													<button class="product__sells-btn product__sells-active button" type="button">
+														<span class="lnr lnr-cart"></span>
+													</button>
+													68
+												</div>
+
+												<div class="product__stars product-weekly__stars">stars</div>
+											</div>
+										</div>
+
+									</div>
+								</article>
+							</div>
+
+							<div class="slide">
+								<article class="product product-weekly">
+									<div class="product__picture product-weekly__picture">
+										<img class="product__img product-weekly__img" src="images/content/product-2.jpg"
+											alt="product picture">
+
+										<div class="product__picture-btns">
+											<a class="product__picture-btn button button--rounded button--transparent" href="#">More Info</a>
+											<a class="product__picture-btn button button--rounded button--transparent" href="#">Live Demo</a>
+										</div>
+									</div>
+
+									<div class="product__content product-weekly__content">
+
+										<a class="product__content-title product-weekly__content-title" href="#">One Page Resume
+											Template</a>
+
+										<div class="product__info">
+											<a class="product__info-author" href="#">
+												<img class="avatar product__avatar" src="images/content/avatar-2.jpg" alt="user picture">
+												AazzTech
+											</a>
+											<a class="product__info-category" style="background-image: url(images/icons/wordpress.svg);"
+												href="#">
+												WordPress
+											</a>
+										</div>
+
+										<div class="product__content-text">
+											Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo
+											quam
+											aliquet congue placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the
+											mattis, leo quam aliquet congue justo ut scelerisque.
+										</div>
+
+										<div class="tags product__tags">
+											<a class="tag" href="#">website</a>
+											<a class="tag" href="#">plugin</a>
+											<a class="tag" href="#">landing page</a>
+											<a class="tag" href="#">landing page</a>
+											<a class="tag" href="#">website</a>
+											<a class="tag" href="#">plugin</a>
+											<a class="tag" href="#">landing page</a>
+										</div>
+
+										<div class="product__content-bottom product-weekly__content-bottom">
+											<div class="product__stats">
+												<div class="product__price product-weekly__price">$10 - $50</div>
+
+												<div class="product__fav">
+													<button class="product__fav-btn product__fav-active button" type="button">
+														<span class="lnr lnr-heart"></span>
+													</button>
+													46
+												</div>
+
+												<div class="product__sells product-weekly__sells">
+													<button class="product__sells-btn product__sells-active button" type="button">
+														<span class="lnr lnr-cart"></span>
+													</button>
+													68
+												</div>
+
+												<div class="product__stars product-weekly__stars">stars</div>
+											</div>
+										</div>
+
+									</div>
+								</article>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</section>
+
+			<section class="newest">
+				<div class="container">
+					<div class="newest__inner">
+
+						<div class="title-background newest__title">
+							<div class="title-background__text">
+								Newest Release Products
+							</div>
+
+							<div class="newest__filter">
+								Filter by:
+								<div class="newest__filters">
+									<button class="newest__filters-btn" type="button">Trending items</button>
+									<button class="newest__filters-btn" type="button">Best seller</button>
+									<button class="newest__filters-btn" type="button">Best rating</button>
+									<button class="newest__filters-btn" type="button">Low price</button>
+									<button class="newest__filters-btn" type="button">High price</button>
+								</div>
+							</div>
+						</div>
+
+						<div class="tags newest__tags">
+							<button class="tag newest__tag" type="button" data-filter=".category-plugins">
+								Plugins
+							</button>
+
+							<button class="tag newest__tag" type="button" data-filter=".category-wordpress">
+								WordPress
+							</button>
+
+							<button class="tag newest__tag" type="button" data-filter=".category-site">
+								Site Template
+							</button>
+
+							<button class="tag newest__tag" type="button" data-filter=".category-psd">
+								PSD Template
+							</button>
+
+							<button class="tag newest__tag" type="button" data-filter=".category-joomla">
+								Joomla
+							</button>
+
+							<button class="tag newest__tag" type="button" data-filter=".category-ui">
+								User Interface
+							</button>
+
+							<button class="tag newest__tag" type="button" data-filter=".category-landing">
+								Landing Page
+							</button>
+
+							<button class="tag newest__tag" type="button" data-filter=".category-software">
+								Software
+							</button>
+						</div>
+
+						<div class="newest__items">
+
+							<article class="product mix category-plugins">
+								<div class="product__picture">
+									<img class="product__img" src="images/content/product-1.jpg" alt="product picture">
+
+									<div class="product__picture-btns">
+										<a class="product__picture-btn button button--rounded button--transparent" href="#">More Info</a>
+										<a class="product__picture-btn button button--rounded button--transparent" href="#">Live Demo</a>
+									</div>
+								</div>
+
+								<div class="product__content">
+
+									<div class="product__content-top">
+										<a class="product__content-title" href="#">E-commerce Shopping Cart</a>
+
+										<div class="product__info">
+											<a class="product__info-author" href="#">
+												<img class="avatar product__avatar" src="images/content/avatar-2.jpg" alt="user picture">
+												Theme-Valley
+											</a>
+											<a class="product__info-category" style="background-image: url(images/icons/wordpress.svg);"
+												href="#">
+												Plugin
+											</a>
+										</div>
+
+										<div class="product__content-text">
+											Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo
+											quam
+											aliquet congue.
+										</div>
+									</div>
+
+									<div class="product__content-bottom">
+										<div class="product__stats">
+											<div class="product__price">$10</div>
+
+											<div class="product__fav">
+												<button class="product__fav-btn button" type="button">
+													<span class="lnr lnr-heart"></span>
+												</button>
+												56
+											</div>
+
+											<div class="product__stars">stars</div>
+
+											<div class="product__sells">
+												<button class="product__sells-btn button" type="button">
+													<span class="lnr lnr-cart"></span>
+												</button>
+												68
+											</div>
+										</div>
+									</div>
+
+								</div>
+							</article>
+
+							<article class="product mix category-psd">
+								<div class="product__picture">
+									<img class="product__img" src="images/content/product-4.jpg" alt="product picture">
+
+									<div class="product__picture-btns">
+										<a class="product__picture-btn button button--rounded button--transparent" href="#">More Info</a>
+										<a class="product__picture-btn button button--rounded button--transparent" href="#">Live Demo</a>
+									</div>
+								</div>
+
+								<div class="product__content">
+
+									<div class="product__content-top">
+										<a class="product__content-title" href="#">Marketify Coffee Shop</a>
+
+										<div class="product__info">
+											<a class="product__info-author" href="#">
+												<img class="avatar product__avatar" src="images/content/avatar-2.jpg" alt="user picture">
+												AazzTech
+											</a>
+											<a class="product__info-category product__info-category--uppercase"
+												style="background-image: url(images/icons/psd.svg);" href="#">
+												psd
+											</a>
+										</div>
+
+										<div class="product__content-text">
+											Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo
+											quam
+											aliquet congue.
+										</div>
+									</div>
+
+									<div class="product__content-bottom">
+										<div class="product__stats">
+											<div class="product__price">$10</div>
+
+											<div class="product__fav">
+												<button class="product__fav-btn button" type="button">
+													<span class="lnr lnr-heart"></span>
+												</button>
+												56
+											</div>
+
+											<div class="product__stars">stars</div>
+
+											<div class="product__sells">
+												<button class="product__sells-btn button" type="button">
+													<span class="lnr lnr-cart"></span>
+												</button>
+												68
+											</div>
+										</div>
+									</div>
+
+								</div>
+							</article>
+
+							<article class="product mix category-landing">
+								<div class="product__picture">
+									<img class="product__img" src="images/content/product-2.jpg" alt="product picture">
+
+									<div class="product__picture-btns">
+										<a class="product__picture-btn button button--rounded button--transparent" href="#">More Info</a>
+										<a class="product__picture-btn button button--rounded button--transparent" href="#">Live Demo</a>
+									</div>
+								</div>
+
+								<div class="product__content">
+
+									<div class="product__content-top">
+										<a class="product__content-title" href="#">Bryson - Portfolio Template</a>
+
+										<div class="product__info">
+											<a class="product__info-author" href="#">
+												<img class="avatar product__avatar" src="images/content/avatar-2.jpg" alt="user picture">
+												AazzTech
+											</a>
+											<a class="product__info-category product__info-category--uppercase"
+												style="background-image: url(images/icons/html.svg);" href="#">
+												html
+											</a>
+										</div>
+
+										<div class="product__content-text">
+											Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo
+											quam
+											aliquet congue.
+										</div>
+									</div>
+
+									<div class="product__content-bottom">
+										<div class="product__stats">
+											<div class="product__price">$10</div>
+
+											<div class="product__fav">
+												<button class="product__fav-btn button" type="button">
+													<span class="lnr lnr-heart"></span>
+												</button>
+												56
+											</div>
+
+											<div class="product__stars">stars</div>
+
+											<div class="product__sells">
+												<button class="product__sells-btn button" type="button">
+													<span class="lnr lnr-cart"></span>
+												</button>
+												68
+											</div>
+										</div>
+									</div>
+
+								</div>
+							</article>
+
+							<article class="product mix category-plugins">
+								<div class="product__picture">
+									<img class="product__img" src="images/content/product-3.jpg" alt="product picture">
+
+									<div class="product__picture-btns">
+										<a class="product__picture-btn button button--rounded button--transparent" href="#">More Info</a>
+										<a class="product__picture-btn button button--rounded button--transparent" href="#">Live Demo</a>
+									</div>
+								</div>
+
+								<div class="product__content">
+
+									<div class="product__content-top">
+										<a class="product__content-title" href="#">E-commerce Shopping Cart</a>
+
+										<div class="product__info">
+											<a class="product__info-author" href="#">
+												<img class="avatar product__avatar" src="images/content/avatar-2.jpg" alt="user picture">
+												SomeDude
+											</a>
+											<a class="product__info-category" style="background-image: url(images/icons/wordpress.svg);"
+												href="#">
+												Plugin
+											</a>
+										</div>
+
+										<div class="product__content-text">
+											Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo
+											quam
+											aliquet congue.
+										</div>
+									</div>
+
+									<div class="product__content-bottom">
+										<div class="product__stats">
+											<div class="product__price">$10</div>
+
+											<div class="product__fav">
+												<button class="product__fav-btn button" type="button">
+													<span class="lnr lnr-heart"></span>
+												</button>
+												56
+											</div>
+
+											<div class="product__stars">stars</div>
+
+											<div class="product__sells">
+												<button class="product__sells-btn button" type="button">
+													<span class="lnr lnr-cart"></span>
+												</button>
+												68
+											</div>
+										</div>
+									</div>
+
+								</div>
+							</article>
+
+							<article class="product mix category-psd">
+								<div class="product__picture">
+									<img class="product__img" src="images/content/product-2.jpg" alt="product picture">
+
+									<div class="product__picture-btns">
+										<a class="product__picture-btn button button--rounded button--transparent" href="#">More Info</a>
+										<a class="product__picture-btn button button--rounded button--transparent" href="#">Live Demo</a>
+									</div>
+								</div>
+
+								<div class="product__content">
+
+									<div class="product__content-top">
+										<a class="product__content-title" href="#">Marketify Coffee Shop</a>
+
+										<div class="product__info">
+											<a class="product__info-author" href="#">
+												<img class="avatar product__avatar" src="images/content/avatar-2.jpg" alt="user picture">
+												AazzTech
+											</a>
+											<a class="product__info-category product__info-category--uppercase"
+												style="background-image: url(images/icons/psd.svg);" href="#">
+												psd
+											</a>
+										</div>
+
+										<div class="product__content-text">
+											Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo
+											quam
+											aliquet congue.
+										</div>
+									</div>
+
+									<div class="product__content-bottom">
+										<div class="product__stats">
+											<div class="product__price">$10</div>
+
+											<div class="product__fav">
+												<button class="product__fav-btn button" type="button">
+													<span class="lnr lnr-heart"></span>
+												</button>
+												56
+											</div>
+
+											<div class="product__sells">
+												<button class="product__sells-btn button" type="button">
+													<span class="lnr lnr-cart"></span>
+												</button>
+												68
+											</div>
+										</div>
+									</div>
+
+								</div>
+							</article>
+
+							<article class="product mix category-site">
+								<div class="product__picture">
+									<img class="product__img" src="images/content/product-4.jpg" alt="product picture">
+
+									<div class="product__picture-btns">
+										<a class="product__picture-btn button button--rounded button--transparent" href="#">More Info</a>
+										<a class="product__picture-btn button button--rounded button--transparent" href="#">Live Demo</a>
+									</div>
+								</div>
+
+								<div class="product__content">
+
+									<div class="product__content-top">
+										<a class="product__content-title" href="#">Bryson - Portfolio Template</a>
+
+										<div class="product__info">
+											<a class="product__info-author" href="#">
+												<img class="avatar product__avatar" src="images/content/avatar-2.jpg" alt="user picture">
+												AazzTech
+											</a>
+											<a class="product__info-category product__info-category--uppercase"
+												style="background-image: url(images/icons/html.svg);" href="#">
+												html
+											</a>
+										</div>
+
+										<div class="product__content-text">
+											Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo
+											quam
+											aliquet congue.
+										</div>
+									</div>
+
+									<div class="product__content-bottom">
+										<div class="product__stats">
+											<div class="product__price">$10</div>
+
+											<div class="product__fav">
+												<button class="product__fav-btn button" type="button">
+													<span class="lnr lnr-heart"></span>
+												</button>
+												56
+											</div>
+
+											<div class="product__stars">stars</div>
+
+											<div class="product__sells">
+												<button class="product__sells-btn button" type="button">
+													<span class="lnr lnr-cart"></span>
+												</button>
+												68
+											</div>
+										</div>
+									</div>
+
+								</div>
+							</article>
+
+						</div>
+
+						<div class="newest__button-wrapper">
+							<a class="newest__button button button--rounded button--blue" href="#">All New Products</a>
+						</div>
+
+					</div>
+				</div>
+			</section>
+
+			<section class="feed">
+				<div class="container">
+					<div class="feed__inner">
+
+						<div class="title-background">
+							<div class="title-background__text">Your Followers Feed</div>
+
+							<div class="feed__arrows-wrapper"></div>
+						</div>
+
+						<div class="feed__items">
+
+							<div class="slide">
+								<article class="product feed__product">
+									<div class="product__picture">
+										<img class="product__img" src="images/content/product-4.jpg" alt="product picture">
+
+										<div class="product__picture-btns">
+											<a class="product__picture-btn button button--rounded button--transparent" href="#">More Info</a>
+											<a class="product__picture-btn button button--rounded button--transparent" href="#">Live Demo</a>
+										</div>
+									</div>
+
+									<div class="product__content">
+
+										<div class="product__content-top">
+											<a class="product__content-title" href="#">Bryson - Portfolio Template</a>
+
+											<div class="product__info">
+												<a class="product__info-author" href="#">
+													<img class="avatar product__avatar" src="images/content/avatar-2.jpg" alt="user picture">
+													Theme-Valley
+												</a>
+												<a class="product__info-category product__info-category--uppercase"
+													style="background-image: url(images/icons/html.svg);" href="#">
+													html
+												</a>
+											</div>
+
+											<div class="product__content-text">
+												Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis,
+												leo
+												quam
+												aliquet congue.
+											</div>
+										</div>
+
+										<div class="product__content-bottom">
+											<div class="product__stats">
+												<div class="product__price">$10</div>
+
+												<div class="product__fav">
+													<button class="product__fav-btn button" type="button">
+														<span class="lnr lnr-heart"></span>
+													</button>
+													56
+												</div>
+
+												<div class="product__stars">stars</div>
+
+												<div class="product__sells">
+													<button class="product__sells-btn button" type="button">
+														<span class="lnr lnr-cart"></span>
+													</button>
+													68
+												</div>
+											</div>
+										</div>
+
+									</div>
+								</article>
+							</div>
+
+							<div class="slide">
+								<article class="product feed__product">
+									<div class="product__picture">
+										<img class="product__img" src="images/content/product-2.jpg" alt="product picture">
+
+										<div class="product__picture-btns">
+											<a class="product__picture-btn button button--rounded button--transparent" href="#">More Info</a>
+											<a class="product__picture-btn button button--rounded button--transparent" href="#">Live Demo</a>
+										</div>
+									</div>
+
+									<div class="product__content">
+
+										<div class="product__content-top">
+											<a class="product__content-title" href="#">Bryson - Portfolio Template</a>
+
+											<div class="product__info">
+												<a class="product__info-author" href="#">
+													<img class="avatar product__avatar" src="images/content/avatar-2.jpg" alt="user picture">
+													EcoTheme
+												</a>
+												<a class="product__info-category product__info-category--uppercase"
+													style="background-image: url(images/icons/html.svg);" href="#">
+													html
+												</a>
+											</div>
+
+											<div class="product__content-text">
+												Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis,
+												leo
+												quam
+												aliquet congue.
+											</div>
+										</div>
+
+										<div class="product__content-bottom">
+											<div class="product__stats">
+												<div class="product__price">$10</div>
+
+												<div class="product__fav">
+													<button class="product__fav-btn button" type="button">
+														<span class="lnr lnr-heart"></span>
+													</button>
+													56
+												</div>
+
+												<div class="product__stars">stars</div>
+
+												<div class="product__sells">
+													<button class="product__sells-btn button" type="button">
+														<span class="lnr lnr-cart"></span>
+													</button>
+													68
+												</div>
+											</div>
+										</div>
+
+									</div>
+								</article>
+							</div>
+
+							<div class="slide">
+								<article class="product feed__product">
+									<div class="product__picture">
+										<img class="product__img" src="images/content/product-3.jpg" alt="product picture">
+
+										<div class="product__picture-btns">
+											<a class="product__picture-btn button button--rounded button--transparent" href="#">More Info</a>
+											<a class="product__picture-btn button button--rounded button--transparent" href="#">Live Demo</a>
+										</div>
+									</div>
+
+									<div class="product__content">
+
+										<div class="product__content-top">
+											<a class="product__content-title" href="#">Bryson - Portfolio Template</a>
+
+											<div class="product__info">
+												<a class="product__info-author" href="#">
+													<img class="avatar product__avatar" src="images/content/avatar-2.jpg" alt="user picture">
+													Artcorner
+												</a>
+												<a class="product__info-category product__info-category--uppercase"
+													style="background-image: url(images/icons/html.svg);" href="#">
+													html
+												</a>
+											</div>
+
+											<div class="product__content-text">
+												Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis,
+												leo
+												quam
+												aliquet congue.
+											</div>
+										</div>
+
+										<div class="product__content-bottom">
+											<div class="product__stats">
+												<div class="product__price">$10</div>
+
+												<div class="product__fav">
+													<button class="product__fav-btn button" type="button">
+														<span class="lnr lnr-heart"></span>
+													</button>
+													56
+												</div>
+
+												<div class="product__stars">stars</div>
+
+												<div class="product__sells">
+													<button class="product__sells-btn button" type="button">
+														<span class="lnr lnr-cart"></span>
+													</button>
+													68
+												</div>
+											</div>
+										</div>
+
+									</div>
+								</article>
+							</div>
+
+							<div class="slide">
+								<article class="product feed__product">
+									<div class="product__picture">
+										<img class="product__img" src="images/content/product-3.jpg" alt="product picture">
+
+										<div class="product__picture-btns">
+											<a class="product__picture-btn button button--rounded button--transparent" href="#">More Info</a>
+											<a class="product__picture-btn button button--rounded button--transparent" href="#">Live Demo</a>
+										</div>
+									</div>
+
+									<div class="product__content">
+
+										<div class="product__content-top">
+											<a class="product__content-title" href="#">Bryson - Portfolio Template</a>
+
+											<div class="product__info">
+												<a class="product__info-author" href="#">
+													<img class="avatar product__avatar" src="images/content/avatar-2.jpg" alt="user picture">
+													AazzTech
+												</a>
+												<a class="product__info-category product__info-category--uppercase"
+													style="background-image: url(images/icons/html.svg);" href="#">
+													html
+												</a>
+											</div>
+
+											<div class="product__content-text">
+												Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis,
+												leo
+												quam
+												aliquet congue.
+											</div>
+										</div>
+
+										<div class="product__content-bottom">
+											<div class="product__stats">
+												<div class="product__price">$10</div>
+
+												<div class="product__fav">
+													<button class="product__fav-btn button" type="button">
+														<span class="lnr lnr-heart"></span>
+													</button>
+													56
+												</div>
+
+												<div class="product__stars">stars</div>
+
+												<div class="product__sells">
+													<button class="product__sells-btn button" type="button">
+														<span class="lnr lnr-cart"></span>
+													</button>
+													68
+												</div>
+											</div>
+										</div>
+
+									</div>
+								</article>
+							</div>
+
+							<div class="slide">
+								<article class="product feed__product">
+									<div class="product__picture">
+										<img class="product__img" src="images/content/product-4.jpg" alt="product picture">
+
+										<div class="product__picture-btns">
+											<a class="product__picture-btn button button--rounded button--transparent" href="#">More Info</a>
+											<a class="product__picture-btn button button--rounded button--transparent" href="#">Live Demo</a>
+										</div>
+									</div>
+
+									<div class="product__content">
+
+										<div class="product__content-top">
+											<a class="product__content-title" href="#">Bryson - Portfolio Template</a>
+
+											<div class="product__info">
+												<a class="product__info-author" href="#">
+													<img class="avatar product__avatar" src="images/content/avatar-2.jpg" alt="user picture">
+													AazzTech
+												</a>
+												<a class="product__info-category product__info-category--uppercase"
+													style="background-image: url(images/icons/html.svg);" href="#">
+													html
+												</a>
+											</div>
+
+											<div class="product__content-text">
+												Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis,
+												leo
+												quam
+												aliquet congue.
+											</div>
+										</div>
+
+										<div class="product__content-bottom">
+											<div class="product__stats">
+												<div class="product__price">$10</div>
+
+												<div class="product__fav">
+													<button class="product__fav-btn button" type="button">
+														<span class="lnr lnr-heart"></span>
+													</button>
+													56
+												</div>
+
+												<div class="product__stars">stars</div>
+
+												<div class="product__sells">
+													<button class="product__sells-btn button" type="button">
+														<span class="lnr lnr-cart"></span>
+													</button>
+													68
+												</div>
+											</div>
+										</div>
+
+									</div>
+								</article>
+							</div>
+
+							<div class="slide">
+								<article class="product feed__product">
+									<div class="product__picture">
+										<img class="product__img" src="images/content/product-1.jpg" alt="product picture">
+
+										<div class="product__picture-btns">
+											<a class="product__picture-btn button button--rounded button--transparent" href="#">More Info</a>
+											<a class="product__picture-btn button button--rounded button--transparent" href="#">Live Demo</a>
+										</div>
+									</div>
+
+									<div class="product__content">
+
+										<div class="product__content-top">
+											<a class="product__content-title" href="#">Bryson - Portfolio Template</a>
+
+											<div class="product__info">
+												<a class="product__info-author" href="#">
+													<img class="avatar product__avatar" src="images/content/avatar-2.jpg" alt="user picture">
+													AazzTech
+												</a>
+												<a class="product__info-category product__info-category--uppercase"
+													style="background-image: url(images/icons/html.svg);" href="#">
+													html
+												</a>
+											</div>
+
+											<div class="product__content-text">
+												Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis,
+												leo
+												quam
+												aliquet congue.
+											</div>
+										</div>
+
+										<div class="product__content-bottom">
+											<div class="product__stats">
+												<div class="product__price">$10</div>
+
+												<div class="product__fav">
+													<button class="product__fav-btn button" type="button">
+														<span class="lnr lnr-heart"></span>
+													</button>
+													56
+												</div>
+
+												<div class="product__stars">stars</div>
+
+												<div class="product__sells">
+													<button class="product__sells-btn button" type="button">
+														<span class="lnr lnr-cart"></span>
+													</button>
+													68
+												</div>
+											</div>
+										</div>
+
+									</div>
+								</article>
+							</div>
+
+						</div>
+
+					</div>
+				</div>
+			</section>
+
+			<section class="statistics">
+				<div class="container">
+					<div class="statistics__inner">
+
+						<div class="statistics__item">
+							<div class="statistics__icon lnr lnr-briefcase"></div>
+							<div class="statistics__number">38,436</div>
+							<div class="statistics__title">items for sale</div>
+						</div>
+
+						<div class="statistics__item statistics__item--blue">
+							<div class="statistics__icon lnr lnr-cloud-download"></div>
+							<div class="statistics__number">3,736</div>
+							<div class="statistics__title">total sales</div>
+						</div>
+
+						<div class="statistics__item statistics__item--green">
+							<div class="statistics__icon lnr lnr-smile"></div>
+							<div class="statistics__number">2,736</div>
+							<div class="statistics__title">happy customers</div>
+						</div>
+
+						<div class="statistics__item statistics__item--red">
+							<div class="statistics__icon lnr lnr-users"></div>
+							<div class="statistics__number">25,736</div>
+							<div class="statistics__title">members</div>
+						</div>
+
+					</div>
+				</div>
+			</section>
+
+			<section class="why-us">
+				<div class="container">
+					<div class="why-us__inner">
+
+						<div class="section-heading">
+							<div class="section-heading__title">
+								Why Choose <span>MartPlace</span>
+							</div>
+							<div class="section-heading__text">
+								Laborum dolo rumes fugats untras. Etharums ser quidem rerum facilis dolores nemis omnis fugats. Lid est
+								laborum dolo rumes fugats untras.
+							</div>
+						</div>
+
+						<ol class="why-us__items">
+
+							<li class="feature why-us__item">
+								<div class="feature__icon lnr lnr-license"></div>
+								<div class="feature__title why-us__title">One Time Payment</div>
+								<div class="feature__text why-us__text">
+									Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
+									the mattis, leo quam aliquet diam
+									congue is laoreet elit metus.
+								</div>
+							</li>
+
+							<li class="feature why-us__item">
+								<div class="feature__icon lnr lnr-magic-wand"></div>
+								<div class="feature__title why-us__title">Quality Products</div>
+								<div class="feature__text">
+									Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
+									the mattis, leo quam aliquet diam
+									congue is laoreet elit metus.
+								</div>
+							</li>
+
+							<li class="feature why-us__item">
+								<div class="feature__icon lnr lnr-lock"></div>
+								<div class="feature__title why-us__title">100% Secure Payment</div>
+								<div class="feature__text">
+									Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
+									the mattis, leo quam aliquet diam
+									congue is laoreet elit metus.
+								</div>
+							</li>
+
+							<li class="feature why-us__item">
+								<div class="feature__icon lnr lnr-chart-bars"></div>
+								<div class="feature__title why-us__title">Well Organized Code</div>
+								<div class="feature__text">
+									Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
+									the mattis, leo quam aliquet diam
+									congue is laoreet elit metus.
+								</div>
+							</li>
+
+							<li class="feature why-us__item">
+								<div class="feature__icon lnr lnr-leaf"></div>
+								<div class="feature__title why-us__title">Life Time Free Update</div>
+								<div class="feature__text">
+									Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
+									the mattis, leo quam aliquet diam
+									congue is laoreet elit metus.
+								</div>
+							</li>
+
+							<li class="feature why-us__item">
+								<div class="feature__icon lnr lnr-phone"></div>
+								<div class="feature__title why-us__title">Fast and Friendly Support</div>
+								<div class="feature__text">
+									Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
+									the mattis, leo quam aliquet diam
+									congue is laoreet elit metus.
+								</div>
+							</li>
+
+						</ol>
+					</div>
+				</div>
+			</section>
+
+			<section class="start">
+
+				<div class="start__item start__item--blue" style="background-image: url(images/start-blue.jpg)">
+					<div class="start__content">
+						<div class="start__icon" style="background-image:url(images/monitor.svg)">
+							become a seller
+						</div>
+						<div class="start__title">Sell Your Products</div>
+						<div class="start__text">
+							Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
+							the mattis, leo quam aliquet diamcongue is laoreet elit metus.
+						</div>
+						<a class="start__button button button--rounded button--white" href="#">Become an Author</a>
+					</div>
+				</div>
+
+				<div class="start__item start__item--purple" style="background-image: url(images/start-purple.jpg);">
+					<div class="start__content">
+						<div class="start__icon" style="background-image:url(images/buy.svg)">
+							become a seller
+						</div>
+						<div class="start__title">Start Shopping Today</div>
+						<div class="start__text">
+							Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
+							the mattis, leo quam aliquet diamcongue is laoreet elit metus.
+						</div>
+						<a class="start__button button button--rounded button--white" href="#">Start Shopping</a>
+					</div>
+				</div>
+
+			</section>
+
+			<section class="clients">
+				<div class="container">
+					<div class="clients__inner">
+
+						<div class="section-heading clients__heading">
+							<div class="section-heading__title">
+								Our Clients <span>Feedback</span>
+							</div>
+							<div class="section-heading__text">
+								Laborum dolo rumes fugats untras. Etharums ser quidem rerum facilis dolores nemis omnis fugats. Lid est
+								laborum dolo rumes fugats untras.
+							</div>
+						</div>
+
+						<div class="clients__items">
+							<div class="clients__item">
+								<a class="clients__top">
+									<img class="clients__avatar avatar" src="images/content/avatar.jpg" alt="client photo">
+									<div class="clients__info">
+										<span class="clients__name" href="#">Taofiqul Hakim</span>
+										<span class="clients__job">Product Designer</span>
+									</div>
+								</a>
+
+								<div class="clients__quote">
+									Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam
+									aliquet diam congue is the laoreet elit metus. Nunc placerat mi is id nisi interdum is mollis.
+									Praesent
+									the pharetra, justo ut scelerisque.
+								</div>
+							</div>
+
+							<div class="clients__item">
+								<a class="clients__top">
+									<img class="clients__avatar avatar" src="images/content/avatar-2.jpg" alt="client photo">
+									<div class="clients__info">
+										<span class="clients__name" href="#">Saifullah Al Murtafee</span>
+										<span class="clients__job">Product Designer</span>
+									</div>
+								</a>
+
+								<div class="clients__quote">
+									Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam
+									aliquet diam congue is the laoreet elit metus. Nunc placerat mi is id nisi interdum is mollis.
+									Praesent
+									the pharetra, justo ut scelerisque.
+								</div>
+							</div>
+
+							<div class="clients__item">
+								<a class="clients__top">
+									<img class="clients__avatar avatar" src="images/content/avatar.jpg" alt="client photo">
+									<div class="clients__info">
+										<span class="clients__name" href="#">Jake Pine</span>
+										<span class="clients__job">Product Designer</span>
+									</div>
+								</a>
+
+								<div class="clients__quote">
+									Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam
+									aliquet diam congue is the laoreet elit metus. Nunc placerat mi is id nisi interdum is mollis.
+									Praesent
+									the pharetra, justo ut scelerisque.
+								</div>
+							</div>
+
+							<div class="clients__item">
+								<a class="clients__top">
+									<img class="clients__avatar avatar" src="images/content/avatar-2.jpg" alt="client photo">
+									<div class="clients__info">
+										<span class="clients__name" href="#">Jacob Mufee</span>
+										<span class="clients__job">Product Designer</span>
+									</div>
+								</a>
+
+								<div class="clients__quote">
+									Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam
+									aliquet diam congue is the laoreet elit metus. Nunc placerat mi is id nisi interdum is mollis.
+									Praesent
+									the pharetra, justo ut scelerisque.
+								</div>
+							</div>
+						</div>
+
+						<a class="clients__button button button--blue button--rounded" href="#">View All Reviews</a>
+
+					</div>
+				</div>
+			</section>
+
+			<section class="blog">
+				<div class="container">
+					<div class="blog__inner">
+
+						<div class="section-heading">
+							<div class="section-heading__title">
+								Latest <span>News</span>
+							</div>
+							<div class="section-heading__text">
+								Laborum dolo rumes fugats untras. Etharums ser quidem rerum facilis dolores nemis omnis fugats. Lid est
+								laborum dolo rumes fugats untras.
+							</div>
+						</div>
+
+						<div class="blog__items">
+
+							<article class="blog__item">
+								<a class="blog__item-link" href="#">
+									<img class="blog__item-img" src="images/content/blog.jpg" alt="blog picture">
+								</a>
+								<div class="blog__item-content">
+									<div class="blog__item-top">
+										<a class="blog__item-title" href="#">Web Design Trends in 2017</a>
+										<div class="blog__item-text">
+											Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
+											the mattis, leo quam aliquet congue.
+										</div>
+									</div>
+
+									<div class="blog__item-bottom">
+										<a href="" class="blog__date-link">
+											<time class="blog__date-text" datetime="15-03-2017">15 Mar 2017</time>
+										</a>
+
+										<div class="blog__item-statistics">
+											<a class="blog__item-comments" href="#">45</a>
+											<span class="blog__item-views">345</span>
+										</div>
+									</div>
+								</div>
+							</article>
+
+							<article class="blog__item">
+								<a class="blog__item-link" href="#">
+									<img class="blog__item-img" src="images/content/blog-1.jpg" alt="blog picture">
+								</a>
+								<div class="blog__item-content">
+									<div class="blog__item-top">
+										<a class="blog__item-title" href="#">The best advices to start your own project</a>
+										<div class="blog__item-text">
+											Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
+										</div>
+									</div>
+
+									<div class="blog__item-bottom">
+										<a href="" class="blog__date-link">
+											<time class="blog__date-text" datetime="15-03-2017">15 Mar 2017</time>
+										</a>
+
+										<div class="blog__item-statistics">
+											<a class="blog__item-comments" href="#">45</a>
+											<span class="blog__item-views">345</span>
+										</div>
+									</div>
+								</div>
+							</article>
+
+							<article class="blog__item">
+								<a class="blog__item-link" href="#">
+									<img class="blog__item-img" src="images/content/blog-2.jpg" alt="blog picture">
+								</a>
+								<div class="blog__item-content">
+									<div class="blog__item-top">
+										<a class="blog__item-title" href="#">Best Related Post Plugin</a>
+										<div class="blog__item-text">
+											Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
+											the mattis, leo quam aliquet congue.
+										</div>
+									</div>
+
+									<div class="blog__item-bottom">
+										<a href="" class="blog__date-link">
+											<time class="blog__date-text" datetime="15-03-2017">15 Mar 2017</time>
+										</a>
+
+										<div class="blog__item-statistics">
+											<a class="blog__item-comments" href="#">45</a>
+											<span class="blog__item-views">345</span>
+										</div>
+									</div>
+								</div>
+							</article>
+
+						</div>
+					</div>
+				</div>
+			</section>
+	
+			<section class="service">
+				<div class="service__item">
+					<div class="service__title" style="background-image: url(images/guarantee.png);">
+						30 Days Money Back <span>Guarantee</span>
+					</div>
+				</div>
+
+				<div class="service__item service__item--right">
+					<div class="service__title service__title--right" style="background-image: url(images/support.png);">
+						Fast and Friendly <span>Support</span>
+					</div>
+				</div>
+			</section>
+
+			<section class="join-us">
+
+  <div class="join-us__content">
+    <div class="join-us__title">Ready to Join Our Marketplace!</div>
+    <div class="join-us__suptitle">
+      Over 25,000 designers and developers trust the MartPlace.
+    </div>
+
+    <a class="join-us__button button button--rounded button--white" type="button" href="#">Join Us Today</a>
+  </div>
+
+</section>
+		</main>
+
+		<footer class="footer">
+  <div class="container">
+    <div class="footer__top">
+      <div class="footer__info">
+        <a class="footer__logo" href="#">
+          <img class="logo__img" src="images/logo-footer.png" alt="logo">
+        </a>
+
+        <div class="footer__info-text">
+          Nunc placerat mi id nisi interdum they mollis. Praesent pharetra, justo ut scel erisque the mattis, leo
+          quam.
+        </div>
+
+        <address class="footer__address">
+          <ul class="footer__contacts">
+            <li class="footer__contact">
+              <a class="footer__contact-link lnr lnr-phone-handset" href="tel:67898752235">
+                Phone: +6789-875-2235
+              </a>
+            </li>
+            <li class="footer__contact">
+              <a class="footer__contact-link lnr lnr-envelope" href="mailto:support@aazztech.com">
+                support@aazztech.com
+              </a>
+            </li>
+            <li class="footer__contact">
+              <a class="footer__contact-link lnr lnr-map-marker" target="_blank" href="https://goo.gl/maps/8JwvLDkWaAqTCvuE6">
+                202 New Hampshire Avenue Northwest #100, New York-2573
+              </a>
+            </li>
+          </ul>
+
+        </address>
+      </div>
+
+      <div class="footer__links">
+        <div class="footer__title">Our Company</div>
+
+        <ul class="footer__links-items">
+          <li class="footer__link-item">
+            <a class="footer__link" href="#">About Us</a>
+          </li>
+          <li class="footer__link-item">
+            <a class="footer__link" href="#">How It Work</a>
+          </li>
+          <li class="footer__link-item">
+            <a class="footer__link" href="#">Affiliates</a>
+          </li>
+          <li class="footer__link-item">
+            <a class="footer__link" href="#">Testimonials</a>
+          </li>
+          <li class="footer__link-item">
+            <a class="footer__link" href="#">Contact Us</a>
+          </li>
+          <li class="footer__link-item">
+            <a class="footer__link" href="#">Copyright Notice</a>
+          </li>
+          <li class="footer__link-item">
+            <a class="footer__link" href="#">Blog</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="footer__links">
+        <div class="footer__title">Help Support</div>
+
+        <ul class="footer__links-items">
+          <li class="footer__link-item">
+            <a class="footer__link" href="#">Support Forum</a>
+          </li>
+          <li class="footer__link-item">
+            <a class="footer__link" href="#">Terms & Conditions</a>
+          </li>
+          <li class="footer__link-item">
+            <a class="footer__link" href="#">Support Policy</a>
+          </li>
+          <li class="footer__link-item">
+            <a class="footer__link" href="#">Refund Policy</a>
+          </li>
+          <li class="footer__link-item">
+            <a class="footer__link" href="#">FAQs</a>
+          </li>
+          <li class="footer__link-item">
+            <a class="footer__link" href="#">Buyers Faq</a>
+          </li>
+          <li class="footer__link-item">
+            <a class="footer__link" href="#">Sellers Faq</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="footer__newsletter">
+        <div class="footer__title">Newsletter</div>
+
+        <div class="footer__newsletter-text">
+          Subscribe to get the latest news, update and offer information. Don't worry, we won't send spam!
+        </div>
+
+        <form class="footer__subscribe-form">
+          <input class="footer__subscribe-input input input--rounded" type="email" placeholder="Enter email">
+          <button class="footer__subscribe-btn button button--blue button--rounded" type="submit">
+            Submit
+          </button>
+        </form>
+
+        <div class="footer__social">
+          <a class="footer__social-link footer__social-link--facebook" href="#">facebook</a>
+          <a class="footer__social-link footer__social-link--twitter" href="#">twitter</a>
+          <a class="footer__social-link footer__social-link--google" href="#">google+</a>
+          <a class="footer__social-link" href="#">pinterest</a>
+          <a class="footer__social-link footer__social-link--linkedin" href="#">linked-in</a>
+          <a class="footer__social-link footer__social-link--something" href="#">something</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer__bottom">
+    ©2017
+    <a class="footer__bottom-link" href="#">MartPlace</a>
+    . All rights reserved. Created by
+    <a class="footer__bottom-link" href="#">AazzTech</a>
+  </div>
+</footer>
+
+	</div>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="js/libs.min.js"></script>
+	<script src="js/main.js"></script>
+</body>
+
+</html>
