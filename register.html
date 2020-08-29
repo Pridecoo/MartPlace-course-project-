@@ -629,367 +629,83 @@
         <div class="container">
           <div class="page-heading__inner">
 
-            <div class="page-heading__content">
+            <div class="breadcrumbs">
+              <ul class="breadcrumbs__list">
+                <li class="breadcrumbs__item">
+                  <a class="breadcrumbs__link" href="index.html">Home</a>
+                </li>
+                <li class="breadcrumbs__item">
+                  <span class="breadcrumbs__link">Login</span>
+                </li>
+              </ul>
+            </div>
 
-              <div class="page-heading__title">
-                <span>4,572</span> wordpress themes, made with love
-              </div>
-
-              <form class="page-heading__search">
-                <input class="page-heading__input" type="search" placeholder="Search your products">
-                <button class="page-heading__button button button--blue button--rounded">Search</button>
-              </form>
-
-              <div class="breadcrumbs">
-
-                <ul class="breadcrumbs__list">
-                  <li class="breadcrumbs__item">
-                    <a class="breadcrumbs__link" href="#">Home</a>
-                  </li>
-                  <li class="breadcrumbs__item">
-                    <span class="breadcrumbs__link">Category Page Grid</span>
-                  </li>
-                </ul>
-
-              </div>
+            <div class="page-heading__title">
+              <span>Login</span>
             </div>
 
           </div>
         </div>
       </section>
-      <section class="products-heading">
+
+      <section class="register-login">
         <div class="container">
-          <div class="products-heading__inner">
-            <div class="products-heading__links">
-              <button class="products-heading__link" type="button">New Products</button>
-              <button class="products-heading__link" type="button">Popular Products</a>
+          <div class="register-login__inner">
+
+            <div class="register-login__heading">
+              <div class="register-login__title">Create Your Account</div>
+              <div class="register-login__suptitle">
+                Please fill the following fields with appropriate information
+                to register a new MartPlace account.
+              </div>
             </div>
 
-            <div class="products-heading__sort">
-              <select name="Price" id="" class="products-heading__price">
-                <option value="from-low" class="products-heading__price-option">
-                  Low to High
-                </option>
-                <option value="from-high" class="products-heading__price-option">
-                  High to Low
-                </option>
-              </select>
+            <form class="register-login__form" action="">
 
-              <select name="max-items" id="" class="products-heading__max-items">
-                <option value="12" class="products-heading__max-option">
-                  12 Items Per Page
-                </option>
-                <option value="24" class="products-heading__max-option">
-                  24 Items Per Page
-                </option>
-              </select>
-            </div>
+              <label for="">
+                <div class="register-login__input-title">Your Name</div>
+                <input class="register-login__input" type="text" placeholder="Enter your name..." required>
+              </label>
 
-            <div class="products-heading__view-buttons">
-              <button class="products-heading__view" type="button">grid</button>
-              <button class="products-heading__view" type="button">list</button>
-            </div>
+              <label for="">
+                <div class="register-login__input-title">Email Address</div>
+                <input class="register-login__input" type="text" placeholder="Enter your email address..." required>
+              </label>
+
+              <label for="">
+                <div class="register-login__input-title">Username</div>
+                <input class="register-login__input" type="text" placeholder="Enter your username..." required>
+              </label>
+
+              <label for="">
+                <div class="register-login__input-title">Password</div>
+                <input class="register-login__input" type="text" placeholder="Enter your password..." required>
+              </label>
+
+              <label for="">
+                <div class="register-login__input-title">Confirm Password</div>
+                <input class="register-login__input" type="text" placeholder="Enter your password..." required>
+              </label>
+
+
+              <button class="register-login__button button button--blue button--rounded" type="submit">
+                Register Now
+              </button>
+
+              <div class="register-login__links">
+
+                <div class="register-login__links-content">
+                  Already have an account? 
+                  <a class="register-login__link" href="">Login</a>
+                </div>
+
+              </div>
+            </form>
+
           </div>
         </div>
       </section>
 
-      <section class="product-page">
-        <div class="container">
-          <aside class="product-page__aside">
-            <div class="product-page__filters">
-              <div class="product-page__filters-title">Categories</div>
-              <ul class="product-page__filters-list">
-                <li class="product-page__filter-item">
-                  <a href="#" class="product-page__filter-link">Wordpress</a>
-                  <span>35</span>
-                </li>
-                <li class="product-page__filter-item">
-                  <a href="#" class="product-page__filter-link">Landing Page</a>
-                  <span>45</span>
-                </li>
-                <li class="product-page__filter-item">
-                  <a href="#" class="product-page__filter-link">Psd Template</a>
-                  <span>13</span>
-                </li>
-                <li class="product-page__filter-item">
-                  <a href="#" class="product-page__filter-link">Plugins</a>
-                  <span>08</span>
-                </li>
-                <li class="product-page__filter-item">
-                  <a href="#" class="product-page__filter-link">HTML Template</a>
-                  <span>34</span>
-                </li>
-                <li class="product-page__filter-item">
-                  <a href="#" class="product-page__filter-link">Components</a>
-                  <span>78</span>
-                </li>
-                <li class="product-page__filter-item">
-                  <a href="#" class="product-page__filter-link">Joomla Template</a>
-                  <span>26</span>
-                </li>
-              </ul>
-            </div>
-
-            <div class="product-page__filters">
-              <div class="product-page__filters-title">Filter Products</div>
-              <ul class="product-page__filters-list">
-                <li class="product-page__filter-item">
-                  <a href="#" class="product-page__filter-link">Trending Products</a>
-                </li>
-                <li class="product-page__filter-item">
-                  <a href="#" class="product-page__filter-link">Popular Products</a>
-                </li>
-                <li class="product-page__filter-item">
-                  <a href="#" class="product-page__filter-link">New Products</a>
-                </li>
-                <li class="product-page__filter-item">
-                  <a href="#" class="product-page__filter-link">Best Seller</a>
-                </li>
-                <li class="product-page__filter-item">
-                  <a href="#" class="product-page__filter-link">Best Rating</a>
-                </li>
-                <li class="product-page__filter-item">
-                  <a href="#" class="product-page__filter-link">Low Price</a>
-                </li>
-                <li class="product-page__filter-item">
-                  <a href="#" class="product-page__filter-link">High Price</a>
-                </li>
-              </ul>
-            </div>
-
-            <div class="product-page__price-filter">
-              <div class="product-page__filters-title">Pricing Range</div>
-            </div>
-          </aside>
-          <div class="product-page__main">
-            <div class="product-page__items">
-
-              <article class="product mix category-plugins">
-                <div class="product__picture">
-                  <img class="product__img" src="images/content/product-1.jpg" alt="product picture">
-
-                  <div class="product__picture-btns">
-                    <a class="product__picture-btn button button--rounded button--transparent" href="#">More Info</a>
-                    <a class="product__picture-btn button button--rounded button--transparent" href="#">Live Demo</a>
-                  </div>
-                </div>
-
-                <div class="product__content">
-
-                  <div class="product__content-top">
-                    <a class="product__content-title" href="#">E-commerce Shopping Cart</a>
-
-                    <div class="product__info">
-                      <a class="product__info-author" href="#">
-                        <img class="avatar product__avatar" src="images/content/avatar-2.jpg" alt="user picture">
-                        Theme-Valley
-                      </a>
-                      <a class="product__info-category" style="background-image: url(images/icons/wordpress.svg);"
-                        href="#">
-                        Plugin
-                      </a>
-                    </div>
-
-                    <div class="product__content-text">
-                      Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo
-                      quam
-                      aliquet congue.
-                    </div>
-                  </div>
-
-                  <div class="product__content-bottom">
-                    <div class="product__stats">
-                      <div class="product__price">$10</div>
-
-                      <div class="product__fav">
-                        <button class="product__fav-btn button" type="button">
-                          <span class="lnr lnr-heart"></span>
-                        </button>
-                        56
-                      </div>
-
-                      <div class="product__stars">stars</div>
-
-                      <div class="product__sells">
-                        <button class="product__sells-btn button" type="button">
-                          <span class="lnr lnr-cart"></span>
-                        </button>
-                        68
-                      </div>
-                    </div>
-                  </div>
-
-                </div>
-              </article>
-
-              <article class="product mix category-plugins">
-                <div class="product__picture">
-                  <img class="product__img" src="images/content/product-1.jpg" alt="product picture">
-
-                  <div class="product__picture-btns">
-                    <a class="product__picture-btn button button--rounded button--transparent" href="#">More Info</a>
-                    <a class="product__picture-btn button button--rounded button--transparent" href="#">Live Demo</a>
-                  </div>
-                </div>
-
-                <div class="product__content">
-
-                  <div class="product__content-top">
-                    <a class="product__content-title" href="#">E-commerce Shopping Cart</a>
-
-                    <div class="product__info">
-                      <a class="product__info-author" href="#">
-                        <img class="avatar product__avatar" src="images/content/avatar-2.jpg" alt="user picture">
-                        Theme-Valley
-                      </a>
-                      <a class="product__info-category" style="background-image: url(images/icons/wordpress.svg);"
-                        href="#">
-                        Plugin
-                      </a>
-                    </div>
-
-                    <div class="product__content-text">
-                      Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo
-                      quam
-                      aliquet congue.
-                    </div>
-                  </div>
-
-                  <div class="product__content-bottom">
-                    <div class="product__stats">
-                      <div class="product__price">$10</div>
-
-                      <div class="product__fav">
-                        <button class="product__fav-btn button" type="button">
-                          <span class="lnr lnr-heart"></span>
-                        </button>
-                        56
-                      </div>
-
-                      <div class="product__stars">stars</div>
-
-                      <div class="product__sells">
-                        <button class="product__sells-btn button" type="button">
-                          <span class="lnr lnr-cart"></span>
-                        </button>
-                        68
-                      </div>
-                    </div>
-                  </div>
-
-                </div>
-              </article>
-
-              <article class="product mix category-plugins">
-                <div class="product__picture">
-                  <img class="product__img" src="images/content/product-1.jpg" alt="product picture">
-
-                  <div class="product__picture-btns">
-                    <a class="product__picture-btn button button--rounded button--transparent" href="#">More Info</a>
-                    <a class="product__picture-btn button button--rounded button--transparent" href="#">Live Demo</a>
-                  </div>
-                </div>
-
-                <div class="product__content">
-
-                  <div class="product__content-top">
-                    <a class="product__content-title" href="#">E-commerce Shopping Cart</a>
-
-                    <div class="product__info">
-                      <a class="product__info-author" href="#">
-                        <img class="avatar product__avatar" src="images/content/avatar-2.jpg" alt="user picture">
-                        Theme-Valley
-                      </a>
-                      <a class="product__info-category" style="background-image: url(images/icons/wordpress.svg);"
-                        href="#">
-                        Plugin
-                      </a>
-                    </div>
-
-                    <div class="product__content-text">
-                      Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo
-                      quam
-                      aliquet congue.
-                    </div>
-                  </div>
-
-                  <div class="product__content-bottom">
-                    <div class="product__stats">
-                      <div class="product__price">$10</div>
-
-                      <div class="product__fav">
-                        <button class="product__fav-btn button" type="button">
-                          <span class="lnr lnr-heart"></span>
-                        </button>
-                        56
-                      </div>
-
-                      <div class="product__stars">stars</div>
-
-                      <div class="product__sells">
-                        <button class="product__sells-btn button" type="button">
-                          <span class="lnr lnr-cart"></span>
-                        </button>
-                        68
-                      </div>
-                    </div>
-                  </div>
-
-                </div>
-              </article>
-
-            </div>
-
-            <div class="pagination">
-              <ul class="pagination__list">
-                <li class="pagination__item">
-                  <a href="#" class="pagination__link lnr lnr-arrow-left">previous page</a>
-                </li>
-                <li class="pagination__item">
-                  <a href="#" class="pagination__link">1</a>
-                </li>
-                <li class="pagination__item">
-                  <a href="#" class="pagination__link">2</a>
-                </li>
-                <li class="pagination__item">
-                  <a href="#" class="pagination__link">3</a>
-                </li>
-                <li class="pagination__item">
-                  <a href="#" class="pagination__link">4</a>
-                </li>
-                <li class="pagination__item">
-                  <a href="#" class="pagination__link">5</a>
-                </li>
-                <li class="pagination__item">
-                  <a href="#" class="pagination__link">6</a>
-                </li>
-                <li class="pagination__item">
-                  <a href="#" class="pagination__link">7</a>
-                </li>
-                <li class="pagination__item">
-                  <a href="#" class="pagination__link">8</a>
-                </li>
-                <li class="pagination__item">
-                  <a href="#" class="pagination__link lnr lnr-arrow-right">next page</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="join-us">
-
-  <div class="join-us__content">
-    <div class="join-us__title">Ready to Join Our Marketplace!</div>
-    <div class="join-us__suptitle">
-      Over 25,000 designers and developers trust the MartPlace.
-    </div>
-
-    <a class="join-us__button button button--rounded button--white" type="button" href="#">Join Us Today</a>
-  </div>
-
-</section>
     </main>
 
     <footer class="footer">
@@ -1118,6 +834,10 @@
 </footer>
 
   </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="js/libs.min.js"></script>
+  <script src="js/main.js"></script>
 </body>
 
 </html>
