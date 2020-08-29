@@ -1,7 +1,11 @@
 .page-heading {
   position: relative;
-  padding: 83px 0 14px;
+  padding: 55px 0;
   background-color: #000;
+  
+  &--search {
+    padding: 83px 0 14px;
+  }
 
   &:before {
     content: "";
@@ -23,9 +27,12 @@
   }
 
   &__title {
-    margin-bottom: 32px;
     font-size: 26px;
     color: #fff;
+    
+    &--search {
+      margin-bottom: 32px;
+    }
 
     span {
       font-weight: 500;

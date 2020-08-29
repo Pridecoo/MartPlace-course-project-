@@ -14,6 +14,95 @@
 @import "components/breadcrumbs";
 
 
+// login page
+
+.register-login {
+  padding: 70px 0 120px;
+  background-color: #eff1f5;
+
+  &__inner {
+    max-width: 555px;
+    margin: 0 auto;
+    padding: 58px 0 58px;
+    font-size: 16px;
+    background-color: #fff;
+    box-shadow: 0px 2px 4px 0px rgba(108, 111, 115, 0.1);
+    border-radius: 4px;
+  }
+
+  &__heading {
+    padding: 0 50px 30px;
+    border-bottom: 1px solid #e8ebf0;
+    text-align: center;
+  }
+
+  &__title {
+    margin-bottom: 15px;
+    font-size: 26px;
+  }
+
+  &__suptitle {
+    font-size: 16px;
+    color: $grey-text;
+  }
+
+  &__form {
+    width: 100%;
+    margin: 0 auto;
+    padding: 28px 50px 0;
+  }
+
+  &__input-title {
+    font-weight: 500;
+    line-height: 32px;
+  }
+
+  &__input {
+    width: 100%;
+    min-height: 50px;
+    margin-bottom: 20px;
+    padding: 0 19px;
+    color: #898f96;
+    background-color: #f4f5f8;
+    border: none;
+
+    @include focus-purple;
+  }
+
+  &__radio-title {
+    color: $grey-text;
+  }
+
+  &__radio {
+    margin-bottom: 30px;
+  }
+
+  &__button {
+    display: block;
+    margin-bottom: 40px;
+    padding: 0 55px;
+    font-size: 15px;
+    line-height: 50px;
+    font-weight: 500;
+  }
+
+  &__links {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  &__links-content {
+    &:first-child {
+      margin-right: 15px;
+    }
+  }
+
+  &__link {
+    color: $blue;
+  }
+
+}
 
 .products-heading {
   position: relative;
@@ -519,5 +608,7 @@
     }
   }
 }
+
+
 
 @import "media";

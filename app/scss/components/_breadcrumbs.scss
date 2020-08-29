@@ -1,7 +1,10 @@
 .breadcrumbs {
-  text-align: center;
+  &--center {
+    text-align: center;
+  }
 
   &__list {
+    margin-top: 0;
     padding: 0;
     list-style: none;
   }

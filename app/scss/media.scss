@@ -746,13 +746,13 @@
     padding: 45px 0 30px;
 
     &__title {
-    font-size: 24px;
-  }
+      font-size: 24px;
+    }
 
-  &__search {
-    display: none;
+    &__search {
+      display: none;
+    }
   }
-}
 
   .products-heading {
     #per-page {
@@ -793,7 +793,30 @@
         font-size: 42px;
       }
     }
-  } 
+  }
+
+  // login 
+ .register-login {
+    padding: 0;
+
+    &__inner {
+      margin: 0 -15px;
+      padding: 38px 0 38px;
+
+    }
+
+    &__form {
+      padding: 28px 15px 0;
+    }
+
+    &__links-content {
+      margin-bottom: 10px;
+    }
+
+    &__heading {
+      padding: 0 15px 30px;
+    }
+  }
 }
 
 @media (max-width: 376px) {

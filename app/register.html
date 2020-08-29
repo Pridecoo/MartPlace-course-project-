@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="css/libs.min.css">
+  <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
+  <link rel="stylesheet" href="css/styles.min.css">
+  <title>MartPlace</title>
+</head>
+
+<body>
+  @@include('./parts/_header.html')
+  <div class="wrapper">
+
+    <main>
+
+      <section class="page-heading">
+        <div class="container">
+          <div class="page-heading__inner">
+
+            <div class="breadcrumbs">
+              <ul class="breadcrumbs__list">
+                <li class="breadcrumbs__item">
+                  <a class="breadcrumbs__link" href="index.html">Home</a>
+                </li>
+                <li class="breadcrumbs__item">
+                  <span class="breadcrumbs__link">Login</span>
+                </li>
+              </ul>
+            </div>
+
+            <div class="page-heading__title">
+              <span>Login</span>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <section class="register-login">
+        <div class="container">
+          <div class="register-login__inner">
+
+            <div class="register-login__heading">
+              <div class="register-login__title">Create Your Account</div>
+              <div class="register-login__suptitle">
+                Please fill the following fields with appropriate information
+                to register a new MartPlace account.
+              </div>
+            </div>
+
+            <form class="register-login__form" action="">
+
+              <label for="">
+                <div class="register-login__input-title">Your Name</div>
+                <input class="register-login__input" type="text" placeholder="Enter your name..." required>
+              </label>
+
+              <label for="">
+                <div class="register-login__input-title">Email Address</div>
+                <input class="register-login__input" type="text" placeholder="Enter your email address..." required>
+              </label>
+
+              <label for="">
+                <div class="register-login__input-title">Username</div>
+                <input class="register-login__input" type="text" placeholder="Enter your username..." required>
+              </label>
+
+              <label for="">
+                <div class="register-login__input-title">Password</div>
+                <input class="register-login__input" type="text" placeholder="Enter your password..." required>
+              </label>
+
+              <label for="">
+                <div class="register-login__input-title">Confirm Password</div>
+                <input class="register-login__input" type="text" placeholder="Enter your password..." required>
+              </label>
+
+
+              <button class="register-login__button button button--blue button--rounded" type="submit">
+                Register Now
+              </button>
+
+              <div class="register-login__links">
+
+                <div class="register-login__links-content">
+                  Already have an account? 
+                  <a class="register-login__link" href="">Login</a>
+                </div>
+
+              </div>
+            </form>
+
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    @@include('./parts/_footer.html')
+
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="js/libs.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
