@@ -167,6 +167,22 @@ body {
 
 }
 
+.select {
+  padding: 0 38px 0 20px;
+  color: $grey-text;
+  border: 1px solid #dcdcdc;
+  border-radius: 0 4px 4px 0;
+
+  background: url(../images/icons/arrow.svg);
+  background-position: right 20px bottom 47%;
+  background-repeat: no-repeat;
+  background-size: 12px;
+
+  appearance: none;
+
+  @include focus-purple;
+}
+
 // slick
 .slick-slide .product {
   box-shadow: none; //no shadow for a hidden slide
@@ -245,4 +261,8 @@ body {
   &:active {
     background-color: #602bbd;
   }
+}
+
+.noscroll {
+  overflow: hidden;
 }

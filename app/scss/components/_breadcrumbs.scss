@@ -1,0 +1,35 @@
+.breadcrumbs {
+  text-align: center;
+
+  &__list {
+    padding: 0;
+    list-style: none;
+  }
+
+  &__item {
+    position: relative;
+    display: inline-block;
+
+    &+& {
+      padding-left: 24px;
+
+
+      &:before {
+        position: absolute;
+        content: "/";
+        left: 8px;
+        color: #fff;
+      }
+    }
+
+    &:last-child {
+      .breadcrumbs__link {
+        color: #bfcad7;
+      }
+    }
+  }
+
+  &__link {
+    color: #fff;
+  }
+}

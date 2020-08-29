@@ -1,0 +1,57 @@
+.page-heading {
+  position: relative;
+  padding: 83px 0 14px;
+  background-color: #000;
+
+  &:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to left, #0d3ef2 0%, #4030c9 46%, #4f2797 100%);
+    opacity: 0.92;
+  }
+
+  &__inner {
+    position: relative;
+  }
+
+  &__content {
+    text-align: center;
+  }
+
+  &__title {
+    margin-bottom: 32px;
+    font-size: 26px;
+    color: #fff;
+
+    span {
+      font-weight: 500;
+    }
+  }
+
+  &__search {
+    position: relative;
+    max-width: 554px;
+    margin: 0 auto 35px;
+  }
+
+  &__input {
+    width: 100%;
+    min-height: 55px;
+    padding: 0 115px 0 30px;
+    border-radius: 35px;
+    border: none;
+    outline: transparent;
+  }
+
+  &__button {
+    position: absolute;
+    right: -3px;
+    top: 0;
+    height: 101%;
+    min-width: 110px;
+  }
+}
