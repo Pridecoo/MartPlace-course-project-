@@ -16,7 +16,7 @@
 
 // login page
 
-.register-login {
+.credentials {
   padding: 70px 0 120px;
   background-color: #eff1f5;
 
@@ -43,7 +43,13 @@
 
   &__suptitle {
     font-size: 16px;
+    line-height: 28px;
     color: $grey-text;
+
+    &--recover {
+      line-height: 30px;
+      text-align: left;
+    }
   }
 
   &__form {
