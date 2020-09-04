@@ -1,0 +1,63 @@
+.why-us {
+  padding: 113px 0 87px;
+
+  &__items {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    margin: 0 -29px 0 0;
+    padding: 0;
+
+    counter-reset: myCounter;
+  }
+
+  &__item {
+    max-width: calc(100% / 3 - 29px);
+    margin: 0 29px 30px 0;
+    padding-top: 50px;
+    padding-bottom: 52px;
+
+    box-shadow: 0px 2px 50px 0px rgba(0, 0, 0, 0.08);
+
+    list-style: none;
+
+    &:before {
+      counter-increment: myCounter;
+      content: "0"counter(myCounter);
+
+      position: absolute;
+      top: 13px;
+      left: 17px;
+
+      font-size: 48px;
+      line-height: 48px;
+      font-weight: 300;
+
+      color: rgba(#5c87f8, $alpha: .2);
+    }
+
+    .lnr-magic-wand {
+      color: #7f4ec2;
+    }
+
+    .lnr-lock {
+      color: $green-icon;
+    }
+
+    .lnr-chart-bars {
+      color: $yellow-icon;
+    }
+
+    .lnr-leaf {
+      color: $blue-icon;
+    }
+
+    .lnr-phone {
+      color: $red-icon;
+    }
+  }
+
+  &__title {
+    margin-top: 43px;
+  }
+}

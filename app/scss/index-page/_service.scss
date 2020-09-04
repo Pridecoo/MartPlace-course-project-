@@ -1,0 +1,42 @@
+.service {
+  display: flex;
+  padding: 0 15px;
+
+  &__item {
+    width: 50%;
+    min-height: 297px;
+
+    text-align: center;
+
+    &--right {
+      text-align: left;
+      border-left: 1px solid #e8eaf3;
+    }
+  }
+
+  &__title {
+    width: fit-content;
+    padding: 210px 0 50px 0;
+    margin: 0 120px 50px auto;
+    font-size: 24px;
+    background-repeat: no-repeat;
+    background-size: 150px 120px;
+    background-position: center 60px;
+
+    span {
+      color: $blue;
+    }
+
+    &--right {
+      margin: 0 0 50px 120px;
+
+      span {
+        color: $purple;
+      }
+
+      &:before {
+        width: 155px;
+      }
+    }
+  }
+}

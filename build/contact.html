@@ -319,7 +319,7 @@
 
           <ul class="header__menu-items">
             <li class="header__menu-item header__menu-home">
-              <a class="header__menu-link header__menu-active" href="#">home</a>
+              <a class="header__menu-link" href="#">home</a>
 
               <ul class="header__home-links header__menu-pop-up">
                 <li class="header__links-item">
@@ -701,18 +701,22 @@
 
             </div>
 
-            <form action="" class="contact__form">
+            <form class="contact__form" action="">
               <div class="contact__form-title">
                 Leave Your Messages
               </div>
 
               <div class="contact__inputs">
-                <input type="text" class="contact__input" placeholder="Name">
-                <input type="text" class="contact__input" placeholder="Email">
-                <input type="text" class="contact__input" placeholder="Subject">
-                <input type="text" class="contact__input" placeholder="Phone">
+                <div class="contact__inputs-credentials">
+                
+                  <input class="contact__input" type="text" placeholder="Name">
+                  <input class="contact__input" type="text" placeholder="Email">
+                  <input class="contact__input" type="text" placeholder="Subject">
+                  <input class="contact__input" type="text" placeholder="Phone">
 
-                <textarea name="" id="" cols="30" rows="10" class="contact__input" placeholder="Your text here..."></textarea>
+                </div>
+
+                <textarea class="contact__input contact__input--message" name="" id="" cols="30" rows="10" placeholder="Your text here..."></textarea>
 
                 <button class="contact__button button button--blue button--rounded">
                   Send Request
@@ -726,7 +730,7 @@
       </section>
 
       <section class="map">
-        
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9939.40480643515!2d30.464010208245412!3d50.435763102112226!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4c54fb96886bf%3A0xa45df5c213153259!2z0J7RgtC30YvQstGLINC90LAgR29vZ2xlIE1hcHMsINCa0YDQsNGD0LQt0JzQsNGA0LrQtdGC0LjQvdCzLCDRgdGB0YvQu9C60Lgg0YEg0YTQvtGA0YPQvNC-0LI!5e0!3m2!1sru!2sua!4v1598867640530!5m2!1sru!2sua" width="100%" height="400" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
       </section>
     </main>
 
@@ -835,14 +839,14 @@
           </button>
         </form>
 
-        <div class="footer__social">
-          <a class="footer__social-link footer__social-link--facebook" href="#">facebook</a>
-          <a class="footer__social-link footer__social-link--twitter" href="#">twitter</a>
-          <a class="footer__social-link footer__social-link--google" href="#">google+</a>
-          <a class="footer__social-link" href="#">pinterest</a>
-          <a class="footer__social-link footer__social-link--linkedin" href="#">linked-in</a>
-          <a class="footer__social-link footer__social-link--something" href="#">something</a>
-        </div>
+        <div class="social">
+  <a class="social__link social__link--facebook" href="#">facebook</a>
+  <a class="social__link social__link--twitter" href="#">twitter</a>
+  <a class="social__link social__link--google" href="#">google+</a>
+  <a class="social__link" href="#">pinterest</a>
+  <a class="social__link social__link--linkedin" href="#">linked-in</a>
+  <a class="social__link social__link--something" href="#">something</a>
+</div>
       </div>
     </div>
   </div>

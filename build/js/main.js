@@ -176,6 +176,19 @@ $(function () {
     $('body').removeClass('noscroll');
   });
 
+  $(function () {
+    $("[name=license-type]").change(function () {
+      $('.product-full__license-text').hide('slow');
+      $("#user-text-" + $("[name=license-type]:checked").val()).show('slow');
+    });
+  });
+
+  // nav btns
+  $(".product-full__nav-btn").click(function () {
+    $(this).addClass("active");
+    $(".product-full__nav-btn").not(this).removeClass("active");
+  });
+
   if ($('.newest__items').length) {
     var mixer = mixitup('.newest__items');
   } else if ($('.products-page__items').length) {

@@ -1,0 +1,144 @@
+.newest {
+  padding: 120px 0;
+
+  background-color: #f6f7fb;
+
+  &__title {
+    margin-bottom: 30px;
+  }
+
+  &__items {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+
+    margin-right: -28px;
+  }
+
+  &__tags {
+    padding: 30px 30px 25px;
+    margin-bottom: 50px;
+
+    background-color: #fff;
+    border-radius: 4px;
+    box-shadow: 0px 2px 4px 0px rgba(108, 111, 115, 0.1);
+  }
+
+  &__tag {
+    padding: 8px 20px;
+  }
+
+  &__button-wrapper {
+    text-align: center;
+    padding-top: 48px;
+  }
+
+  &__button {
+    padding: 18px 36px;
+
+    word-spacing: 2px;
+
+    color: #fff;
+    background-color: $blue;
+
+    transition: all .3s;
+
+  }
+
+  // filter
+  &__filter {
+    position: relative;
+
+    padding: 20px 0;
+    margin-right: 30px;
+
+    font-size: 16px;
+    white-space: nowrap;
+
+    color: #747b86;
+
+    &:hover {
+      .newest__filters {
+        height: auto;
+        padding: 21px 22px;
+
+        font-size: 15px;
+
+        opacity: 1;
+      }
+    }
+
+    &:after {
+      position: absolute;
+      right: -30px;
+
+      content: "";
+
+      width: 8px;
+      height: 20px;
+
+      background: url(../images/icons/filter.svg) center no-repeat;
+
+    }
+  }
+
+  &__filters {
+    position: absolute;
+    z-index: 1;
+    top: 125%;
+    left: -70px;
+
+    min-width: 184px;
+    padding: 0 22px;
+    height: 0;
+
+    font-size: 0;
+    white-space: normal;
+
+    opacity: 0;
+    background-color: #fff;
+    box-shadow: 0px 5px 40px 0px rgba(82, 85, 90, 0.2);
+    border-radius: 3px;
+
+    transition: all .2s;
+
+    &:before {
+      position: absolute;
+      top: -12px;
+      right: 16px;
+
+      content: "";
+      width: 0;
+      height: 0;
+
+      border: none;
+      border-style: solid;
+      border-width: 0 7px 12px 7px;
+      border-color: transparent transparent #ffffff transparent;
+    }
+  }
+
+  &__filters-btn {
+    margin-bottom: 8px;
+
+    color: #747b86;
+    background: transparent;
+    border: none;
+
+    cursor: pointer;
+
+    transition: color .3s;
+
+    &:last-child {
+      margin: 0;
+    }
+
+    &:hover {
+      color: $blue;
+    }
+
+    &:active {
+      color: $purple;
+    }
+  }
+}

@@ -1,0 +1,155 @@
+.blog {
+  padding: 113px 0 120px;
+
+  background-color: #eff1f5;
+
+  &__items {
+    display: flex;
+    justify-content: start;
+    flex-wrap: wrap;
+
+    margin-right: -28px;
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    width: calc(33.333% - 28px);
+    margin: 0 28px 28px 0;
+
+    background-color: #fff;
+    box-shadow: 0px 2px 4px 0px rgba(108, 111, 115, 0.1);
+    border-radius: 4px;
+
+    transition: transform .3s;
+
+    &:hover {
+      transform: scale(1.05);
+    }
+  }
+
+  &__item-img {
+    width: 100%;
+    height: 230px;
+
+    border-radius: 4px 4px 0 0;
+    object-fit: cover;
+  }
+
+  &__item-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 1;
+  }
+
+  &__item-top {
+    padding: 26px 26px;
+  }
+
+  &__item-bottom {
+    display: flex;
+    justify-content: space-between;
+    margin-top: auto;
+    padding: 20px 30px;
+
+    color: #999;
+    border-top: 1px solid #ececec;
+  }
+
+  &__item-title {
+    display: inline-block;
+    margin-bottom: 19px;
+
+    font-size: 22px;
+    font-weight: 500;
+
+    color: #000;
+  }
+
+  &__item-text {
+    color: $grey-text;
+
+    @include content-text;
+    @include text-nowrap;
+  }
+
+  &__item-statistics {
+    position: relative;
+
+    width: 50%;
+
+    text-align: right;
+
+    color: #7e7e7e;
+
+    &:before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 0;
+      z-index: 1;
+
+      width: 1px;
+      height: 245%;
+
+      background-color: #ececec;
+
+      transform: translateY(-50%);
+    }
+  }
+
+
+  &__date-link,
+  &__item-comments,
+  &__item-views {
+    position: relative;
+
+    &:before {
+      content: "";
+      position: absolute;
+      left: -20px;
+
+      width: 15px;
+      height: 15px;
+
+      background: url(../images/icons/bubble.svg);
+      @include bg-center-norep-cover;
+    }
+  }
+
+  &__item-comments {
+    position: relative;
+    margin-right: 50px;
+
+    color: #7e7e7e;
+    transition: color .3s;
+
+    &:hover {
+      color: $blue;
+    }
+  }
+
+  &__date-link {
+    padding-left: 22px;
+    color: $blue;
+
+    &:before {
+      top: 1px;
+      left: 0px;
+      background: url(../images/icons/clock.svg);
+      @include bg-center-norep-cover;
+    }
+  }
+
+  &__date-text {
+    color: #999;
+  }
+
+  &__item-views {
+    &:before {
+      background: url(../images/icons/eye.svg);
+      @include bg-center-norep-cover;
+    }
+  }
+}

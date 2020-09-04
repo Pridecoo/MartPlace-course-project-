@@ -1,0 +1,70 @@
+.price-range {
+  padding: 10px 0;
+  text-align: center;
+
+  .irs-max,
+  .irs-min {
+    display: none;
+  }
+
+  .irs-line,
+  .irs-bar {
+    height: 6px;
+    background-color: #efedf3;
+  }
+
+  .irs-bar {
+    background-color: $purple;
+  }
+
+  .irs-handle {
+    top: 19px;
+    height: 18px;
+    width: 18px;
+    border-radius: 50%;
+    border: 4px solid $blue;
+    background-color: #fff;
+  }
+
+  .irs--flat .irs-handle>i:first-child {
+    display: none;
+  }
+
+  .irs-to,
+  .irs-from {
+    top: 50px;
+    max-width: 80px;
+    width: 100%;
+    font-family: "quicksand", sans-serif;
+    font-size: 15px;
+    line-height: 32px;
+    color: $purple;
+    background-color: #f1ecf9;
+    border-radius: 35px;
+    visibility: visible !important;
+
+    &:before {
+      display: none;
+    }
+  }
+
+  .irs-to {
+    left: unset !important;
+    right: 0;
+  }
+
+  .irs-from {
+    left: 0 !important;
+  }
+
+  .irs-single {
+    visibility: hidden !important;
+  }
+
+  &__button {
+    margin-top: 80px;
+    padding: 0 31px;
+    line-height: 44px;
+    font-weight: 500;
+  }
+}

@@ -1,0 +1,279 @@
+.products-page {
+  position: relative;
+  padding: 80px 0;
+  background-color: #eff1f5;
+
+  &__inner {
+    display: flex;
+  }
+
+  &__aside {
+    margin-right: 28px;
+  }
+
+  &__filters-btn {
+    position: absolute;
+    top: 20px;
+    display: none;
+    padding: 12px 28px;
+
+    &--sorting {
+      right: 15px;
+    }
+  }
+
+  &__items {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -28px;
+  }
+
+  &__filters {
+    min-width: 262px;
+    margin-bottom: 28px;
+    padding: 27px 27px 16px;
+    background-color: #fff;
+    border-radius: 4px;
+    box-shadow: 0px 2px 4px 0px rgba(108, 111, 115, 0.1);
+  }
+
+  &__filters-list {
+    padding: 27px 0 0;
+    margin: 0;
+    list-style: none;
+  }
+
+  &__filter-item {
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding-left: 15px;
+    margin-bottom: 17px;
+    font-family: "quicksand", sans-serif;
+
+    span {
+      margin-left: auto;
+    }
+
+    &:before {
+      position: absolute;
+      left: 0;
+      font-size: 10px;
+      font-family: "linearicons-free";
+    }
+
+    &:hover {
+      &:before {
+        color: $blue;
+      }
+    }
+
+    &:last-child {
+      button {
+        margin: 0;
+      }
+    }
+  }
+
+  &__filters-title {
+    position: relative;
+    padding-bottom: 28px;
+    font-family: "quicksand", sans-serif;
+    font-size: 20px;
+    border-bottom: 1px solid #e7ebee;
+    cursor: pointer;
+
+    &:before {
+      position: absolute;
+      right: 0;
+      top: 5px;
+      font-family: "linearicons-free";
+      font-size: 14px;
+      transition: transform .4s;
+    }
+
+    &.active {
+      &:before {
+        transform: rotate(180deg);
+      }
+    }
+  }
+
+  &__filter {
+    background-color: transparent;
+    border: none;
+    color: #000;
+  }
+
+  &__radio {
+    position: absolute;
+    left: 0;
+    margin-right: 9px;
+    cursor: pointer;
+  }
+
+  &__label {
+    padding-left: 6px;
+  }
+
+  // product
+  .product {
+    transition: width .3s;
+
+    &__img {
+      max-height: 160px;
+    }
+
+    &__content-title {
+      font-size: 18px;
+      line-height: 21px;
+    }
+
+    &__content {
+      padding: 16px 20px;
+    }
+
+    &__content-top {
+      padding: 0;
+    }
+
+    &__content-text {
+      display: none;
+    }
+
+    &__fav,
+    &__comments,
+    &__stars-counter {
+      display: none;
+    }
+
+    &__stars-wrapper {
+      display: flex;
+    }
+
+    &__stars-counter {
+      margin-left: 4px;
+      color: #6f7d8d;
+    }
+
+    &__picture {
+      .product__img {
+        opacity: 1;
+      }
+    }
+
+    &__content-middle {
+      display: flex;
+      justify-content: space-between;
+      padding: 0 0 14px;
+      margin-top: 20px;
+    }
+
+    &__content-bottom {
+      padding: 10px 0 0;
+    }
+
+    &__info-category {
+      padding-left: 22px;
+      margin-left: auto;
+    }
+
+    &.list {
+      flex-direction: row;
+      width: calc(100% - 28px);
+      margin-right: 0;
+
+      .product__img {
+        max-width: 230px;
+        min-height: 100%;
+        border-radius: 4px 0 0 4px;
+      }
+
+      .product__content {
+        flex-direction: row;
+        justify-content: start;
+        padding: 27px 0;
+      }
+
+      .product__content-text {
+        display: -webkit-box;
+        margin: 25px 0;
+        -webkit-line-clamp: 2;
+      }
+
+      .product__content-top {
+        max-width: 260px;
+        padding: 0 17px;
+      }
+
+      .product__content-bottom {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        flex: 1;
+        margin: 0;
+        padding: 0 14px 0 20px;
+        text-align: center;
+        border-top: none;
+        border-left: 1px solid #ececec;
+      }
+
+      .product__content-middle {
+        flex-direction: column-reverse;
+        justify-content: center;
+        max-width: 205px;
+        width: 100%;
+        padding: 0 20px;
+        margin: 0;
+        border-left: 1px solid #ececec;
+      }
+
+      .product__info {
+        margin: 0 0 26px;
+      }
+
+      .product__info-author {
+        margin: 0;
+      }
+
+      .product__fav,
+      .product__comments {
+        display: block;
+        margin: 0 0 13px;
+      }
+
+      .product__fav {
+        color: #6f7d8d;
+      }
+
+      .product__sells {
+        margin: 0;
+        color: $blue;
+      }
+
+      .product__price {
+        width: 100%;
+        margin: 0 0 28px;
+      }
+
+      .product__stars-counter {
+        display: block;
+      }
+
+      .product__fav-btn {
+        margin-right: 1px;
+        color: $purple;
+      }
+
+      .product__sells-btn {
+        margin: 0;
+
+        span {
+          margin-right: 2px;
+        }
+      }
+
+    }
+  }
+
+}

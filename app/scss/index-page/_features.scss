@@ -1,0 +1,20 @@
+.features {
+  padding: 187px 0 120px;
+
+  font-weight: 500;
+
+  &__items {
+    display: flex;
+    justify-content: space-between;
+    height: fit-content;
+  }
+
+  &__item {
+    transition: box-shadow .4s;
+
+    &:hover {
+      box-shadow: 0px 2px 50px 0px rgba(0, 0, 0, 0.08);
+    }
+  }
+
+}

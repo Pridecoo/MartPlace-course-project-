@@ -1,0 +1,42 @@
+.feature {
+  position: relative;
+
+  max-width: 362px;
+  padding: 40px 30px 50px;
+
+  text-align: center;
+
+  border-radius: 4px;
+
+  &__img {
+    margin: 0 auto;
+    width: 112px;
+    height: 120px;
+
+    font-size: 0;
+
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  &__icon {
+
+    font-size: 60px;
+    color: $blue;
+  }
+
+  &__title {
+    margin: 31px 0 20px;
+
+    font-size: 24px;
+
+    color: #010101;
+  }
+
+  &__text {
+    color: $grey-text;
+
+    @include content-text;
+    @include text-nowrap;
+  }
+}

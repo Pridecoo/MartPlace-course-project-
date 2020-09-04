@@ -1,0 +1,25 @@
+.feed {
+  padding: 120px 0 90px;
+
+  background-color: #eff1f5;
+
+  &__items {
+    margin-right: -28px;
+  }
+
+  &__product {
+    width: calc(100% - 28px);
+  }
+
+  &__arrow {
+    background-color: $blue;
+
+    &:hover {
+      background-color: rgba($blue, .9);
+    }
+
+    &:active {
+      background-color: #1474ce;
+    }
+  }
+}

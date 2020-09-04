@@ -1,0 +1,48 @@
+.statistics {
+  padding: 95px 0;
+
+  background-color: #212225;
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__item {
+    width: 25%;
+    text-align: center;
+
+    color: $yellow-icon;
+
+    &--blue {
+      color: $blue-icon;
+    }
+
+    &--green {
+      color: $green-icon;
+    }
+
+    &--red {
+      color: $red-icon;
+    }
+  }
+
+  &__icon {
+    margin-bottom: 45px;
+
+    font-size: 48px;
+  }
+
+  &__number {
+    margin-bottom: 14px;
+
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  &__title {
+    font-size: 18px;
+
+    color: #fff;
+  }
+}

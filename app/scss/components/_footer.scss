@@ -132,48 +132,6 @@
     line-height: 50px;
   }
 
-  &__social {
-    display: flex;
-    justify-content: flex-start;
-    flex-wrap: wrap;
-  }
-
-  &__social-link {
-    width: 42px;
-    height: 42px;
-    margin-right: 13px;
-
-    font-size: 0;
-
-    background-image: url(../images/social.png);
-
-    transition: transform .3s;
-
-    &--facebook {
-      background-position: -210px -0;
-    }
-
-    &--twitter {
-      background-position: -168px -0;
-    }
-
-    &--google {
-      background-position: -126px -0;
-    }
-
-    &--linkedin {
-      background-position: -42px -0;
-    }
-
-    &--something {
-      margin: 0;
-      background-position: -84px -0;
-    }
-
-    &:hover {
-      transform: scale(1.1)
-    }
-  }
 
   &__bottom {
     display: flex;

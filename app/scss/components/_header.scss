@@ -192,14 +192,6 @@
     }
   }
 
-  &__menu-active {
-    color: $blue;
-
-    &:after {
-      opacity: 1;
-    }
-  }
-
   &__search {
     position: relative;
 
