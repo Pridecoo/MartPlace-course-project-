@@ -108,52 +108,54 @@
             <div class="products-page__filters-btn button button--blue button--rounded" id="filters">
               Filters
             </div>
-            <div class="products-page__filters-btn products-page__filters-btn--sorting button button--blue button--rounded">
+            <div
+              class="products-page__filters-btn products-page__filters-btn--sorting button button--blue button--rounded">
               Sorting
             </div>
 
-            <aside class="products-page__aside">
+            <aside class="products-page__aside aside-menu">
               <div class="products-page__filters">
                 <div class="products-page__filters-title lnr lnr-chevron-down" id="categories">Categories</div>
-                <ul class="products-page__filters-list" id="categories-list">
-                  <li class="products-page__filter-item lnr lnr-chevron-right">
-                    <button class="products-page__filter button" type="button" data-filter=".category-wordpress">
+
+                <ul class="aside-menu__filters-list" id="categories-list">
+                  <li class="aside-menu__filter-item lnr lnr-chevron-right">
+                    <button class="aside-menu__filter button" type="button" data-filter=".category-wordpress">
                       Wordpress
                     </button>
                     <span>35</span>
                   </li>
-                  <li class="products-page__filter-item lnr lnr-chevron-right">
-                    <button class="products-page__filter button" type="button" data-filter=".category-landing">
+                  <li class="aside-menu__filter-item lnr lnr-chevron-right">
+                    <button class="aside-menu__filter button" type="button" data-filter=".category-landing">
                       Landing Page
                     </button>
                     <span>45</span>
                   </li>
-                  <li class="products-page__filter-item lnr lnr-chevron-right">
-                    <button class="products-page__filter button" type="button"data-filter=".category-psd">
+                  <li class="aside-menu__filter-item lnr lnr-chevron-right">
+                    <button class="aside-menu__filter button" type="button" data-filter=".category-psd">
                       Psd Template
                     </button>
                     <span>13</span>
                   </li>
-                  <li class="products-page__filter-item lnr lnr-chevron-right">
-                    <button class="products-page__filter button" type="button" data-filter=".category-plugins">
+                  <li class="aside-menu__filter-item lnr lnr-chevron-right">
+                    <button class="aside-menu__filter button" type="button" data-filter=".category-plugins">
                       Plugins
                     </button>
                     <span>08</span>
                   </li>
-                  <li class="products-page__filter-item lnr lnr-chevron-right">
-                    <button class="products-page__filter button" type="button" data-filter=".category-html">
+                  <li class="aside-menu__filter-item lnr lnr-chevron-right">
+                    <button class="aside-menu__filter button" type="button" data-filter=".category-html">
                       HTML Template
                     </button>
                     <span>34</span>
                   </li>
-                  <li class="products-page__filter-item lnr lnr-chevron-right">
-                    <button class="products-page__filter button" type="button" data-filter=".category-components">
+                  <li class="aside-menu__filter-item lnr lnr-chevron-right">
+                    <button class="aside-menu__filter button" type="button" data-filter=".category-components">
                       Components
                     </button>
                     <span>78</span>
                   </li>
-                  <li class="products-page__filter-item lnr lnr-chevron-right">
-                    <button class="products-page__filter button" type="button" data-filter=".category-joomla">
+                  <li class="aside-menu__filter-item lnr lnr-chevron-right">
+                    <button class="aside-menu__filter button" type="button" data-filter=".category-joomla">
                       Joomla Template
                     </button>
                     <span>26</span>
@@ -163,32 +165,33 @@
 
               <div class="products-page__filters">
                 <div class="products-page__filters-title lnr lnr-chevron-down" id="filters-radio">Filter Products</div>
-                <ul class="products-page__filters-list" id="radio-list">
-                  <li class="products-page__filter-item">
+
+                <ul class="aside-menu__filters-list" id="radio-list">
+                  <li class="aside-menu__filter-item">
                     <input class="products-page__radio" type="radio" name="foo" id="trending">
                     <label for="trending">Trending Products</label>
                   </li>
-                  <li class="products-page__filter-item">
+                  <li class="aside-menu__filter-item">
                     <input class="products-page__radio" type="radio" name="foo" id="popular">
                     <label for="popular">Popular Products</label>
                   </li>
-                  <li class="products-page__filter-item">
+                  <li class="aside-menu__filter-item">
                     <input class="products-page__radio" type="radio" name="foo" id="new">
                     <label for="new">New Products</label>
                   </li>
-                  <li class="products-page__filter-item">
+                  <li class="aside-menu__filter-item">
                     <input class="products-page__radio" type="radio" name="foo" id="top-seller">
                     <label for="top-seller">Best Seller</label>
                   </li>
-                  <li class="products-page__filter-item">
+                  <li class="aside-menu__filter-item">
                     <input class="products-page__radio" type="radio" name="foo" id="top-rated">
                     <label for="top-rated">Best Rating</label>
                   </li>
-                  <li class="products-page__filter-item">
+                  <li class="aside-menu__filter-item">
                     <input class="products-page__radio" type="radio" name="foo" id="low-price">
                     <label for="low-price">Low Price</label>
                   </li>
-                  <li class="products-page__filter-item">
+                  <li class="aside-menu__filter-item">
                     <input class="products-page__radio" type="radio" name="foo" id="high-price">
                     <label for="high-price">High Price</label>
                   </li>
@@ -915,7 +918,8 @@
                       <div class="product__stats">
                         <div class="product__price">$10</div>
 
-                        <a class="product__info-category" style="background-image: url(images/icons/html.svg);" href="#">
+                        <a class="product__info-category" style="background-image: url(images/icons/html.svg);"
+                          href="#">
                           Components
                         </a>
 
@@ -924,7 +928,7 @@
 
                   </div>
                 </article>
-                
+
                 <article class="product mix category-joomla popular">
                   <a class="product__picture" href="#">
                     <img class="product__img" src="images/content/product-3.jpg" alt="product picture">
@@ -979,7 +983,8 @@
                       <div class="product__stats">
                         <div class="product__price">$10</div>
 
-                        <a class="product__info-category" style="background-image: url(images/icons/html.svg);" href="#">
+                        <a class="product__info-category" style="background-image: url(images/icons/html.svg);"
+                          href="#">
                           Joomla
                         </a>
 
@@ -990,31 +995,8 @@
                 </article>
               </div>
 
-              <div id="data-container"></div>
-              <div id="pagination-container"></div>
+              @@include('./parts/_pagination.html')
 
-              <div class="pagination">
-                <ul class="pagination__list">
-                  <li class="pagination__item">
-                    <span class="pagination__link pagination__link--arrow pagination__link--prev lnr lnr-arrow-left">previous page</span>
-                  </li>
-                  <li class="pagination__item">
-                    <a class="pagination__link active" href="#">1</a>
-                  </li>
-                  <li class="pagination__item">
-                    <a class="pagination__link" href="#">2</a>
-                  </li>
-                  <li class="pagination__item">
-                    <a class="pagination__link" href="#">...</a>
-                  </li>
-                  <li class="pagination__item">
-                    <a class="pagination__link" href="#">8</a>
-                  </li>
-                  <li class="pagination__item">
-                    <a class="pagination__link pagination__link--arrow pagination__link--next active lnr lnr-arrow-right" href="#">next page</a>
-                  </li>
-                </ul>
-              </div>
             </div>
 
           </div>

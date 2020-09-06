@@ -37,43 +37,7 @@
     box-shadow: 0px 2px 4px 0px rgba(108, 111, 115, 0.1);
   }
 
-  &__filters-list {
-    padding: 27px 0 0;
-    margin: 0;
-    list-style: none;
-  }
-
-  &__filter-item {
-    position: relative;
-    display: flex;
-    align-items: center;
-    padding-left: 15px;
-    margin-bottom: 17px;
-    font-family: "quicksand", sans-serif;
-
-    span {
-      margin-left: auto;
-    }
-
-    &:before {
-      position: absolute;
-      left: 0;
-      font-size: 10px;
-      font-family: "linearicons-free";
-    }
-
-    &:hover {
-      &:before {
-        color: $blue;
-      }
-    }
-
-    &:last-child {
-      button {
-        margin: 0;
-      }
-    }
-  }
+ 
 
   &__filters-title {
     position: relative;
@@ -99,21 +63,14 @@
     }
   }
 
-  &__filter {
-    background-color: transparent;
-    border: none;
-    color: #000;
-  }
-
   &__radio {
     position: absolute;
     left: 0;
-    margin-right: 9px;
     cursor: pointer;
   }
 
-  &__label {
-    padding-left: 6px;
+  label {
+    padding-left: 10px;
   }
 
   // product
@@ -276,4 +233,7 @@
     }
   }
 
+  .mixitup-control-active {
+    color: $blue;
+  }
 }

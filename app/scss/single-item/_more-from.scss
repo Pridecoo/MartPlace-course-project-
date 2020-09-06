@@ -1,0 +1,10 @@
+.more-from {
+  padding: 120px 0;
+  background-color: #f6f7fb;
+
+  &__items {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -28px;
+  }
+}
