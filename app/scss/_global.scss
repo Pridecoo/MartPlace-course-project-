@@ -348,3 +348,18 @@ body {
   }
 }
 
+.filters-btns {
+  position: absolute;
+  top: 20px;
+  display: none;
+  width: calc(100% - 30px);
+
+  .filters-btn {
+    padding: 12px 28px;
+
+    &--sorting {
+      text-align: right;
+    }
+  }
+}
+

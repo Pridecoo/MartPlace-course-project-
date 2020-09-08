@@ -1,0 +1,119 @@
+.favorite {
+  position: relative;
+  padding: 80px 0;
+  background-color: #eff1f5;
+
+  &__items {
+    display: flex;
+    justify-content: start;
+    flex-wrap: wrap;
+    margin-right: -28px;
+  }
+
+  .product {
+    transition: width .3s;
+
+
+    &.list {
+      flex-direction: row;
+      width: calc(100% - 28px);
+      margin-right: 0;
+
+      .product__img {
+        max-width: 430px;
+        min-height: 100%;
+        border-radius: 4px 0 0 4px;
+      }
+
+      .product__content {
+        flex-direction: row;
+        justify-content: start;
+        padding: 27px 0;
+      }
+
+      .product__content-text {
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        margin: 0;
+      }
+
+      .product__content-top {
+        max-width: 65%;
+        padding: 0 17px;
+      }
+
+      .product__content-bottom {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        flex: 1;
+        margin: 0;
+        padding: 0 14px 0 20px;
+        text-align: center;
+        border-top: none;
+        border-left: 1px solid #ececec;
+      }
+
+      .product__content-middle {
+        flex-direction: column-reverse;
+        justify-content: center;
+        max-width: 205px;
+        width: 100%;
+        padding: 0 20px;
+        margin: 0;
+        border-left: 1px solid #ececec;
+      }
+
+      .product__stats {
+        flex-direction: column;
+      }
+
+      .product__info {
+        margin: 10px 0 16px;
+        align-items: start;
+      }
+
+      .product__info-author {
+        margin: 0;
+      }
+
+      .product__fav {
+        order: 3;
+        margin: 13px 0 0;
+        color: #6f7d8d;
+      }
+
+      .product__sells {
+        margin: 12px 0 0;
+        color: $blue;
+      }
+
+      .product__price {
+        width: 50%;
+        margin: 0 0 18px;
+      }
+
+      .product__stars-counter {
+        display: block;
+      }
+
+      .product__fav-btn {
+        margin-right: 1px;
+        color: $purple;
+      }
+
+      .product__info-category {
+        margin: 5px 0 0 10px;
+      }
+
+      .product__sells-btn {
+        margin: 0;
+
+        span {
+          margin-right: 2px;
+        }
+      }
+
+    }
+  }
+}

@@ -11,17 +11,6 @@
     margin-right: 28px;
   }
 
-  &__filters-btn {
-    position: absolute;
-    top: 20px;
-    display: none;
-    padding: 12px 28px;
-
-    &--sorting {
-      right: 15px;
-    }
-  }
-
   &__items {
     display: flex;
     flex-wrap: wrap;

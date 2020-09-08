@@ -296,6 +296,23 @@
       }
     }
   }
+
+  // favorites
+  .favorite {
+
+    .product {
+
+      &.list {
+        flex-direction: column;
+
+        .product__img {
+          max-width: 100%;
+          border-radius: 4px 4px 0 0;
+        }
+      }
+
+    }
+  }
 }
 
 @media (max-width: 769px) {
@@ -598,7 +615,8 @@
   }
 
   .newest,
-  .more-from {
+  .more-from,
+  .favorite {
     padding: 60px 0;
 
     &__tags {
@@ -808,10 +826,6 @@
   // products categories
   .products-page {
 
-    &__filters-btn {
-      display: block;
-    }
-
     &__filters {
       margin-bottom: -1px;
       max-width: 265px;
@@ -831,6 +845,11 @@
     &__items {
       margin-right: -10px;
     }
+  }
+
+  .filters-btns {
+    display: flex;
+    justify-content: space-between;
   }
 
   // .products-page__aside,
@@ -1014,6 +1033,69 @@
       left: 15px;
     }
   }
+
+  // favorites 
+  .favorite {
+
+    .product {
+      margin-right: 10px;
+      width: calc(50% - 10px);
+
+      &__content {
+        padding: 0;
+      }
+    }
+
+    &__items {
+      margin-right: -10px;
+    }
+
+    .filters-btns {
+      top: 10px;
+    }
+
+  }
+
+  .products-heading {
+
+    &__filter-by-list {
+      position: initial;
+      height: auto;
+      min-width: unset;
+      margin-top: 10px;
+      padding: 0;
+      text-align: center;
+
+      &:before {
+        display: none;
+      }
+    }
+
+    &__filter-by {
+      margin: 15px 0 0;
+      padding: 20px 0;
+      border: none;
+
+      &:after {
+        content: ":";
+        position: absolute;
+        top: 20px;
+        right: 35px;
+        font-size: inherit;
+        font-family: inherit;
+      }
+    }
+
+    &__filter-by:hover 
+      .products-heading__filter-by-list {
+      padding: 0;
+      overflow: hidden;
+      box-shadow: none;
+      border: none;
+      z-index: initial;
+    }
+  }
+
 }
 
 @media (max-width: 481px) {
@@ -1116,7 +1198,8 @@
   }
 
   // single item 
-  .more-from {
+  .more-from,
+  .favorite {
 
     &__items {
       margin: 0;
@@ -1493,6 +1576,17 @@
 
       .blog__item-img {
         height: 220px;
+      }
+    }
+  }
+
+  // favorite 
+  .favorite {
+
+    .menu-overlay {
+      
+      &__close {
+        right: 0;
       }
     }
   }
