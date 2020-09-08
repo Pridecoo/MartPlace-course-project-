@@ -4,6 +4,16 @@
   color: #fff;
   background-color: #000;
 
+  &--how {
+    padding: 90px 0 15px;
+    text-align: center;
+
+    span {
+      display: block;
+      margin-bottom: 18px;
+    }
+  }
+
   &--search {
     padding: 83px 0 14px;
   }
@@ -50,6 +60,10 @@
 
     &--blog {
       font-size: 30px;
+    }
+
+    &--how {
+      margin-bottom: 70px;
     }
   }
 

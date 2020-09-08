@@ -81,12 +81,12 @@ gulp.task("browser-sync", function(){
   })
 });
 
-gulp.task('fonts', function() {
+gulp.task("fonts", function() {
   return gulp.src('app/fonts/**/*')
          .pipe(gulp.dest('./build/fonts'));
 });
 
-gulp.task('images', function() {
+gulp.task("images", function() {
   return gulp.src('app/images/**/*')
          .pipe(gulp.dest('./build/images'));
 });

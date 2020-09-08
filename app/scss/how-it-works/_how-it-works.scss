@@ -1,0 +1,51 @@
+.how-it-works {
+  
+  &__wrapper {
+    background-color: #eff1f5;
+  }
+
+  &__item {
+    padding: 130px 0;
+    background-size: auto 352px;
+    background-repeat: no-repeat;
+    background-position: 0 center;
+    
+    &--middle {
+      background-position: 100% center;
+    }
+  }
+  
+  &__content {
+    max-width: 440px;
+    margin-left: auto;
+
+    &--middle {
+      margin-left: 0;
+    }
+  }
+
+  &__title {
+    margin-bottom: 30px;
+    font-size: 30px;
+  }
+
+  &__text {
+    @include content-text;
+    margin-bottom: 24px;
+    color: $grey-text;
+  }
+
+  &__btn {
+    min-width: 170px;
+    text-align: center;
+    line-height: 50px;
+  }
+
+  .button--white {
+    
+    &:hover {
+      background-color: $purple;
+      color: #fff;
+    }
+  }
+}
