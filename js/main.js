@@ -127,15 +127,15 @@ $(function () {
     $('#grid-view').removeClass('active');
 
     $('.product__info').each(function () {
-      $(this).parents('.product').find('.product__content-middle').append($(this));
+      $(this).parents('.product.mix').find('.product__content-middle').append($(this));
     });
 
     $('.product__sells').each(function () {
-      $(this).parents('.product').find('.product__content-bottom').append($(this));
+      $(this).parents('.product.mix').find('.product__content-bottom').append($(this));
     });
 
     $('.product__info-category').each(function () {
-      $(this).parents('.product').find('.product__content-top').append($(this));
+      $(this).parents('.product.mix').find('.product__content-top').append($(this));
     });
   });
 
@@ -145,15 +145,15 @@ $(function () {
     $('#list-view').removeClass('active');
 
     $('.product__info').each(function () {
-      $(this).parents('.product').find('.product__content-top').append($(this));
+      $(this).parents('.product.mix').find('.product__content-top').append($(this));
     });
 
     $('.product__sells').each(function () {
-      $(this).parents('.product').find('.product__content-middle').append($(this));
+      $(this).parents('.product.mix').find('.product__content-middle').append($(this));
     });
 
     $('.product__info-category').each(function () {
-      $(this).parents('.product').find('.product__stats').append($(this));
+      $(this).parents('.product.mix').find('.product__stats').append($(this));
     });
   });
 
@@ -163,7 +163,7 @@ $(function () {
     $('body').addClass('noscroll');
   });
 
-  $('.products-page__filters-btn--sorting').click(function () {
+  $('.filters-btn--sorting').click(function () {
     $('.products-heading').addClass('active');
     $('.menu-overlay').addClass('active');
     $('body').addClass('noscroll');
