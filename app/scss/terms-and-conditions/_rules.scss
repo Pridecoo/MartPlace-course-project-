@@ -1,0 +1,28 @@
+.rules {
+  padding: 60px 0 120px;
+  background-color: #eff1f5;
+
+  &__inner {
+    background-color: #fff;
+    box-shadow: 0px 2px 4px 0px rgba(108, 111, 115, 0.1);
+    border-radius: 4px;
+  }
+
+  &__title {
+    padding: 40px 30px 30px;
+    font-size: 24px;
+    border-bottom: 1px solid #e8ebf0;
+  }
+
+  &__text {
+    @include content-text;
+    margin: 20px 0;
+    padding: 0 30px;
+    color: $grey-text;
+
+    &:last-child {
+      padding-bottom: 100px;
+    }
+  }
+
+}

@@ -1323,6 +1323,22 @@
       bottom: 163%;
     }
   }
+
+  // terms and cond's
+  .rules {
+    padding: 60px 0;
+  
+    &__title {
+      padding: 25px 30px;
+      font-size: 22px;
+    }
+  
+    &__text {
+      &:last-child {
+        padding-bottom: 40px;
+      }
+    }
+  }
 }
 
 @media (max-width: 376px) {
