@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="css/libs.min.css">
+  <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
+  <link rel="stylesheet" href="css/styles.min.css">
+  <title>MartPlace</title>
+</head>
+
+<body>
+  @@include('./parts/_header.html')
+  <div class="wrapper">
+
+    <main>
+      <section class="page-heading">
+        <div class="container">
+          <div class="page-heading__inner">
+
+            <div class="breadcrumbs">
+              <ul class="breadcrumbs__list">
+                <li class="breadcrumbs__item">
+                  <a class="breadcrumbs__link" href="index.html">Home</a>
+                </li>
+                <li class="breadcrumbs__item">
+                  <span class="breadcrumbs__link">404</span>
+                </li>
+              </ul>
+            </div>
+
+            <div class="page-heading__title">
+              <span>Error-404</span>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <section class="error">
+        <div class="container">
+          <div class="error__inner" style="background-image: url(images/404.png);">
+            Oops! Page Not Found
+
+            <a class="error__btn button button--blue button--rounded" href="index.html">
+              Back to Home
+            </a>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    @@include('./parts/_footer.html')
+
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="js/libs.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>

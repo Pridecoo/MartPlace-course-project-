@@ -1159,6 +1159,16 @@
       margin-right: 0;
     }
   }
+
+  // error 
+  .error {
+
+    &__inner {
+      padding: 415px 0 70px;
+      background-size: auto 320px;
+      background-position: center 60px;
+    }
+  }
 }
 
 @media (max-width: 481px) {
@@ -1687,4 +1697,17 @@
       }
     }
   }
+
+    // error 
+    .error {
+
+      &__inner {
+        padding: 250px 0 50px;
+        background-size: auto 220px;
+        background-position: center 20px;
+
+        line-height: 50px;
+        font-size: 26px;
+      }
+    }
 }

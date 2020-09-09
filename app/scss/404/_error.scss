@@ -1,0 +1,22 @@
+.error {
+  
+  &__inner {
+    padding: 585px 0 100px;
+    text-align: center;
+    font-size: 30px;
+    line-height: 80px;
+    background-repeat: no-repeat;
+    background-size: auto 447px;
+    background-position: center 80px;
+  }
+
+  &__btn {
+    display: block;
+    min-width: 190px;
+    width: min-content;
+    margin: 20px auto 0;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 50px;
+  }
+}
