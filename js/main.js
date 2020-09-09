@@ -204,6 +204,10 @@ $(function () {
     $(".blog-big__tag").not(this).removeClass("active");
   });
 
+  $(".lnr.lnr-question-circle").hover(function () {
+    $
+  })
+
 
   $('.button').mouseup(function() { this.blur() });
 
